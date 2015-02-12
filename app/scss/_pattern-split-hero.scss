@@ -1,0 +1,28 @@
+
+// Pattern: Split Hero
+// --------------------
+
+.split-hero {
+    @include clearfix;
+    position: relative;
+
+    .split-hero-content {
+        width:50%;
+        float: left;
+        padding: rem-calc(90) rem-calc(60) rem-calc(60) rem-calc(60);
+        background: $cool;
+
+        .tagline {
+            color: $orange;
+            font-weight: 600;
+            margin-bottom: rem-calc(48);
+        }
+    }
+    .split-hero-pic {
+        position: absolute;
+        height: 100%;
+        right: 0;
+        width: 50%;
+        top: 0;
+    }
+}

@@ -1,0 +1,35 @@
+
+
+// Icon Triggers
+// -------------
+
+
+.icon-trigger {
+    position: absolute;
+    right:0;
+    bottom:0;
+
+    // More
+    &.more {
+
+        &:after {
+            transition: background $global-transition;
+            margin-left: - rem-calc(96);
+            margin-top: - rem-calc(47);
+            position: absolute;
+            content: '+';
+            font-size: rem-calc(32);
+            color: $white;
+            background: rgba($orange, .9);
+            height:rem-calc(48);
+            width:rem-calc(96);
+            text-align: center;
+        }
+        &:hover {
+            &:after {background: $orange;}
+        }
+    }
+
+
+
+}

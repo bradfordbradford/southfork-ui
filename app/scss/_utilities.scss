@@ -1,0 +1,53 @@
+// Utilities
+// - - - - - - - -
+
+// Fills
+.fill-white {
+    background: $white;
+}
+.fill-cream {
+    background: $cream;
+}
+
+// Colors
+.color-white {
+    background: $white;
+}
+.color-cream {
+    background: $cream;
+}
+
+// Ghost Center
+.ghost-center {position: relative;}
+.ghost-content {
+    position: absolute !important;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+
+// Number Badge
+.number-badge {
+    background: $white;
+    color: $orange;
+    border-radius: 1000px;
+    height:rem-calc(48);
+    width:rem-calc(48);
+    border: 1px solid $orange;
+    text-align: center;
+    display: inline-block;
+    font-size: rem-calc(24);
+    span {
+        position: relative;
+        top:6px;
+    }
+}
+
+// Dotted Line
+.dotted-line {
+    display: block;
+    width:222px;
+    height:6px;
+    background: url(../images/icons/dotted-line.png);
+}

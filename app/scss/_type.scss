@@ -1,0 +1,14 @@
+
+// Typography
+// ----------
+
+// Type Utilities
+
+// Formatting
+.section-tag {
+    text-transform: uppercase;
+    // font-size: rem-calc(14);
+    letter-spacing: 0.04rem;
+    font-weight: 600;
+    font-family: $font-family-sans-serif
+}

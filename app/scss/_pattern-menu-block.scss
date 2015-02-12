@@ -1,0 +1,61 @@
+
+
+// Pattern: Menu Block
+// -------------------
+
+ul.menu-block-list {
+    list-style: none;
+
+    li {
+        @include grid-column(4);
+        position: relative;
+
+        .inner {
+            border-bottom-right-radius: 8px;
+            border-top-right-radius: 8px;
+            background: $white;
+            height: 100%;
+        }
+
+        // Menu Pic
+        .menu-block-pic {
+            border-top-right-radius: 8px;
+            position: relative;
+            a {
+                display: block;
+                &:hover {
+                    .icon-trigger.more:after {background: $orange;}
+                }
+            }
+        }
+
+        // Menu Content
+        .menu-block-content {
+            padding: rem-calc(20) rem-calc(20) rem-calc(10) rem-calc(20) ;
+
+            .title {
+                font-size: rem-calc(20);
+                font-weight: 600;
+            }
+        }
+
+        // Menu Block Meta
+        .menu-block-meta {
+            // text-align: right;
+            text-align: right;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            margin-left: -($column-gutter + rem-calc(20));
+            margin-bottom: rem-calc(6);
+
+            .price {
+                font-size: rem-calc(16);
+                letter-spacing: 0.06rem;
+                color:$aluminum;
+                margin: 0 4px 0 0;
+            }
+        }
+
+    }
+}
