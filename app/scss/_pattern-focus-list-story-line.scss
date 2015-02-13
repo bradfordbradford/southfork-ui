@@ -18,5 +18,15 @@
         .list-content {
 
         }
+        @media #{$medium-only} {
+            @include grid-column(6);
+        }
+        @media #{$small-only} {
+            @include grid-column(12, $center:true);
+            display: block;
+
+            .number {display: block;margin:0 auto;}
+            text-align:center;
+        }
     }
 }

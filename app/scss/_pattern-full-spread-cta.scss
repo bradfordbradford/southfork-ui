@@ -2,12 +2,7 @@
 // Full Spread CTA
 // ----------------
 .full-spread-cta {
-    position: absolute;
-    z-index: 100;
-    width:650px;
-    left:50%;
-    margin-left: -325px;
-    margin-top: rem-calc(120);
+    // major layout styles: full-spread.scss
 
     .inner {
         padding: rem-calc(70 78 74);
@@ -34,4 +29,27 @@
     form {
         margin: rem-calc(42 0 0);
     }
+
+    @media #{$small-only} {
+
+        .inner {padding: rem-calc(40 32 44);}
+
+        .section-tag {
+            font-size: rem-calc(18);
+            letter-spacing: 0.04rem;
+            margin: rem-calc(0 0 12);
+        }
+
+        p {
+            font-family: $font-family-serif;
+            letter-spacing: 0.04rem;
+            font-size: rem-calc(16);
+        }
+
+        form {
+            margin: rem-calc(24 0 0);
+        }
+
+    }
 }
+

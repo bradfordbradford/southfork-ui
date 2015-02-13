@@ -1,0 +1,67 @@
+
+// Site Footer
+// ------------
+
+.site-footer {
+    background: $footer-brown;
+
+    a {
+        color: $white;
+        letter-spacing: 0.014rem;
+        &:hover {
+            color: $light-tan;
+        }
+    }
+    .site-map-list {
+        @extend %list-reset;
+        margin: rem-calc(0 0 32);
+
+        li {
+            display: inline-block;
+
+            &.icon {
+                margin: rem-calc(32 12 24 0);
+                position: relative;
+                top: 24px;
+            }
+            a {
+                padding: rem-calc(0 8);
+                font-size: rem-calc(12);
+            }
+        }
+    }
+    .site-info {
+        max-width: 200px;
+        color: $light-tan;
+        font-size: rem-calc(12);
+        margin: rem-calc(24 0 32)
+    }
+
+    .newsletter-cta {
+        .title {
+            letter-spacing: 0.1rem;
+            text-transform: uppercase;
+            color: $white;
+            font-size: rem-calc(12);
+            margin: rem-calc(60 0 8);
+            font-family:$font-family-sans-serif;
+        }
+        p {
+            font-size: rem-calc(12);
+            color: $light-tan;
+        }
+        a.button {background:$dark-brown;
+            &:hover {
+                background:$light-tan;
+            }
+        }
+    }
+    .social-icons-list {
+        margin: rem-calc(24 0 32);
+        a {color: $light-tan;
+            &:hover {
+                color: $orange;
+            }
+        }
+    }
+}

@@ -47,3 +47,36 @@ $images.imagesLoaded().progress(function(instance, image){
 $images.imagesLoaded( function() {
     $('#full-spread').fadeIn('fast');
 });
+
+
+// Select 2
+// ---------
+// $(".select-awesome").select2({
+//   placeholder: "Where are you located?"
+// });
+
+
+// Location Select
+// ---------------
+$('#location-select').magicSuggest({
+    placeholder: 'Where are you located?',
+    maxSelection: 1,
+    data: [{
+        name: 'Transamerica Tower',
+        address: '2121 Broadway Ave. Atlanta, GA'
+    },{
+        name: 'Theodore Tower',
+        address: '1708 Atlantic Ave. Atlanta, GA'
+    },{
+        name: 'Jefferson Tower',
+        address: '19 3rd St. Atlanta, GA'
+    },{
+        name: 'Abraham Bldg.',
+        address: 'Alpine Way Atlanta, GA'
+    }],
+    valueField: 'address',
+    renderer: function(data){
+        return data.name + ' <span>' + data.address + '</span>';
+    },
+    resultAsString: true
+});

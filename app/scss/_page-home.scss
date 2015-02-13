@@ -5,4 +5,10 @@
     .split-hero {
         margin-top: rem-calc(60)
     }
+    // Hero CTA
+    @media #{$large-only} {
+        .cta-hero-copy .inner {
+            width:500px;
+        }
+    }
 }

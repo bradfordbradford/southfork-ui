@@ -25,4 +25,21 @@
         width: 50%;
         top: 0;
     }
+    @media #{$medium-only} {
+        .split-hero-content {
+            width:75%;
+        }
+        .split-hero-pic {
+            width:25%;
+        }
+    }
+    @media #{$small-only} {
+        .split-hero-content {
+            width:85%;
+            padding: rem-calc(40) rem-calc(24) rem-calc(24) rem-calc(32);
+        }
+        .split-hero-pic {
+            width:15%;
+        }
+    }
 }

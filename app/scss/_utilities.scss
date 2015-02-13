@@ -17,6 +17,11 @@
     background: $cream;
 }
 
+// Breaks
+.break {
+    display: block;
+}
+
 // Ghost Center
 .ghost-center {position: relative;}
 .ghost-content {
@@ -46,8 +51,40 @@
 
 // Dotted Line
 .dotted-line {
-    display: block;
+    display: inline-block;
     width:222px;
     height:6px;
     background: url(../images/icons/dotted-line.png);
+}
+
+// Heart Icon
+.heart-icon {
+    display: inline-block;
+    width:21px;
+    height:18px;
+    background: url(../images/icons/heart-icon.png);
+    background-size:100%;
+}
+
+// bowl Icon
+.bowl-icon {
+    display: inline-block;
+    width:86px;
+    height:98px;
+    background: url(../images/icons/bowl-icon.png);
+    background-size:100%;
+}
+
+// Social Icons
+.social-icons-list {
+    @extend %list-rest;
+    li {
+        padding: 0 6px;
+        display: inline-block;
+
+        &:first-child {padding-left: 0;}
+        a {
+            font-size: rem-calc(26);
+        }
+    }
 }
