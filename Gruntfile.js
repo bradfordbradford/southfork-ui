@@ -105,7 +105,7 @@ module.exports = function(grunt) {
 		connect: {
 			app: {
 				options: {
-					port: 8000,
+					port: 9000,
 					base: '<%= app %>/',
 					open: true,
 					livereload: true,
@@ -114,7 +114,7 @@ module.exports = function(grunt) {
 			},
 			dist: {
 				options: {
-					port: 8000,
+					port: 9000,
 					base: '<%= dist %>/',
 					open: true,
 					keepalive: true,
