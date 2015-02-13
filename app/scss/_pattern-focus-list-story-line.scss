@@ -5,7 +5,7 @@
     @extend %list-reset;
     li {
         display: inline-block;
-        @include grid-column(3);
+        @include grid-column(4);
         padding: rem-calc(24 32 20);
 
         .inner {

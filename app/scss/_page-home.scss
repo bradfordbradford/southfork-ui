@@ -11,4 +11,11 @@
             width:500px;
         }
     }
+
+    // Ordering
+    #ordering-learn-more {
+        @include clearfix;
+        text-align: center;
+        margin: rem-calc(32 0 80);
+    }
 }

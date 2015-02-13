@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "southfork";
+  src:url("fonts/southfork.eot");
+  src:url("fonts/southfork.eot?#iefix") format("embedded-opentype"),
+    url("fonts/southfork.woff") format("woff"),
+    url("fonts/southfork.ttf") format("truetype"),
+    url("fonts/southfork.svg#southfork") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "southfork" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="ico-"]:before,
+[class*=" ico-"]:before {
+  font-family: "southfork" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ico-twitter:before {
+  content: "n";
+}
+.ico-facebook:before {
+  content: "e";
+}
+.ico-letter-mail-1:before {
+  content: "b";
+}
+.ico-arrow-right:before {
+  content: "c";
+}
+.ico-arrow-left:before {
+  content: "d";
+}
+.ico-chevron-medium-2-01:before {
+  content: "F";
+}
+.ico-chevron-medium-1-01:before {
+  content: "G";
+}
+.ico-chevron-medium-3-01:before {
+  content: "H";
+}
+.ico-chevron-medium-4-01:before {
+  content: "I";
+}
+.ico-twitter-circled:before {
+  content: "a";
+}
+.ico-instagrem:before {
+  content: "f";
+}
+.ico-pinterest-circled:before {
+  content: "g";
+}
+.ico-facebook-circled:before {
+  content: "h";
+}
+.ico-search-find:before {
+  content: "j";
+}

@@ -5,7 +5,7 @@
     // major layout styles: full-spread.scss
 
     .inner {
-        padding: rem-calc(70 78 74);
+        padding: rem-calc(70 78 32);
         border: 3px solid $white;
     }
 
@@ -28,6 +28,24 @@
 
     form {
         margin: rem-calc(42 0 0);
+    }
+
+    small {
+        text-align: center;
+
+        font-size: rem-calc(12);
+        margin: rem-calc(28 0 0);
+        display: block;
+        letter-spacing: 0.012em;
+        a {
+            color: $silver;
+            &:hover {color: $orange;}
+        }
+        .icon {
+            position: relative;
+            top: 1px;
+            font-size: rem-calc(10);
+        }
     }
 
     @media #{$small-only} {

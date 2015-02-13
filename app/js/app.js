@@ -59,7 +59,7 @@ $images.imagesLoaded( function() {
 // Location Select
 // ---------------
 $('#location-select').magicSuggest({
-    placeholder: 'Where are you located?',
+    placeholder: 'Enter your delivery location',
     maxSelection: 1,
     data: [{
         name: 'Transamerica Tower',
