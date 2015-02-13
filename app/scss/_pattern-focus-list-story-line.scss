@@ -13,11 +13,23 @@
         }
         .icon-content {
             margin: rem-calc(0 0 24);
+            position: relative;
+
+            &:after {
+                content:'';
+                position: absolute;
+                background:url(../images/icons/dotted-line.png) no-repeat;
+                width: 222px;
+                height: 8px;
+                top: 23px;
+                margin-left: 18px;
+            }
 
         }
         .list-content {
 
         }
+
         @media #{$medium-only} {
             @include grid-column(6);
         }
