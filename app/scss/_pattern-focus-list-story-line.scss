@@ -6,28 +6,29 @@
     li {
         display: inline-block;
         @include grid-column(4);
-        padding: rem-calc(24 32 20);
+        padding: rem-calc(6 32 20);
 
         .inner {
             padding: rem-calc(24 32 20);
         }
         .icon-content {
             margin: rem-calc(0 0 24);
-            position: relative;
+            text-align: center;
+            // position: relative;
 
-            &:after {
-                content:'';
-                position: absolute;
-                background:url(../images/icons/dotted-line.png) no-repeat;
-                width: 222px;
-                height: 8px;
-                top: 23px;
-                margin-left: 18px;
-            }
+            // &:after {
+            //     content:'';
+            //     position: absolute;
+            //     background:url(../images/icons/dotted-line.png) no-repeat;
+            //     width: 222px;
+            //     height: 8px;
+            //     top: 23px;
+            //     margin-left: 18px;
+            // }
 
         }
         .list-content {
-
+            text-align: center;
         }
 
         @media #{$medium-only} {
