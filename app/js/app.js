@@ -66,5 +66,5 @@ $(".location-select").select2({
   data: locations,
   placeholder: "Enter your delivery location.",
   maximumSelectionLength: 1,
-  minimumInputLength: 1,
+  minimumInputLength: 1
 })
