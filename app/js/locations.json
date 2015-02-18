@@ -1,0 +1,19 @@
+{
+  "items": [
+    {
+      "id": 3081286,
+      "name": "Jefferson Tower",
+      "address": "2121 W. 12th St Atlanta, GA"
+    },
+    {
+      "id": 3081285,
+      "name": "Atlantic Suites",
+      "address": "128 W. 12th St Atlanta, GA"
+    },
+    {
+      "id": 3081284,
+      "name": "Fairmont Building",
+      "address": "100 W. 12th St Atlanta, GA"
+    }
+  ]
+}
