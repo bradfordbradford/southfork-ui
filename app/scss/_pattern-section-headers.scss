@@ -1,0 +1,39 @@
+
+// Pattern: Section Headers
+// -------------------------
+
+header.time-left {
+    text-align: center;
+    padding: rem-calc(32 0 40);
+    .title {
+        font-family: $font-family-sans-serif;
+        letter-spacing: 0.02em;
+        font-weight: $font-weight-normal;
+
+        strong {
+            color: $orange;
+        }
+        font-size: rem-calc(16);
+    }
+}
+
+.section-header {
+    text-align: center;
+    padding: rem-calc(60 16 40);
+}
+
+.menu-section-header {
+    margin-bottom: rem-calc(40);
+
+    h2 {
+        font-size: rem-calc(36);
+        margin: rem-calc(60 0 24);
+        a {
+            text-decoration: underline;
+        }
+    }
+    h5 {
+        font-size: rem-calc(20);
+        font-weight: $font-weight-normal;
+    }
+}

@@ -22,7 +22,7 @@ var app = (function(document, $) {
 })();
 
 
-// Full Spread Loaded
+// Full Spread Loaded (imagesloaded.js)
 // ------------------
 $('#full-spread').hide();
 var $images = $('img');

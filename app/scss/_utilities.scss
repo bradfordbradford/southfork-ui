@@ -1,6 +1,11 @@
 // Utilities
 // - - - - - - - -
 
+// Inner Container
+.inner-container {
+    @include grid-column(11, $center: true);
+}
+
 // Fills
 .fill-white {
     background: $white;
@@ -8,6 +13,16 @@
 .fill-cream {
     background: $cream;
 }
+.fill-cool {
+    background: $cool;
+}
+
+// Fill Section
+.fill-section {
+    margin: 0;
+    padding: rem-calc(110 0 100);
+}
+
 
 // Colors
 .color-white {
@@ -47,6 +62,78 @@
         position: relative;
         top:6px;
     }
+}
+
+// Ribbon
+.ribbon {
+    position: relative;
+    display: block;
+    width:65px;
+    text-align: center;
+
+    &:after,&:before {
+        content: '';
+        z-index: 1;
+        position: absolute;
+        border-bottom: 60px solid $footer-brown;
+        border-left: 20px solid rgba(0, 0, 0, 0);
+        border-right: 20px solid rgba(0, 0, 0, 0);
+        top: 0;
+        left: 32px;
+        -webkit-transform: rotate(-180deg);
+        -moz-transform: rotate(-180deg);
+        -ms-transform: rotate(-180deg);
+        -o-transform: rotate(-180deg);
+    }
+    &:after {
+        bottom: 0;
+        left: 0;
+        right: -8px;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+
+    .inner {
+        position: relative;
+        padding: 1px 0 3px;
+        display: block;
+        width:42px;
+        background: $footer-brown;
+        z-index: 2;
+        .content {
+            position: relative;
+            left: 14px;
+        }
+        &:after {
+            left: 0;
+            border-width: rem-calc(8 0 0 32);
+            content: "";
+            bottom: - rem-calc(8);
+            position: absolute;
+            display: block;
+            border-style: solid;
+            border-color: #1E1D1E rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+            z-index: -1;
+        }
+    }
+
+    small, h5 {
+        color: $white;
+        margin: 0;
+        font-family: $font-family-sans-serif;
+        text-transform: uppercase;
+    }
+    small {
+        font-size: rem-calc(10);
+        letter-spacing: .12em;
+    }
+    h5 {
+        font-size: rem-calc(16);
+        margin: -3px 0 -7px;
+    }
+
 }
 
 // Dotted Line

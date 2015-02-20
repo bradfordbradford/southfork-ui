@@ -1,0 +1,43 @@
+
+// Modal Nav for Menu Detail
+// -------------------------
+
+.modal-nav-bar {
+    background: $white;
+    height: $topbar-height;
+    .name {
+        height: $topbar-height;
+        margin: 0;
+        font-size: $rem-base;
+
+        .logo {
+          max-width: 210px;
+          width:100%;
+          position: relative;
+          top: -3px;
+          @media #{$medium-only} {max-width:160px;}
+          @media #{$small-only} {max-width:132px;}
+        }
+
+    }
+
+    ul {
+        @extend %list-reset;
+        text-align: center;
+    }
+
+    ul.left,
+    ul.right, {
+        position: absolute;
+        top: rem-calc(28);
+
+    }
+    ul.left {
+        left:0;
+        margin-left: 1.40625rem;
+    }
+    ul.right {
+        right:0;
+        margin-right: 1.40625rem;
+    }
+}

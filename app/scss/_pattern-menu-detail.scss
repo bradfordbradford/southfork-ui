@@ -1,0 +1,200 @@
+
+// Pattern: Menu Detail
+// ------------------------
+
+.menu-detail {
+    padding: rem-calc(0 0 60);
+    .menu-primary-info {
+        margin-bottom: rem-calc(32);
+    }
+}
+
+// Image & Header
+.menu-detail-pic,
+.menu-detail-title,
+.menu-detail-blocks,
+.menu-detail-reviews {
+    @include grid-column(6);
+}
+
+// Image
+.menu-detail-pic {
+    position: relative;
+
+    .ribbon {
+        position: absolute;
+        top: 16px;
+        left: -16px;
+    }
+    .menu-detail-tags {
+        background: $white;
+        width: 100%;
+        padding: rem-calc(18 16 20);
+        text-align: center;
+    }
+}
+
+.menu-detail-title {
+
+    .title {
+        margin: rem-calc(0 0 12);
+    }
+
+    .menu-ingredients-list {
+        font-size: rem-calc(16);
+        margin: rem-calc(0 0 12);
+    }
+
+    .star-rating {
+        padding: rem-calc(0 0 16 0);
+        border-bottom: 1px solid $gainsboro;
+        margin: rem-calc(0 0 12);
+        .star {
+            display: inline-block;
+            margin: rem-calc(0 2 0);
+            font-size: rem-calc(22);
+            position: relative;
+            top:4px;
+            &.highlighted {color: $gold;}
+            &.inactive {color:$lightest-tan;}
+        }
+        .count {
+            color: $lightest-tan;
+            font-size: rem-calc(14);
+            margin: rem-calc(0 0 0 4);
+        }
+    }
+
+    .menu-detail-meta {
+        margin: rem-calc(0 0 24 0 );
+        .price {
+            font-size: rem-calc(36);
+            position: relative;
+            .cents {
+                font-size: 18px;
+                position: absolute;
+                top: 2px;
+            }
+        }
+        .fees {
+            color: $light-tan;
+            font-style: italic;
+            font-family: $font-family-serif;
+            font-size: rem-calc(14);
+            position: relative;
+            margin-left: 32px;
+            top:-9px;
+        }
+    }
+
+    .menu-detail-cart-opts {
+        @include clearfix;
+        margin: rem-calc(0 0 24 0);
+
+        .quantity {
+            width: rem-calc(120);
+            float:left;
+        }
+        .order {
+            width: rem-calc(200);
+            float:left;
+            margin-left: rem-calc(16);
+        }
+    }
+}
+
+// Detail Block
+.menu-detail-blocks {
+
+    .menu-detail-block {
+        margin: rem-calc(0 0 40 0);
+        &:last-child {margin-bottom: 0;}
+    }
+
+
+    // Type & Lists
+    p, ul li {
+        color: $clay;
+        font-size: rem-calc(14);
+    }
+    ul {
+        @extend %list-reset;
+        -webkit-column-count: 3;
+        li {
+            margin: rem-calc(0 0 4 0);
+        }
+    }
+
+    .menu-detail-nutrition-cards {
+        @include clearfix;
+    }
+
+    // Nutrition Cards
+    .card {
+        float: left;
+        margin-right:rem-calc(12);
+        width: 23.3%;
+        &:last-child {margin-right: 0;}
+
+        .inner {
+            background: $white;
+            padding: rem-calc(4 8 6 8);
+
+            h4 {
+                padding: rem-calc(0 0 8 0);
+                border-bottom: 1px solid $gainsboro;
+                padding: rem-calc(0 0 8 0);
+                font-size: rem-calc(36);
+            }
+            span {
+                color: $sea;
+                display: block;
+                font-size: rem-calc(12);
+            }
+        }
+    }
+
+}
+
+// Section Headers
+.menu-detail-section-header {
+    .title {
+        font-size: rem-calc(20);
+        margin: rem-calc(0 0 18 0);
+        padding: rem-calc(0 0 6 0);
+        border-bottom: 1px solid $gainsboro;
+
+    }
+}
+
+.menu-detail-reviews {
+    blockquote {
+        color: $gainsboro;
+        font-style: italic;
+        padding: 0;
+        font-family: $font-family-serif;
+        margin: rem-calc(32 0 82 0);
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        p {
+            font-size: rem-calc(18);
+        }
+
+        cite {
+            margin: rem-calc(32 0 0 0);
+            font-style: normal;
+            strong {
+                font-weight: $font-weight-normal;
+                color: $brown;
+            }
+            .divider {
+                display: inline-block;
+                margin: 0 6px;
+            }
+        }
+
+    }
+}
+

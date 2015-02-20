@@ -5,6 +5,8 @@
 
 ul.menu-block-list {
     list-style: none;
+    @extend %list-reset;
+    @include clearfix;
 
     li {
         @include grid-column(4);
@@ -21,6 +23,9 @@ ul.menu-block-list {
         .menu-block-pic {
             border-top-right-radius: 8px;
             position: relative;
+            img {
+                width:100%;
+            }
             a {
                 display: block;
                 &:hover {
@@ -47,12 +52,12 @@ ul.menu-block-list {
             position: absolute;
             bottom: 0;
             margin-left: -($column-gutter + rem-calc(20));
-            margin-bottom: rem-calc(6);
+            margin-bottom: rem-calc(20);
 
             .price {
                 font-size: rem-calc(16);
                 letter-spacing: 0.06rem;
-                color:$aluminum;
+                // color:$aluminum;
                 margin: 0 4px 0 0;
             }
         }

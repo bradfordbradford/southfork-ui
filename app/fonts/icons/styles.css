@@ -80,3 +80,15 @@
 .ico-search-find:before {
   content: "j";
 }
+.ico-bookmark-star-favorite:before {
+  content: "i";
+}
+.ico-favorite-heart-outline:before {
+  content: "k";
+}
+.ico-big-favorite-heart:before {
+  content: "l";
+}
+.ico-export:before {
+  content: "m";
+}
