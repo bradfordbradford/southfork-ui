@@ -186,7 +186,9 @@
     <div id="menu-item-modal" class="full reveal-modal" data-reveal>
       <div class="modal-nav-bar">
         <ul class="left">
-          <li>Back to Menu</li>
+          <li class="back-to-menu">
+            <a class="close-reveal-modal" href="#"><span class="left-arrow icon" data-icon="d"></span>Back to Menu</a>
+          </li>
         </ul>
         <ul class="title-area">
           <li class="name">
@@ -195,13 +197,15 @@
           <li class="toggle-topbar menu-icon"><a href="#"><span class=""></span></a></li>
         </ul>
         <ul class="right">
-          [cart]
+          <li class="cart">
+            <a href="#"><span class="cart icon" data-icon="m"></span></a>
+          </li>
         </ul>
       </div>
       <section class="menu-detail fill-cream">
         <header class="row time-left">
           <div class="inner-container">
-            <h6 class="title"><strong>01:42</strong> HRS LEFT TO ORDER TODAY’S LUNCH</h6>
+            <h6 class="title"><span class="clock icon" data-icon="v"></span><strong>01:42</strong> HRS LEFT TO ORDER TODAY’S LUNCH</h6>
           </div>
         </header>
         <div class="row menu-primary-info">
@@ -217,9 +221,26 @@
                 </span>
               </span>
               <img src="images/food-2.jpg" alt="">
-              <div class="menu-detail-tags">
-                paleo, vegan, etc
-              </div>
+              <ul class="menu-detail-tags">
+                <li>
+                  <span class="food-meta-tag label">
+                    <span data-icon="q" class="icon"></span>
+                    <span class="content">Superfood</span>
+                  </span>
+                </li>
+                <li>
+                  <span class="food-meta-tag label">
+                    <span data-icon="y" class="icon"></span>
+                    <span class="content">Vegetarian</span>
+                  </span>
+                </li>
+                <li>
+                  <span class="food-meta-tag label">
+                    <span data-icon="B" class="icon"></span>
+                    <span class="content">Paleo Diet</span>
+                  </span>
+                </li>
+              </ul>
             </div>
 
             <div class="menu-detail-title">
@@ -231,10 +252,10 @@
                 </p>
 
                 <div class="star-rating">
+                  <span class="highlighted star" data-icon="i"></span>
+                  <span class="highlighted star" data-icon="i"></span>
+                  <span class="highlighted star" data-icon="i"></span>
                   <span class="inactive star" data-icon="i"></span>
-                  <span class="highlighted star" data-icon="i"></span>
-                  <span class="highlighted star" data-icon="i"></span>
-                  <span class="highlighted star" data-icon="i"></span>
                   <span class="count">(22)</span>
                 </div>
               </header>
@@ -256,10 +277,11 @@
                 </div>
               </div>
 
-              <div class="menu-detail-share-opts">
-                share this dish
-                had this dish
-              </div>
+              <ul class="menu-detail-share-opts">
+                <li><h5><a href="#"><span class="share icon" data-icon="C"></span> share this dish</a></h5></li>
+
+                <li><h5><a href="#"><span class="share icon" data-icon="p"></span> had this dish</a></h5></li>
+              </ul>
             </div>
           </div>
         </div>
@@ -269,7 +291,7 @@
             <section class="menu-detail-blocks">
               <div class="menu-detail-block">
                 <header class="menu-detail-section-header">
-                  <span class="icon"></span><h4 class="title">Description</h4>
+                  <h4 class="title"><span class="cookbook icon" data-icon="o"></span> Description</h4>
                 </header>
                 <p>This fresh, flavorful salad is served over a bed of quinoa and mixed vegetables. It’s topped with chopped cucumber, kalamata olives, cherry tomatoes, green beans, and feta cheese. Sprouted almonds are layered on to provide texture and crunch. </p>
                 <p>The salad is dressed with a lemon oregano vinaigrette adding a nice citrus flavor.</p>
@@ -277,7 +299,7 @@
 
               <div class="menu-detail-block">
                 <header class="menu-detail-section-header">
-                  <span class="icon"></span><h4 class="title">Ingredients</h4>
+                  <h4 class="title"><span class="ingredients icon" data-icon="s"></span> Ingredients</h4>
                 </header>
                 <ul class="menu-detail-ingredients">
                   <li>kale</li>
@@ -303,7 +325,7 @@
 
               <div class="menu-detail-block">
                 <header class="menu-detail-section-header">
-                  <span class="icon"></span><h4 class="title">Nutritional Facts</h4>
+                  <h4 class="title"><span class="nutrition icon" data-icon="z"></span> Nutritional Facts</h4>
                 </header>
                 <div class="menu-detail-nutrition-cards" data-equalizer>
                   <div class="card" data-equalizer-watch>
@@ -336,7 +358,7 @@
             <section class="menu-detail-reviews">
               <div class="menu-detail-block">
                 <header class="menu-detail-section-header">
-                  <span class="icon"></span><h4 class="title">Customer Reviews</h4>
+                  <h4 class="title"><span class="reviews icon" data-icon="r"></span> Customer Reviews</h4>
                 </header>
                 <blockquote>
                   <p>“So delicious, fresh, and simple. The ingredients are top-notch quality. One of my go-to-staples from South Fork.”</p>
@@ -346,8 +368,8 @@
                   <p>“Seeing as I’ve never liked collards or quinoa before, I’m shocked this was so tasty! A friend recommended it to me, as one of the best quick healthy lunches in town. Cannot wait to try more from Chef Molly.”</p>
                   <cite>by <strong>Catherine Riggs</strong>   <span class="divider">|</span>  Rated <strong>4.5 Stars</strong></cite>
                 </blockquote>
-                <div class="text-center">
-                  <a href="#" class="tiny button knockout orange border radius">Learn More About Ordering</a>
+                <div class="text-center read-more-reviews">
+                  <a href="#" class="tiny button knockout orange border radius">Read More Reviews</a>
                 </div>
               </div>
             </section>

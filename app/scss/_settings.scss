@@ -104,6 +104,7 @@ $silver      : #E1E1E1;
 
 $gainsboro   : #D8D8D8;
 $iron        : #CCCCCC;
+$old-iron    : #C9C7C9;
 // $base        : #AAAAAA;
 $aluminum    : #979899;
 $jumbo       : #827974;
@@ -180,8 +181,8 @@ $body-font-family: $font-family-sans-serif;
 // $last-child-float: $opposite-direction;
 
 // We use these to make sure border radius matches unless we want it different.
-// $global-radius: 3px;
-// $global-rounded: 1000px;
+$global-radius: 3px;
+$global-rounded: 1000px;
 
 // We use these to control inset shadow shiny edges and depressions.
 // $shiny-edge-size: 0 1px 0;
@@ -1130,7 +1131,7 @@ $select-bg-color: $white;
 // $include-html-reveal-classes: $include-html-classes;
 
 // We use these to control the style of the reveal overlay.
-$reveal-overlay-bg: rgba($white, .45);
+$reveal-overlay-bg: rgba($white, 1);
 $reveal-overlay-bg-old: $white;
 
 // We use these to control the style of the modal itself.

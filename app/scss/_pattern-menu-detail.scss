@@ -10,16 +10,23 @@
 }
 
 // Image & Header
-.menu-detail-pic,
 .menu-detail-title,
-.menu-detail-blocks,
 .menu-detail-reviews {
-    @include grid-column(6);
+    @include grid-column(5);
+}
+
+.menu-detail-pic,
+.menu-detail-blocks {
+    @include grid-column(7);
 }
 
 // Image
 .menu-detail-pic {
     position: relative;
+    img {
+        width:100%;
+
+    }
 
     .ribbon {
         position: absolute;
@@ -89,16 +96,61 @@
 
     .menu-detail-cart-opts {
         @include clearfix;
-        margin: rem-calc(0 0 24 0);
+        margin: rem-calc(0 0 32 0);
 
         .quantity {
             width: rem-calc(120);
             float:left;
+            position: relative;
+            &:before {
+                position: absolute;
+                content:'QTY:';
+                font-size: rem-calc(12);
+                font-weight: $font-weight-bold;
+                color:$light-tan;
+                top: 16px;
+                left: 12px;
+            }
+            &:after {
+                position: absolute;
+                content:'';
+                height: 32px;
+                width:1px;
+                background: $old-iron;
+                top: 8px;
+                left: 60px;
+            }
+
+            select {
+                padding-left: rem-calc(76);
+            }
         }
         .order {
             width: rem-calc(200);
             float:left;
             margin-left: rem-calc(16);
+        }
+    }
+
+    .menu-detail-share-opts {
+        @extend %list-reset;
+        li {
+            display: inline-block;
+            margin-right: rem-calc(16);
+            a {
+                color: $old-iron;
+                font-size: rem-calc(12);
+                font-family: $font-family-sans-serif;
+                text-transform: uppercase;
+                font-weight: $font-weight-normal;
+                .icon {
+                    display: inline-block;
+                    position: relative;
+                    top:2px;
+                    margin-right: rem-calc(4);
+                }
+                &:hover {color: $light-tan;}
+            }
         }
     }
 }
@@ -158,12 +210,21 @@
 
 // Section Headers
 .menu-detail-section-header {
+    .icon {
+        display: inline-block;
+        position: relative;
+        top:4px;
+        margin-right: rem-calc(4);
+        font-size:  rem-calc(24);
+    }
     .title {
         font-size: rem-calc(20);
         margin: rem-calc(0 0 18 0);
         padding: rem-calc(0 0 6 0);
         border-bottom: 1px solid $gainsboro;
-
+    }
+    .reviews.icon {
+        font-size:  rem-calc(22);
     }
 }
 
@@ -186,7 +247,7 @@
             margin: rem-calc(32 0 0 0);
             font-style: normal;
             strong {
-                font-weight: $font-weight-normal;
+                font-weight: $font-weight-bold;
                 color: $brown;
             }
             .divider {
@@ -195,6 +256,13 @@
             }
         }
 
+    }
+
+    .read-more-reviews {
+        .button {
+            padding-left: rem-calc(24);
+            padding-right: rem-calc(24);
+        }
     }
 }
 
