@@ -4,6 +4,7 @@
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>SouthFork UI Kit</title>
+   <link rel="stylesheet" href="http://cdn.jsdelivr.net/qtip2/2.2.1/jquery.qtip.min.css">
    <link rel="stylesheet" href="css/app.css">
    <script src="js/modernizr.js"></script>
    <script src="//use.typekit.net/dmn4svs.js"></script>
@@ -42,41 +43,71 @@
         <section class="fill-cream">
             <div class="row">
                <header class="text-center menu-section-header">
-                  <h2>View <a href="#">Today's</a> Menu</h2>
+                  <h2>View <span data-menu-by-day="<ul><li class='disabled'><a href='#'>Monday's</a></li><li><a href='#'>Tuesday's</a></li><li><a href='#'>Wednesday's</a></li><li><a href='#'>Thursday's</a><li><a href='#'>Thursday's</a></li></ul>">Today's</span> Menu</h2>
                   <h5>All Meals Prepared by Jamie McAllister</h5>
                </header>
                 <ul class="menu-block-list" data-equalizer>
                    <li class="menu-block" data-equalizer-watch>
                       <div class="inner">
-                         <div class="menu-block-pic">
-                            <a href="#" data-reveal-id="menu-item-modal">
-                               <span class="icon-trigger more"></span>
-                               <img src="images/menu-block-1.png" alt="">
-                            </a>
-                         </div>
+                        <div class="menu-block-pic">
+                          <a href="#">
+                           <span class="icon-trigger add-to-cart">
+                              <span class="more">+</span>
+                              <span class="content">
+                              Add To <span class="cart">Cart</span>
+                              </span>
+                           </span>
+                          </a>
+                          <a <a href="#" data-reveal-id="menu-item-modal">
+                            <img src="images/menu-block-1.png" alt="">
+                          </a>
+                        </div>
 
-                         <div class="menu-block-content">
+                        <div class="menu-block-content">
                             <a href="#">
                                <h5 class="title">Fried Egg BLT Sandwich</h5>
                             </a>
                             <p class="menu-ingredients-list">
                                collard greens / avocado / carrots / sweet potatoes / fresh / high fiber and super greens
                             </p>
-                         </div>
-                         <div class="menu-block-meta">
-                            <span class="price">$12.99</span>
-                            <!-- <span class="menu-category categ-vegetarian"><span>Vegetarian</span></span> -->
-                         </div>
+                            <div class="menu-block-meta">
+                              <ul class="menu-detail-tags sm">
+                                <li data-food-meta="Superfood">
+                                  <span class="food-meta-tag label">
+                                    <span data-icon="q" class="icon"></span>
+                                  </span>
+                                </li>
+                                <li data-food-meta="Vegetarian">
+                                  <span class="food-meta-tag label">
+                                    <span data-icon="y" class="icon"></span>
+                                  </span>
+                                </li>
+                                <li data-food-meta="Paleo Diet">
+                                  <span class="food-meta-tag label">
+                                    <span data-icon="B" class="icon"></span>
+                                  </span>
+                                </li>
+                              </ul>
+                              <span class="price">$14.99</span>
+                           </div>
+                        </div>
                       </div>
                    </li>
                    <li class="menu-block" data-equalizer-watch>
                       <div class="inner">
                          <div class="menu-block-pic">
-                            <a href="#">
-                               <span class="icon-trigger more"></span>
-                               <img src="images/menu-block-2.png" alt="">
-                            </a>
-                         </div>
+                          <a href="#">
+                           <span class="icon-trigger add-to-cart">
+                              <span class="more">+</span>
+                              <span class="content">
+                              Add To <span class="cart">Cart</span>
+                              </span>
+                           </span>
+                          </a>
+                          <a <a href="#" data-reveal-id="menu-item-modal">
+                            <img src="images/menu-block-2.png" alt="">
+                          </a>
+                        </div>
 
                          <div class="menu-block-content">
                             <a href="#">
@@ -85,10 +116,26 @@
                             <p class="menu-ingredients-list">
                                collard greens / avocado / carrots / sweet potatoes / fresh / high fiber and super greens
                             </p>
-                         </div>
-
-                         <div class="menu-block-meta">
-                            <span class="price">$14.99</span>
+                            <div class="menu-block-meta">
+                              <ul class="menu-detail-tags sm">
+                                <li>
+                                  <span class="food-meta-tag label">
+                                    <span data-icon="q" class="icon"></span>
+                                  </span>
+                                </li>
+                                <li>
+                                  <span class="food-meta-tag label">
+                                    <span data-icon="y" class="icon"></span>
+                                  </span>
+                                </li>
+                                <li>
+                                  <span class="food-meta-tag label">
+                                    <span data-icon="B" class="icon"></span>
+                                  </span>
+                                </li>
+                              </ul>
+                              <span class="price">$14.99</span>
+                           </div>
                          </div>
                       </div>
                    </li>
@@ -96,10 +143,17 @@
                       <div class="inner">
                          <div class="menu-block-pic">
                             <a href="#">
-                               <span class="icon-trigger more"></span>
-                               <img src="images/menu-block-3.png" alt="">
+                             <span class="icon-trigger add-to-cart">
+                                <span class="more">+</span>
+                                <span class="content">
+                                Add To <span class="cart">Cart</span>
+                                </span>
+                             </span>
                             </a>
-                         </div>
+                            <a <a href="#" data-reveal-id="menu-item-modal">
+                              <img src="images/menu-block-3.png" alt="">
+                            </a>
+                          </div>
 
                          <div class="menu-block-content">
                             <a href="#">
@@ -108,10 +162,26 @@
                             <p class="menu-ingredients-list">
                                collard greens / avocado / carrots / sweet potatoes / fresh / high fiber and super greens
                             </p>
-                         </div>
-
-                         <div class="menu-block-meta">
-                            <span class="price">$12.99</span>
+                            <div class="menu-block-meta">
+                              <ul class="menu-detail-tags sm">
+                                <li>
+                                  <span class="food-meta-tag label">
+                                    <span data-icon="q" class="icon"></span>
+                                  </span>
+                                </li>
+                                <li>
+                                  <span class="food-meta-tag label">
+                                    <span data-icon="y" class="icon"></span>
+                                  </span>
+                                </li>
+                                <li>
+                                  <span class="food-meta-tag label">
+                                    <span data-icon="B" class="icon"></span>
+                                  </span>
+                                </li>
+                              </ul>
+                              <span class="price">$14.99</span>
+                           </div>
                          </div>
                       </div>
                    </li>
@@ -422,9 +492,11 @@
     </div>
 
   <script src="js/jquery.min.js"></script>
+  <script src="http://cdn.jsdelivr.net/qtip2/2.2.1/jquery.qtip.min.js"></script>
   <script src="js/fastclick.js"></script>
   <script src="js/foundation.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0-beta.3/js/select2.min.js"></script>
+
   <script src="js/libs.js"></script>
   <script src="js/app.js"></script>
 

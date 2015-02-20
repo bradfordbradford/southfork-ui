@@ -9,24 +9,43 @@
     right:0;
     bottom:0;
 
-    // More
-    &.more {
-
-        &:after {
-            transition: background $global-transition;
-            margin-left: - rem-calc(96);
-            margin-top: - rem-calc(47);
-            position: absolute;
-            content: '+';
-            font-size: rem-calc(32);
-            color: $white;
-            background: rgba($orange, .9);
-            height:rem-calc(48);
-            width:rem-calc(96);
-            text-align: center;
-        }
+    &.add-to-cart {
+        background: rgba($orange, .9);
+        height:rem-calc(48);
+        overflow: hidden;
+        width:rem-calc(96);
+        text-align: center;
+        color: $white;
+        transition: all $global-transition;
         &:hover {
+            height:rem-calc(88);
             &:after {background: $orange;}
+        }
+    }
+
+    // More
+    .more {
+        font-size: rem-calc(32);
+        display: block;
+        text-align: center;
+    }
+    // Content
+    .content {
+
+        display: block;
+        text-align: center;
+        font-size: rem-calc(10);
+        letter-spacing: .12em;
+        color: $white;
+        margin: -6px auto 0;
+        font-family: $font-family-sans-serif;
+        text-transform: uppercase;
+        .cart {
+            display: block;
+            font-size: rem-calc(16);
+            letter-spacing: .1em;
+            font-weight: $font-weight-bold;
+            line-height: rem-calc(12);
         }
     }
 

@@ -1,0 +1,47 @@
+// Q Tip2
+// -------
+
+.qtip-default {
+    border: 1px solid $iron;
+    border-radius: $global-radius;
+    background-color: $white;
+    color: $brown;
+    padding: rem-calc(8 12 10);
+    p {
+        font-size: rem-calc(14);
+        color: $light-tan;
+        margin-bottom: rem-calc(6);
+        text-align: center;
+    }
+    p:last-child {margin-bottom: 0;}
+}
+
+
+.qtip-menu-by-day {
+    .qtip-content {padding:0;}
+    ul {
+        @extend %list-reset;
+        text-align: center;
+        padding: rem-calc(0 6);
+        li {
+            &.disabled {
+                a {
+                    color: $iron;
+                }
+            }
+            a {
+                font-family: $font-family-serif;
+                color: $brown;
+                padding: rem-calc(6 24);
+                margin: rem-calc(4 0 2);
+                display: block;
+                &:hover {
+                    color:$orange;
+                }
+            }
+            border-bottom: 1px solid $gainsboro;
+            &:last-child {border-bottom: 0}
+        }
+    }
+
+}
