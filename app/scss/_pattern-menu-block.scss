@@ -10,7 +10,20 @@ ul.menu-block-list {
 
     > li {
         @include grid-column(4);
+        margin: 0 auto;
+        margin-bottom: rem-calc(24);
         position: relative;
+
+
+
+        @media #{$medium-only} {
+            @include grid-column(6);
+        }
+        @media #{$small-only} {
+            @include grid-column(12);
+            float: none;
+            max-width: 400px;
+        }
 
         .inner {
             border-bottom-right-radius: 8px;
@@ -23,6 +36,7 @@ ul.menu-block-list {
         .menu-block-pic {
             border-top-right-radius: 8px;
             position: relative;
+            min-height: 200px;
             img {
                 width:100%;
             }
@@ -68,6 +82,8 @@ ul.menu-block-list {
                 margin: 0 4px 0 0;
             }
         }
+
+
 
     }
 }

@@ -20,13 +20,18 @@
             display: inline-block;
 
             &.icon {
-                margin: rem-calc(32 12 24 0);
+                margin: rem-calc(32 12 -12 -16);
                 position: relative;
                 top: 24px;
+                .bowl-icon {
+                    font-size: rem-calc(72);
+                }
+                a:hover {color:$orange;}
             }
             a {
                 padding: rem-calc(0 8);
                 font-size: rem-calc(12);
+                letter-spacing: 0.04em;
             }
         }
     }
@@ -62,6 +67,29 @@
             &:hover {
                 color: $orange;
             }
+        }
+    }
+    @media #{$small-only} {
+        .site-map-list {
+            li {
+                display: block;
+                text-align: center;
+
+                &.icon {
+                    margin:2rem auto 1rem;
+                }
+            }
+        }
+        .site-info {
+            text-align: center;
+            margin: rem-calc(24) auto rem-calc(32);
+        }
+
+        .social-icons-list,
+        .newsletter-cta {text-align: center;}
+
+        .newsletter-cta a.button {
+            display: block;
         }
     }
 }

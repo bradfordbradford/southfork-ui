@@ -23,4 +23,17 @@
             color: $clay;
         }
     }
+    @media #{$small-only} {
+        .profile-pic,
+        .profile-content {
+            @include grid-column(12);
+            text-align: center;
+        }
+        .profile-pic {
+            img {
+                margin: 0 auto rem-calc(24);
+                display: block;
+            }
+        }
+    }
 }

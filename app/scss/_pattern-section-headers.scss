@@ -49,7 +49,17 @@ header.time-left {
         @include css-triangle(8px, $brown, top);
         display: inline-block;
         position: relative;
-        top: 30px;
+
+    }
+
+    @media #{$small-only} {
+        h2 {
+            font-size: rem-calc(24);
+        }
+        h5 {
+            font-size: rem-calc(18);
+        }
+        .caret{top: 2px;}
     }
 
 }

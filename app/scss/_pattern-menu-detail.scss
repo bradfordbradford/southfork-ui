@@ -10,12 +10,17 @@
 }
 
 // Image & Header
-.menu-detail-title,
+.menu-detail-title {
+    @include grid-column(5, $push:7);
+}
 .menu-detail-reviews {
     @include grid-column(5);
 }
 
-.menu-detail-pic,
+.menu-detail-pic {
+    @include grid-column(7, $pull:5);
+}
+
 .menu-detail-blocks {
     @include grid-column(7);
 }
@@ -36,7 +41,7 @@
     .menu-detail-tags {
         background: $white;
         width: 100%;
-        padding: rem-calc(18 16 20);
+        padding: rem-calc(18 16 12);
         text-align: center;
     }
 }
@@ -130,6 +135,15 @@
             float:left;
             margin-left: rem-calc(16);
         }
+        @media #{$small-only} {
+            .order {
+                width: inherit;
+                .button {
+                    padding-left: rem-calc(24);
+                    padding-right: rem-calc(24);
+                }
+            }
+        }
     }
 
     .menu-detail-share-opts {
@@ -182,11 +196,13 @@
     }
 
     // Nutrition Cards
+
     .card {
         float: left;
-        margin-right:rem-calc(12);
-        width: 23.3%;
-        &:last-child {margin-right: 0;}
+        width:25%;
+        padding: rem-calc(0 12 0 0) ;
+
+        &:last-child {padding-right: 0;}
 
         .inner {
             background: $white;
@@ -266,3 +282,32 @@
     }
 }
 
+
+
+// Media
+@media #{$small-only} {
+    .menu-detail-blocks {
+        .card {
+            width: 50%;
+            margin-bottom: 1rem;
+            &:nth-child(even) {
+                padding-right: 0;
+            }
+        }
+        ul {-webkit-column-count: 2;}
+    }
+}
+
+@media #{$medium-down-upperbound} {
+    .menu-detail-title,
+    .menu-detail-reviews,
+    .menu-detail-pic,
+    .menu-detail-blocks  {
+        @include grid-column(12, $push: 0, $pull: 0);
+    }
+    .menu-detail-title,
+    .menu-detail-blocks,
+    .read-more-reviews {
+        margin-bottom: rem-calc(48)
+    }
+}
