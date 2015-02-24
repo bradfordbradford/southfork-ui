@@ -32,8 +32,9 @@ $('[data-menu-by-day!=""]').qtip({ // Grab all elements with a non-blank data-me
       },
       classes: 'qtip-menu-by-day'
     },
+
     hide: {
         fixed: true,
-        delay: 300
+        event: 'click mouseleave'
     }
 });

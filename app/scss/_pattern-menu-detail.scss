@@ -139,8 +139,8 @@
             .order {
                 width: inherit;
                 .button {
-                    padding-left: rem-calc(24);
-                    padding-right: rem-calc(24);
+                    padding-left: rem-calc(16);
+                    padding-right: rem-calc(16);
                 }
             }
         }
@@ -219,6 +219,11 @@
                 display: block;
                 font-size: rem-calc(12);
             }
+            @media #{$small-only} {
+                h4 {
+                    font-size: rem-calc(24);
+                }
+            }
         }
     }
 
@@ -285,19 +290,6 @@
 
 
 // Media
-@media #{$small-only} {
-    .menu-detail-blocks {
-        .card {
-            width: 50%;
-            margin-bottom: 1rem;
-            &:nth-child(even) {
-                padding-right: 0;
-            }
-        }
-        ul {-webkit-column-count: 2;}
-    }
-}
-
 @media #{$medium-down-upperbound} {
     .menu-detail-title,
     .menu-detail-reviews,
@@ -308,6 +300,28 @@
     .menu-detail-title,
     .menu-detail-blocks,
     .read-more-reviews {
-        margin-bottom: rem-calc(48)
+        margin-bottom: rem-calc(48);
+    }
+}
+@media #{$small-only} {
+    .menu-detail-title {
+        @include grid-column(11, $center: true);
+    }
+    .menu-detail-pic {
+        @include grid-column(10, $center: true);
+        margin-bottom: rem-calc(48);
+    }
+
+    .menu-detail-reviews {margin-top: rem-calc(48);}
+
+    .menu-detail-blocks {
+        .card {
+            width: 50%;
+            margin-bottom: 1rem;
+            &:nth-child(even) {
+                padding-right: 0;
+            }
+        }
+        ul {-webkit-column-count: 2;}
     }
 }

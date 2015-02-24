@@ -4,7 +4,7 @@
 
 header.time-left {
     text-align: center;
-    padding: rem-calc(32 0 40);
+    padding: rem-calc(32 16 40);
     .title {
         font-family: $font-family-sans-serif;
         letter-spacing: 0.02em;
@@ -43,6 +43,7 @@ header.time-left {
     h5 {
         font-size: rem-calc(20);
         font-weight: $font-weight-normal;
+        padding: rem-calc(0 16);
     }
 
     .caret {
@@ -59,7 +60,11 @@ header.time-left {
         h5 {
             font-size: rem-calc(18);
         }
-        .caret{top: 2px;}
+        .caret{
+            top: 2px;
+            @include css-triangle(6px, $brown, top);
+            display: inline-block;
+        }
     }
 
 }

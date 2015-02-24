@@ -17,9 +17,13 @@
         text-align: center;
         color: $white;
         transition: all $global-transition;
+
         &:hover {
             height:rem-calc(88);
             &:after {background: $orange;}
+        }
+        @media #{$small-only}{
+            &:hover {height:rem-calc(48);}
         }
     }
 

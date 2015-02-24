@@ -2,9 +2,10 @@
 // - - - - - - - -
 
 // Inner Container
-.inner-container {
-    @include grid-column(11, $center: true);
-}
+// .inner-container {
+//     @include grid-column(11, $center: true);
+// }
+// @media #{$small-only} {.row .inner-container {width:100%;float:none;display: block;padding:0}}
 
 // Fills
 .fill-white {
