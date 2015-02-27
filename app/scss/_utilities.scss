@@ -148,11 +148,8 @@
 
 // Heart Icon
 .heart-icon {
-    display: inline-block;
-    width:21px;
-    height:18px;
-    background: url(../images/icons/heart-icon.png);
-    background-size:100%;
+    position: relative;
+    top:2px;
 }
 
 // Social Icons

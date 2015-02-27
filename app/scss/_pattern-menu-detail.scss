@@ -155,43 +155,39 @@
             margin: rem-calc(0 0 4 0);
         }
     }
+}
+.menu-detail-nutrition-cards {
+    @include clearfix;
+}
+// Nutrition Cards
+.card {
+    float: left;
+    width:25%;
+    padding: rem-calc(0 12 0 0) ;
 
-    .menu-detail-nutrition-cards {
-        @include clearfix;
-    }
+    &:last-child {padding-right: 0;}
 
-    // Nutrition Cards
+    .inner {
+        background: $white;
+        padding: rem-calc(4 8 6 8);
 
-    .card {
-        float: left;
-        width:25%;
-        padding: rem-calc(0 12 0 0) ;
-
-        &:last-child {padding-right: 0;}
-
-        .inner {
-            background: $white;
-            padding: rem-calc(4 8 6 8);
-
+        h4 {
+            padding: rem-calc(0 0 8 0);
+            border-bottom: 1px solid $gainsboro;
+            padding: rem-calc(0 0 8 0);
+            font-size: rem-calc(36);
+        }
+        span {
+            color: $sea;
+            display: block;
+            font-size: rem-calc(12);
+        }
+        @media #{$small-only} {
             h4 {
-                padding: rem-calc(0 0 8 0);
-                border-bottom: 1px solid $gainsboro;
-                padding: rem-calc(0 0 8 0);
-                font-size: rem-calc(36);
-            }
-            span {
-                color: $sea;
-                display: block;
-                font-size: rem-calc(12);
-            }
-            @media #{$small-only} {
-                h4 {
-                    font-size: rem-calc(24);
-                }
+                font-size: rem-calc(24);
             }
         }
     }
-
 }
 
 // Section Headers
@@ -215,34 +211,7 @@
 }
 
 .menu-detail-reviews {
-    blockquote {
-        color: $gainsboro;
-        font-style: italic;
-        padding: 0;
-        font-family: $font-family-serif;
-        margin: rem-calc(32 0 82 0);
-        &:last-child {
-            margin-bottom: 0;
-        }
 
-        p {
-            font-size: rem-calc(18);
-        }
-
-        cite {
-            margin: rem-calc(32 0 0 0);
-            font-style: normal;
-            strong {
-                font-weight: $font-weight-bold;
-                color: $brown;
-            }
-            .divider {
-                display: inline-block;
-                margin: 0 6px;
-            }
-        }
-
-    }
 
     .read-more-reviews {
         .button {

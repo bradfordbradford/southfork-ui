@@ -62,3 +62,33 @@ hr {
     color: $old-iron;
     display: block;
 }
+
+// Blockquote
+blockquote {
+    color: $gainsboro;
+    font-style: italic;
+    padding: 0;
+    font-family: $font-family-serif;
+    margin: rem-calc(32 0 82 0);
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    p {
+        font-size: rem-calc(18);
+    }
+
+    cite {
+        margin: rem-calc(32 0 0 0);
+        font-style: normal;
+        strong {
+            font-weight: $font-weight-bold;
+            color: $brown;
+        }
+        .divider {
+            display: inline-block;
+            margin: 0 6px;
+        }
+    }
+
+}

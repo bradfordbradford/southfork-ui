@@ -4,17 +4,14 @@
 
 @font-face {
   font-family: "southfork";
-  src:url("../fonts/icons/southfork.eot");
-  src:url("../fonts/icons/southfork.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/icons/southfork.woff") format("woff"),
-    url("../fonts/icons/southfork.ttf") format("truetype"),
-    url("../fonts/icons/southfork.svg#southfork") format("svg");
+  src:url("../fonts/sf-icons/southfork.eot");
+  src:url("../fonts/sf-icons/southfork.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/sf-icons/southfork.woff") format("woff"),
+    url("../fonts/sf-icons/southfork.ttf") format("truetype"),
+    url("../fonts/sf-icons/southfork.svg#southfork") format("svg");
   font-weight: normal;
   font-style: normal;
-
 }
-
-
 [data-icon]:before {
   font-family: "southfork" !important;
   content: attr(data-icon);
@@ -86,12 +83,6 @@
 .ico-bookmark-star-favorite:before {
   content: "i";
 }
-.ico-favorite-heart-outline:before {
-  content: "k";
-}
-.ico-big-favorite-heart:before {
-  content: "l";
-}
 .ico-noun-34909:before {
   content: "o";
 }
@@ -106,9 +97,6 @@
 }
 .ico-noun-14723-cc:before {
   content: "s";
-}
-.ico-noun-16617-cc:before {
-  content: "t";
 }
 .ico-noun-34909-1:before {
   content: "u";
@@ -137,9 +125,6 @@
 .ico-share-boxed-sm:before {
   content: "C";
 }
-.ico-noun-89224-cc:before {
-  content: "D";
-}
 .ico-cart-sm:before {
   content: "m";
 }
@@ -148,4 +133,19 @@
 }
 .ico-close-1:before {
   content: "J";
+}
+.ico-heart-sm-knocked-out:before {
+  content: "k";
+}
+.ico-no-grain:before {
+  content: "l";
+}
+.ico-no-nuts:before {
+  content: "D";
+}
+.ico-glasses:before {
+  content: "K";
+}
+.ico-noun-80442:before {
+  content: "t";
 }

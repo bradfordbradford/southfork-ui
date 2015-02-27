@@ -63,6 +63,6 @@ $(document).on('close.fndtn.reveal', '[data-reveal]', function () {
 
 // Time Left to Order Lunch
 $("#time-left").countdown({
-    date: "26 February 2015 21:42:00", // Change this to your desired date to countdown to
+    date: "27 February 2015 15:55:00", // Change this to your desired date to countdown to
     format: "on"
 });
