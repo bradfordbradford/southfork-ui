@@ -125,6 +125,62 @@
             }
         }
     }
+
+    // Normalize
+    @media #{$medium-down-upperbound}{
+        .checkout-nav .return,
+        .checkout-nav .order,
+        footer.checkout-review-footer {
+            width:auto;
+            padding:0;
+            float: none;
+            display: block;
+        }
+        .checkout-nav {
+            .order a {
+                display: block;
+                float: none;
+                padding-left:rem-calc(6);
+                padding-right:rem-calc(6);
+            }
+            .return {
+                top:0;
+                margin-bottom: rem-calc(12);
+            }
+        }
+
+
+    }
+    @media #{$small-only}{
+
+
+        .checkout-item-list li .item-title,
+        .checkout-item-list li .item-title header,
+        .checkout-item-list li .item-pic {
+            width:auto;
+            padding:0;
+            float: none;
+            display: block;
+        }
+
+
+        .checkout-item-list li {
+            .item-pic {
+                margin-top: rem-calc(12);
+                float: left;
+                max-width:rem-calc(80);
+            }
+            .item-opts {
+                margin-top: rem-calc(12);
+                width: 55%;
+                float: right;
+            }
+
+            .item-title .item-meta .price {
+                display: none;
+            }
+        }
+    }
 }
 
 

@@ -38,5 +38,11 @@
             }
         }
     }
+    @media #{$small-only} {
+        .checkout-item-list li .item-title .title {
+            max-width: 160px;
+            float: left;
+        }
+    }
 
 }

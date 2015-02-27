@@ -170,11 +170,27 @@
 }
 
 
+// User Icon
+.user.icon img,
+.user.icon {
+    display: inline-block;
+    background: $sea;
+    border-radius: $global-rounded;
+    height: rem-calc(32);
+    width: rem-calc(32);
+}
+.user.icon {
+    position: relative;
+    img {
+        position: absolute;
+    }
+}
+
 // Split Panel
 .split-panel {
     width:50%;
     float:left;
-    @media #{$medium-down} {
+    @media #{$medium-down-upperbound} {
         width:inherit;
         float: none;
     }
