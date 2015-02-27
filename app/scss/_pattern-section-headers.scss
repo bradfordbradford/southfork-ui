@@ -46,7 +46,7 @@ header.time-left {
     h2 {
         font-size: rem-calc(36);
         margin: rem-calc(60 0 24);
-        span {
+        .link {
             color: $orange;
             text-decoration: underline;
         }

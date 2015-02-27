@@ -1,4 +1,6 @@
-
+body.no-overflow {
+    overflow: hidden;
+}
 // Modal: Full
 .full.reveal-modal {
     border:0;
@@ -6,6 +8,8 @@
     margin:0;
     border-radius:0;
     box-shadow: none;
+    // backface-visibility: inherit;
+    -webkit-overflow-scrolling : touch;
 
     &.opened {
         position: fixed;
