@@ -138,6 +138,7 @@ $cool        : #F0F5F7;
 $charcoal    : #515252;
 $ghost       : #F4F7F8;
 $moss        : #929879;
+$success     : #6FB081;
 $clay        : #9C9A98;
 
 $green       : #77B34F;
@@ -157,7 +158,7 @@ $global-transition: .2s linear;
 $primary-color: $orange;
 $secondary-color: $brown; // brown
 $alert-color: $tan;
-$success-color: $moss;
+$success-color: $success;
 $warning-color: $tan;
 // $info-color: #a0d3e8;
 
@@ -377,14 +378,14 @@ $blockquote-border: 0px; //1px solid $gainsboro;
 // $include-html-alert-classes: $include-html-classes;
 
 // We use this to control alert padding.
-// $alert-padding-top: rem-calc(14);
+$alert-padding-top: rem-calc(34);
 // $alert-padding-default-float: $alert-padding-top;
 // $alert-padding-opposite-direction: $alert-padding-top + rem-calc(10);
 // $alert-padding-bottom: $alert-padding-top;
 
 // We use these to control text style.
 // $alert-font-weight: $font-weight-normal;
-// $alert-font-size: rem-calc(13);
+$alert-font-size: rem-calc(18);
 // $alert-font-color: $white;
 // $alert-font-color-alt: scale-color($secondary-color, $lightness: -66%);
 
@@ -393,15 +394,15 @@ $blockquote-border: 0px; //1px solid $gainsboro;
 
 // We use these to control border styles.
 // $alert-border-style: solid;
-// $alert-border-width: 1px;
+$alert-border-width: 0;
 // $alert-border-color: scale-color($primary-color, $lightness: $alert-function-factor);
-// $alert-bottom-margin: rem-calc(20);
+$alert-bottom-margin:0;// rem-calc(20);
 
 // We use these to style the close buttons
-// $alert-close-color: $oil;
+$alert-close-color: darken($green, 40);
 // $alert-close-top: 50%;
-// $alert-close-position: rem-calc(4);
-// $alert-close-font-size: rem-calc(22);
+$alert-close-position: rem-calc(16);
+$alert-close-font-size: rem-calc(32);
 // $alert-close-opacity: 0.3;
 // $alert-close-opacity-hover: 0.5;
 // $alert-close-padding: 9px 6px 4px;
@@ -1469,8 +1470,8 @@ $topbar-menu-icon-color-toggled: $jumbo;
 // Transitions and breakpoint styles
 $topbar-transition-speed: 100ms;
 // Using rem-calc for the below breakpoint causes issues with top bar
-$topbar-breakpoint: em-calc(760); //#{lower-bound($medium-range)}; // Change to 9999px for always mobile layout
-$topbar-media-query: "#{$screen} and (min-width:#{em-calc(760)})";
+$topbar-breakpoint: em-calc(1000); //#{lower-bound($medium-range)}; // Change to 9999px for always mobile layout
+$topbar-media-query: "#{$screen} and (min-width:#{em-calc(1000)})";
 // $medium-up: "#{$screen} and (min-width:#{lower-bound($medium-range)})";
 
 // Divider Styles

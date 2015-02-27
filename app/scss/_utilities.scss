@@ -7,6 +7,7 @@
 // }
 // @media #{$small-only} {.row .inner-container {width:100%;float:none;display: block;padding:0}}
 
+
 // Fills
 .fill-white {
     background: $white;
@@ -154,15 +155,6 @@
     background-size:100%;
 }
 
-// bowl Icon
-// .bowl-icon {
-    // display: inline-block;
-    // width:86px;
-    // height:98px;
-    // background: url(../images/icons/bowl-icon.png);
-    // background-size:100%;
-// }
-
 // Social Icons
 .social-icons-list {
     @extend %list-rest;
@@ -174,5 +166,16 @@
         a {
             font-size: rem-calc(26);
         }
+    }
+}
+
+
+// Split Panel
+.split-panel {
+    width:50%;
+    float:left;
+    @media #{$medium-down} {
+        width:inherit;
+        float: none;
     }
 }

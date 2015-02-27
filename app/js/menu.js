@@ -35,6 +35,6 @@ $('[data-menu-by-day!=""]').qtip({ // Grab all elements with a non-blank data-me
 
     hide: {
         fixed: true,
-        event: 'click mouseleave'
+        // event: 'click mouseleave'
     }
 });

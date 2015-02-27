@@ -4,6 +4,20 @@
 
 // Type Utilities
 
+// Caps
+.caps {
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+// Families
+.sans {
+    font-family: $font-family-sans-serif;
+}
+.serif {
+    font-family: $font-family-serif;
+}
+
 // Formatting
 .section-tag {
     text-transform: uppercase;
@@ -11,4 +25,40 @@
     letter-spacing: 0.04rem;
     font-weight: 600;
     font-family: $font-family-sans-serif
+}
+
+// Tiny Header
+.tiny-header {
+    font-size: rem-calc(12);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $old-iron;
+    font-weight: $font-weight-normal;
+    font-family: $font-family-sans-serif;
+}
+
+// HRs
+hr {
+    &.astericks {
+        border-width: 0px;
+        position: relative;
+        margin: rem-calc(12 0 40);
+        &:before {
+            position: absolute;
+            content:'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';
+            font-size: rem-calc(10);
+            letter-spacing: 0.28em;
+            width:100%;
+            top:0;
+            overflow: hidden;
+            color: $gainsboro;
+        }
+    }
+}
+
+// Note
+.note, .note a {
+    font-size: rem-calc(12);
+    color: $old-iron;
+    display: block;
 }

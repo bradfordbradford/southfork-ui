@@ -65,24 +65,60 @@
     margin: rem-calc(0 0 16);
 }
 
-// .menu-category {
-//     height: 8px;
-//     width: 8px;
-//     border-radius:1000px;
-//     display: inline-block;
-//     position: relative;
-//     top:-2px;
-//     span {
-//         position: absolute;
-//         left:-99999px;
-//         height:0px;
-//         width:0px;
-//     }
+// Star Rating
+.star-rating {
+    .star {
+        display: inline-block;
+        margin: rem-calc(0 2 0);
+        font-size: rem-calc(22);
+        position: relative;
+        top:4px;
+        &.highlighted {color: $gold;}
+        &.inactive {color:$lightest-tan;}
+    }
+    .count {
+        color: $lightest-tan;
+        font-size: rem-calc(14);
+        margin: rem-calc(0 0 0 4);
+    }
+}
 
-//     &.categ-vegetarian {
-//         background: $green;
-//     }
-//     &.categ-vegan {
-//         background: $blue;
-//     }
-// }
+// Quantity
+.quantity {
+    width: rem-calc(120);
+
+    position: relative;
+    &:before {
+        position: absolute;
+        content:'QTY:';
+        font-size: rem-calc(12);
+        font-weight: $font-weight-bold;
+        color:$light-tan;
+        top: 16px;
+        left: 12px;
+    }
+    &:after {
+        position: absolute;
+        content:'';
+        height: 32px;
+        width:1px;
+        background: $old-iron;
+        top: 8px;
+        left: 60px;
+    }
+
+    select {
+        padding-left: rem-calc(76);
+    }
+}
+
+// Price
+.price {
+    font-size: rem-calc(36);
+    position: relative;
+    .cents {
+        font-size: 18px;
+        position: absolute;
+        top: 2px;
+    }
+}

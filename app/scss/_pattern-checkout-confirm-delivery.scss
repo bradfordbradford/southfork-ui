@@ -1,0 +1,25 @@
+
+// Pattern: Checkout Confirm Deliver
+.checkout-confirm-delivery {
+    @include grid-column(10, $center:true);
+    @media #{$large-only} {
+        @include grid-column(4, $center:true);
+    }
+
+    padding: 0 0 rem-calc(140);
+    .section-header {
+        padding: rem-calc(60 16 24);
+    }
+    @media #{$large-only} {
+        padding: 0 0 rem-calc(240);
+    }
+    form {
+        .button {
+            margin-top: rem-calc(42);
+        }
+    }
+
+    @media #{$medium-down} {
+
+    }
+}

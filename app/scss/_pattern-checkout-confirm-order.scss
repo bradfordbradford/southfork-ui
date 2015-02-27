@@ -1,0 +1,42 @@
+// Pattern: Checkout Confirm Order
+.checkout-confirm-order {
+    padding-bottom: rem-calc(140);
+
+    .section-header.sm {
+        text-align: left;
+        padding-bottom: rem-calc(8);
+    }
+
+    p {
+        color: $aluminum;
+        font-size: rem-calc(13);
+        margin-bottom: 0;
+    }
+
+    .checkout-item-list {
+        @extend %list-reset;
+
+        li {
+            padding: rem-calc(16 0 8);
+            border-bottom: 1px solid $gainsboro;
+            &:last-child {border-bottom: 0px;}
+
+            .item-title {
+                float:left;
+                .title {
+                    font-size: rem-calc(18);
+                }
+                .tiny-header {
+                    font-size: rem-calc(12);
+                }
+            }
+
+            .item-pic {
+                width:60px;
+                float:left;
+                margin-right: 1em;
+            }
+        }
+    }
+
+}

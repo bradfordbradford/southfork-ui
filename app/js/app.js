@@ -48,4 +48,21 @@ $images.imagesLoaded( function() {
 
 
 
+// Modal
+$(document).on('opened.fndtn.reveal', '[data-reveal]', function () {
+  var modal = $(this);
+  setTimeout(function(){
+    modal.addClass('opened');
+  }, 500);
+});
+$(document).on('close.fndtn.reveal', '[data-reveal]', function () {
+  var modal = $(this);
+  modal.removeClass('opened');
+});
 
+
+// Time Left to Order Lunch
+$("#time-left").countdown({
+    date: "26 February 2015 21:42:00", // Change this to your desired date to countdown to
+    format: "on"
+});

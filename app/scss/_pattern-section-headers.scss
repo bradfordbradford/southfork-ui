@@ -27,6 +27,17 @@ header.time-left {
 .section-header {
     text-align: center;
     padding: rem-calc(60 16 40);
+    &.sm {
+        padding: rem-calc(60 0 24);
+        .title {
+           font-size: rem-calc(18);
+        }
+        p {
+            color: $clay;
+            font-size: rem-calc(13);
+        }
+
+    }
 }
 
 .menu-section-header {

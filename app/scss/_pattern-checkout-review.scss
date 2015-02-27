@@ -1,0 +1,130 @@
+
+// Pattern: Checkout Review
+.checkout-item-review {
+    @include grid-column(8, $center:true);
+    @media #{$medium-down}{
+        @include grid-column(10, $center:true);
+    }
+    padding-bottom: rem-calc(140);
+
+    // Item List
+    .checkout-item-list {
+        @extend %list-reset;
+
+        // Header & Image
+        li {
+            border-bottom: 1px solid $old-iron;
+            padding-bottom: rem-calc(36);
+            margin: rem-calc(16) auto rem-calc(18);
+
+            .item-title {
+                // @include grid-column(10, $push:2);
+                width:85%;
+                padding-left:1em;
+                float:right;
+
+                header {
+                    @include grid-column(10);
+                    .title {
+                        font-size: rem-calc(24);
+                    }
+                }
+                .item-meta {
+                    @include grid-column(2);
+                }
+
+            }
+            .item-opts {
+                .quantity {
+                    float: left;
+                    margin-right: rem-calc(40);
+                }
+                .remove {
+                    float: left;
+                    a {
+                        position: relative;
+                        top: 10px;
+                        &:before {
+                            position: relative;
+                            top: 2px;
+                            margin-right: 6px;
+                        }
+                    }
+                }
+            }
+            .item-pic {
+                // @include grid-column(2, $pull:10);
+                width:15%;
+                float:left;
+                img {width:100%;}
+
+            }
+        }
+    }
+
+
+    // Footer
+    footer.checkout-review-footer {
+        @include grid-column(7, $float:right);
+    }
+
+    // Summary
+    .checkout-item-summary {
+
+        float: right;
+        margin-bottom: rem-calc(40);
+
+        &, td, tr {
+            background: none;
+            border:0;
+        }
+
+        td {
+            text-align: right;
+        }
+        .tiny-header {
+            font-size: rem-calc(13);
+            letter-spacing: 0.1em;
+            font-weight: $font-weight-normal;
+        }
+        .total {
+            font-weight: $font-weight-bold;
+            top: 6px;
+        }
+        .total-amount {
+            font-size: rem-calc(24);
+        }
+    }
+
+    // Price
+    .price {
+        font-size: rem-calc(24);
+        .cents {
+            font-size: 16px;
+            top: 0;
+        }
+    }
+
+    // Checkout Nav
+    .checkout-nav {
+        @include clearfix;
+        .return {
+            @include grid-column(4);
+            color: $light-tan;
+            position: relative;
+            top:16px;
+            text-align: right;
+        }
+        .order {
+            @include grid-column(8);
+            padding-right: 0;
+            a {
+                float:right;
+                padding-right:rem-calc(42);
+                padding-left:rem-calc(42);
+            }
+        }
+    }
+}
+
+

@@ -7,6 +7,17 @@
     .menu-primary-info {
         margin-bottom: rem-calc(32);
     }
+    .inner-container {
+        @include grid-column(10, $center: true);
+    }
+    @media #{$small-only}{
+        .inner-container {
+            width:100%;
+            float:none;
+            padding-left:0;
+            padding-right:0;
+        }
+    }
 }
 
 // Image & Header
@@ -61,33 +72,10 @@
         padding: rem-calc(0 0 16 0);
         border-bottom: 1px solid $gainsboro;
         margin: rem-calc(0 0 12);
-        .star {
-            display: inline-block;
-            margin: rem-calc(0 2 0);
-            font-size: rem-calc(22);
-            position: relative;
-            top:4px;
-            &.highlighted {color: $gold;}
-            &.inactive {color:$lightest-tan;}
-        }
-        .count {
-            color: $lightest-tan;
-            font-size: rem-calc(14);
-            margin: rem-calc(0 0 0 4);
-        }
     }
 
     .menu-detail-meta {
         margin: rem-calc(0 0 24 0 );
-        .price {
-            font-size: rem-calc(36);
-            position: relative;
-            .cents {
-                font-size: 18px;
-                position: absolute;
-                top: 2px;
-            }
-        }
         .fees {
             color: $light-tan;
             font-style: italic;
@@ -104,32 +92,9 @@
         margin: rem-calc(0 0 32 0);
 
         .quantity {
-            width: rem-calc(120);
             float:left;
-            position: relative;
-            &:before {
-                position: absolute;
-                content:'QTY:';
-                font-size: rem-calc(12);
-                font-weight: $font-weight-bold;
-                color:$light-tan;
-                top: 16px;
-                left: 12px;
-            }
-            &:after {
-                position: absolute;
-                content:'';
-                height: 32px;
-                width:1px;
-                background: $old-iron;
-                top: 8px;
-                left: 60px;
-            }
-
-            select {
-                padding-left: rem-calc(76);
-            }
         }
+
         .order {
             width: rem-calc(200);
             float:left;
