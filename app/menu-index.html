@@ -4,7 +4,6 @@
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>SouthFork UI Kit</title>
-   <link rel="stylesheet" href="http://cdn.jsdelivr.net/qtip2/2.2.1/jquery.qtip.min.css">
    <link rel="stylesheet" href="css/app.css">
    <script src="js/modernizr.js"></script>
    <script src="//use.typekit.net/dmn4svs.js"></script>
@@ -33,7 +32,7 @@
               </ul>
             </li>
             <li class="has-form">
-              <a href="#" class="radius knockout orange border tiny button">Sign In</a>
+              <a href="#" class="radius knockout orange border tiny button">Login</a>
             </li>
           </ul>
         </section>
@@ -205,18 +204,23 @@
               <article class="large-8 large-centered columns">
                  <div class="profile-highlight">
                     <div class="profile-pic">
-                       <img src="images/profile-chef-1.png" alt="">
+                       <img src="images/blind-butcher-cs1.png" alt="">
                     </div>
                     <div class="profile-content">
-                       <h6 class="section-tag">Meet our Featured Chef</h6>
-                       <h4 class="title">Jamie McAllister</h4>
-                       <p>Growing up, he enjoyed cooking at home and always tended to a large garden. Jamie found his home in Atlanta at Common Stock, his first solo venture, which he opened at the age of 31.</p>
+                       <h6 class="section-tag">About Today's Partner</h6>
+                       <h4 class="title">The Blind Butcher</h4>
+                       <p>Blind Butcher, located in the eclectic Lower Greenville Avenue neighborhood of East Dallas, was created by Matt Tobin, Josh Yingling, Oliver Sitrin, Tony Bricker and Ryan Chaney. Blind Butcher is a place where guests will discover fine-dining quality food in a comfortable and casual pub-like setting.  We don’t think we fit into a specific category – and, we like that.</p>
                     </div>
                  </div>
+                 <div id="" class="clearfix text-center">
+                  <a href="#" class="tiny button knockout orange border radius">View all Partners</a>
+              </div>
               </article>
             </div>
-         </section>
-         <footer class="site-footer">
+        </section>
+
+        <!-- Footer -->
+        <footer class="site-footer">
           <div class="inner row">
             <section class="large-8 columns">
               <ul class="site-map-list">
@@ -226,13 +230,14 @@
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="press.html">Press</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><a href="faq.html">FAQ</a></li>
               </ul>
               <div class="site-info">
                 © 2015 Southfork Kitchen, LLC
                 <span class="break"></span>
-                <a href="">info@southfork.com</a>
+                <a href="">info@eatsouthfork.com</a>
                 <span class="break"></span>
-                <a href="">(312) 787-1999</a>
+                <a href="">(301) 520-7423</a>
               </div>
             </section>
             <section class="large-4 columns">
@@ -254,7 +259,6 @@
                 <li><a href="#" data-icon="a"><span class="hidden-from-screens">Twitter</span></a></li>
                 <li><a href="#" data-icon="h"><span class="hidden-from-screens">Facebook</span></a></li>
                 <li><a href="#" data-icon="f"><span class="hidden-from-screens">Instagram</span></a></li>
-                <li><a href="#" data-icon="g"><span class="hidden-from-screens">Pinterest</span></a></li>
               </ul>
             </section>
           </div>
@@ -516,7 +520,8 @@
   <script>
   // Time Left to Order Lunch
   $("#time-left").countdown({
-      date: "29 February 2015 15:55:00", // Change this to your desired date to countdown to
+      date: "29 February 2015 15:55:00",
+      // Change this to your desired date to countdown to
       format: "on"
   });
   </script>

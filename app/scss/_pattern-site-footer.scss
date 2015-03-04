@@ -93,3 +93,27 @@
         }
     }
 }
+
+// Keep Footer Down
+@media #{$large-only} {
+    html,
+    body {
+       margin:0;
+       padding:0;
+       height:100%;
+    }
+    .site-container {
+       min-height:100%;
+       position:relative;
+    }
+
+    .site-content {
+       padding-bottom:$footer-height;
+    }
+    .site-footer {
+       position:absolute;
+       bottom:0;
+       width:100%;
+       height:$footer-height;
+    }
+}

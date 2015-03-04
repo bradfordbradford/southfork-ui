@@ -10,263 +10,246 @@
    <script>try{Typekit.load();}catch(e){}</script>
 </head>
 <body>
-   <div class="site-container">
-      <!-- Top Bar -->
-      <nav class="top-bar" data-topbar role="navigation">
-        <ul class="title-area">
-          <li class="name">
-            <h1><a href="#"><img class="logo" src="images/logo.png" alt=""><span class="hidden-from-screens">SouthFork</span></a></h1>
+  <div class="site-container">
+    <!-- Top Bar -->
+    <nav class="top-bar" data-topbar role="navigation">
+      <ul class="title-area">
+        <li class="name">
+          <h1><a href="#"><img class="logo" src="images/logo.png" alt=""><span class="hidden-from-screens">SouthFork</span></a></h1>
+        </li>
+        <li class="toggle-topbar menu-icon"><a href="#"><span class=""></span></a></li>
+      </ul>
+
+      <section class="top-bar-section">
+        <ul class="right">
+          <li class=""><a href="#">How It Works</a></li>
+          <li class="has-dropdown">
+            <a href="#">Learn More</a>
+            <ul class="dropdown">
+              <li><a href="#">First link</a></li>
+              <li><a href="#">Second link</a></li>
+            </ul>
           </li>
-          <li class="toggle-topbar menu-icon"><a href="#"><span class=""></span></a></li>
+          <li class="has-form">
+            <a href="#" class="radius knockout orange border tiny button">Login</a>
+          </li>
         </ul>
+      </section>
+    </nav>
+    <!-- Main Content -->
+    <main class="site-content" role="main">
+      <div class="full-spread-wrap">
+        <section class="full-spread-cta columns">
+           <div class="inner">
+              <h2 class="section-tag">Lunch from your Favorite Chefs</h2>
 
-        <section class="top-bar-section">
-          <ul class="right">
-            <li class=""><a href="#">How It Works</a></li>
-            <li class="has-dropdown">
-              <a href="#">Learn More</a>
-              <ul class="dropdown">
-                <li><a href="#">First link</a></li>
-                <li><a href="#">Second link</a></li>
-              </ul>
-            </li>
-            <li class="has-form">
-              <a href="#" class="radius knockout orange border tiny button">Sign In</a>
-            </li>
-          </ul>
+              <p><em>We're currently delivering to offices in Atlanta!</em></p>
+
+              <form class="">
+                 <div class="row">
+                    <div class="large-8 columns">
+                      <select class="location-select form-control" multiple="multiple"></select>
+                    </div>
+                    <div class="large-4 columns">
+                     <a href="#" class="button expand">View Menu</a>
+                    </div>
+                 </div>
+              </form>
+              <small class="footnote"><a href="#">Don't see your office address? Join our waitlist <span class="icon" data-icon="c"></span></a></small>
+           </div>
         </section>
-      </nav>
 
-      <!-- Main Content -->
-      <main class="site-content" role="main">
-        <div class="full-spread-wrap">
-          <section class="full-spread-cta columns">
-             <div class="inner">
-                <h2 class="section-tag">Lunch from your Favorite Chefs</h2>
+        <div id="full-spread" class='fade-img'></div>
+      </div>
 
-                <p><em>We're currently delivering to offices in Atlanta!</em></p>
+      <section class="more-info below-full-spread" id="what-southfork-is">
 
-                <form class="">
-                   <div class="row">
-                      <div class="large-8 columns">
-                        <select class="location-select form-control" multiple="multiple"></select>
-                      </div>
-                      <div class="large-4 columns">
-                       <a href="#" class="button expand">Order Now</a>
-                      </div>
-                   </div>
-                </form>
-                <small><a href="#">Don't see your office address? Join our waitlist <span class="icon" data-icon="c"></span></a></small>
-             </div>
-          </section>
+          <div class="row">
+            <header class="section-header">
+              <h5 class="section-tag">DELICIOUS MEALS DELIVERED FRESH TO YOUR DESK</h5>
+            </header>
+          </div>
 
-          <div id="full-spread" class='fade-img'></div>
-        </div>
-
-        <section class="more-info below-full-spread">
-
-          <section id="what-southfork-is" class="">
-            <div class="row">
-              <header class="section-header">
-                <h5 class="section-tag">DELICIOUS MEALS DELIVERED FRESH TO YOUR DESK</h5>
-              </header>
-            </div>
-
-            <div class="row">
-              <ul class="focus-list-w-icons" data-equalizer>
-                <li data-equalizer-watch>
-                  <div class="inner">
-                    <div class="icon-content">
-                      <img src="images/icons/chef-icon.png" alt="">
-                    </div>
-                    <div class="list-content">
-                      <h5 class="title">Chef-Craft</h5>
-                      <p>We partner with leading food artisans to offer three curated lunch options every day. </p>
-                    </div>
+          <div class="row">
+            <ul class="focus-list-w-icons" data-equalizer>
+              <li data-equalizer-watch>
+                <div class="inner">
+                  <div class="icon-content">
+                    <img src="images/icons/chef-icon.png" alt="">
                   </div>
-                </li>
-                <li data-equalizer-watch>
-                  <div class="inner">
-                    <div class="icon-content">
-                      <img src="images/icons/veggies-icon.png" alt="">
-                    </div>
-                    <div class="list-content">
-                      <h5 class="title">Healthy &amp; Delicious</h5>
-                      <p>Each meal is handmade using the highest quality ingredients. </p>
-                    </div>
+                  <div class="list-content">
+                    <h5 class="title">Chef-Craft</h5>
+                    <p>We partner with leading food artisans to offer three curated lunch options every day. </p>
                   </div>
-                </li>
-                <li data-equalizer-watch>
-                  <div class="inner">
-                    <div class="icon-content">
-                      <img src="images/icons/eat-icon.png" alt="">
-                    </div>
-                    <div class="list-content">
-                      <h5 class="title">Delivered to You</h5>
-                      <p>We make lunch easy with delivery directly to your office.</p>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-
-            <section class="split-hero">
-              <div class="split-hero-content">
-                 <div class="inner">
-                    <h4 class="tagline">We care deeply about the effect of foood on our health, the environment, and our community</h4>
-                    <a href="#" class="tiny button knockout orange border radius">Read Our Mission</a>
-                 </div>
-                 <div class="split-hero-pic fade-img" style="background-image:url('images/split-hero-1.jpg'); background-size: cover;">
-                 </div>
-              </div>
-            </section>
-
-            <div class="row">
-              <header class="section-header">
-                <h5 class="section-tag">How It Works</h5>
-              </header>
-            </div>
-
-            <div class="large-12 columns">
-              <div class="clearfix">
-                <div class="large-10 large-centered columns">
-                  <ul class="focus-list-story-line">
-                    <li>
-                      <div class="inner">
-                        <div class="icon-content">
-                          <h5 class="number-badge"><span>1</span></h5>
-                        </div>
-                        <div class="list-content">
-                          <p>Select from a daily menu of chef-crafted healthy lunches.. </p>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="inner">
-                        <div class="icon-content">
-                          <h5 class="number-badge"><span>2</span></h5>
-                        </div>
-                        <div class="list-content">
-                          <p>Place your order by 11am for same-day delivery.</p>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="inner">
-                        <div class="icon-content">
-                          <h5 class="number-badge"><span>3</span></h5>
-                        </div>
-                        <div class="list-content">
-                          <p>Select your delivery window and tell us where you want it delivered.</p>
-                        </div>
-                      </div>
-                    </li>
-                    <!-- <li>
-                      <div class="inner">
-                        <div class="icon-content">
-                          <h5 class="number-badge"><span>4</span></h5>
-                        </div>
-                        <div class="list-content">
-                          <p>Want to order for tomorrow or the whole week? Weekly menus are released every Sunday.</p>
-                        </div>
-                      </div>
-                    </li> -->
-                  </ul>
-
                 </div>
-              </div>
-              <div id="ordering-learn-more" class="clearfix">
-                  <a href="#" class="tiny button knockout orange border radius">Learn More About Ordering</a>
+              </li>
+              <li data-equalizer-watch>
+                <div class="inner">
+                  <div class="icon-content">
+                    <img src="images/icons/veggies-icon.png" alt="">
+                  </div>
+                  <div class="list-content">
+                    <h5 class="title">Healthy &amp; Delicious</h5>
+                    <p>Each meal is handmade using the highest quality ingredients. </p>
+                  </div>
+                </div>
+              </li>
+              <li data-equalizer-watch>
+                <div class="inner">
+                  <div class="icon-content">
+                    <img src="images/icons/eat-icon.png" alt="">
+                  </div>
+                  <div class="list-content">
+                    <h5 class="title">Delivered to You</h5>
+                    <p>We make lunch easy with delivery directly to your office.</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <section class="clearfix split-hero">
+            <div class="split-hero-content">
+               <div class="inner">
+                  <h4 class="tagline">We care deeply about the effect of foood on our health, the environment, and our community</h4>
+                  <a href="#" class="tiny button knockout orange border radius">Read Our Mission</a>
+               </div>
+               <div class="split-hero-pic fade-img" style="background-image:url('images/split-hero-1.jpg'); background-size: cover;">
+               </div>
+            </div>
+          </section>
+
+          <div class="row">
+            <header class="section-header">
+              <h5 class="section-tag">How It Works</h5>
+            </header>
+          </div>
+
+          <div class="large-12 columns">
+            <div class="clearfix">
+              <div class="large-10 large-centered columns">
+                <ul class="focus-list-story-line">
+                  <li>
+                    <div class="inner">
+                      <div class="icon-content">
+                        <h5 class="number-badge"><span>1</span></h5>
+                      </div>
+                      <div class="list-content">
+                        <p>Select from a daily menu of chef-crafted healthy lunches.. </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="inner">
+                      <div class="icon-content">
+                        <h5 class="number-badge"><span>2</span></h5>
+                      </div>
+                      <div class="list-content">
+                        <p>Place your order by 11am for same-day delivery.</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="inner">
+                      <div class="icon-content">
+                        <h5 class="number-badge"><span>3</span></h5>
+                      </div>
+                      <div class="list-content">
+                        <p>Select your delivery window and tell us where you want it delivered.</p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+
               </div>
             </div>
+            <div id="ordering-learn-more" class="clearfix">
+                <a href="#" class="tiny button knockout orange border radius">Learn More About Ordering</a>
+            </div>
+          </div>
 
-            <header class="cta-hero">
-              <div class="cta-hero-copy">
-                 <div class="inner">
-                    <h5 class="tagline">WE <span class="heart-icon" data-icon="k"></span></h5>
-                    <h1 class="title">Atlanta</h1>
-                    <p>Right now we’re only in Atlanta. But we’re growing–fast. Join the waitlist to be notified once we’re in your city!</p>
+          <header class="cta-hero">
+            <div class="cta-hero-copy">
+               <div class="inner">
+                  <h5 class="tagline">WE <span class="heart-icon" data-icon="k"></span></h5>
+                  <h1 class="title">Atlanta</h1>
+                  <p>Right now we’re only in Atlanta. But we’re growing–fast. Join the waitlist to be notified once we’re in your city!</p>
 
-                    <form class="">
-                      <div class="row">
-                         <div class="large-6 columns">
-                          <input type="text" placeholder="Your City">
-                         </div>
-                         <div class="large-6 columns">
-                          <select name="" id="">
-                             <option value="Georgia">Georgia</option>
-                             <option value="Texas">Texas</option>
-                             <option value="Louisiana">Louisiana</option>
-                          </select>
-                         </div>
-                      </div>
-                      <div class="row">
-                         <div class="large-8 columns">
-                          <input type="text" placeholder="Email Address">
-                         </div>
-                         <div class="large-4 columns">
-                          <a href="#" class="button expand">Submit</a>
-                         </div>
-                      </div>
-                   </form>
-                 </div>
-              </div>
-              <div class="cta-hero-bg fade-img"></div>
-           </header>
-
-          </section>
+                  <form class="">
+                    <div class="row">
+                       <div class="large-6 columns">
+                        <input type="text" placeholder="Your City">
+                       </div>
+                       <div class="large-6 columns">
+                        <select name="" id="">
+                           <option value="Georgia">Georgia</option>
+                           <option value="Texas">Texas</option>
+                           <option value="Louisiana">Louisiana</option>
+                        </select>
+                       </div>
+                    </div>
+                    <div class="row">
+                       <div class="large-8 columns">
+                        <input type="text" placeholder="Email Address">
+                       </div>
+                       <div class="large-4 columns">
+                        <a href="#" class="button expand">Submit</a>
+                       </div>
+                    </div>
+                 </form>
+               </div>
+            </div>
+            <div class="cta-hero-bg fade-img"></div>
+          </header>
 
           <!-- Footer -->
-          <footer class="site-footer">
-            <div class="inner row">
-              <section class="large-8 columns">
-                <ul class="site-map-list">
-                  <li class="icon"><span class="bowl-icon"></span></li>
-                  <li><a href="about-us.html">About Us</a></li>
-                  <li><a href="mission.html">Mission</a></li>
-                  <li><a href="blog.html">Blog</a></li>
-                  <li><a href="press.html">Press</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-                </ul>
-                <div class="site-info">
-                  © 2015 Southfork Kitchen, LLC
-                  <span class="break"></span>
-                  <a href="">info@southfork.com</a>
-                  <span class="break"></span>
-                  <a href="">(312) 787-1999</a>
-                </div>
-              </section>
-              <section class="large-4 columns">
-                <div class="newsletter-cta">
-                  <h6 class="title">Newsletter</h6>
-                  <p>Sign up to receive Southfork News &amp; Announcements</p>
-                  <form action="">
-                    <div class="row collapse">
-                      <div class="large-8 columns">
-                        <input type="text" placeholder="Email address">
-                      </div>
-                      <div class="large-4 columns">
-                        <a href="#" class="secondary button">Sign Up</a>
-                      </div>
+        <footer class="site-footer">
+          <div class="inner row">
+            <section class="large-8 columns">
+              <ul class="site-map-list">
+                <li class="icon"><a href="/"><span class="bowl-icon" data-icon="E"></span></a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="mission.html">Mission</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="press.html">Press</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+              </ul>
+              <div class="site-info">
+                © 2015 Southfork Kitchen, LLC
+                <span class="break"></span>
+                <a href="">info@eatsouthfork.com</a>
+                <span class="break"></span>
+                <a href="">(301) 520-7423</a>
+              </div>
+            </section>
+            <section class="large-4 columns">
+              <div class="newsletter-cta">
+                <h6 class="title">Newsletter</h6>
+                <p>Sign up to receive Southfork News &amp; Announcements</p>
+                <form action="" class="form-sm">
+                  <div class="row collapse">
+                    <div class="large-8 columns">
+                      <input type="text" placeholder="Email address">
                     </div>
-                  </form>
-                </div>
-                <ul class="social-icons-list">
-                  <li><a href="#" data-icon="a"><span class="hidden-from-screens">Twitter</span></a></li>
-                  <li><a href="#" data-icon="a"><span class="hidden-from-screens">Facebook</span></a></li>
-                  <li><a href="#" data-icon="h"><span class="hidden-from-screens">Instagram</span></a></li>
-                  <li><a href="#" data-icon="g"><span class="hidden-from-screens">Pinterest</span></a></li>
-                </ul>
-              </section>
-            </div>
-          </footer>
-        </section>
+                    <div class="large-4 columns">
+                      <a href="#" class="secondary button">Sign Up</a>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <ul class="social-icons-list">
+                <li><a href="#" data-icon="a"><span class="hidden-from-screens">Twitter</span></a></li>
+                <li><a href="#" data-icon="h"><span class="hidden-from-screens">Facebook</span></a></li>
+                <li><a href="#" data-icon="f"><span class="hidden-from-screens">Instagram</span></a></li>
+              </ul>
+            </section>
+          </div>
+        </footer>
 
-
-      </main>
-
-
-   </div>
+      </section>
+    </main>
+  </div>
 
   <script src="js/jquery.min.js"></script>
   <script src="js/fastclick.js"></script>
