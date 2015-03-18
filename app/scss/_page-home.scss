@@ -7,7 +7,7 @@
     }
     // Hero CTA
     @media #{$large-only} {
-        .cta-hero-copy .inner {
+        .cta-hero-copy:not(.fill-card) .inner {
             width:500px;
         }
     }

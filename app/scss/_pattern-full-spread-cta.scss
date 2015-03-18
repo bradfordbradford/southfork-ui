@@ -6,6 +6,7 @@
 
     .inner {
         padding: rem-calc(70 78 32);
+        background: rgba($white, .05);
         border: 3px solid $white;
     }
 
@@ -25,7 +26,6 @@
     }
 
     p {
-        font-family: $font-family-serif;
         letter-spacing: 0.04rem;
         font-size: rem-calc(16);
     }
