@@ -46,49 +46,77 @@
         </section>
       </nav>
 
+
       <!-- Main Content -->
-      <main class="site-content" role="main" id="">
-        <section class="fill-cream clearfix">
-          <div class="checkout-confirm-delivery">
-            <header class="section-header sm">
-              <h4 class="title caps sans">Confirm Delivery Details</h4>
-              <p>For delivery Today (Monday, February 2nd) by 12:30pm (ET).</p>
-            </header>
-            <form class="">
-              <div class="row">
-                 <div class="large-12 columns">
-                  <select class="location-select form-control" multiple="multiple"></select>
-                 </div>
+      <main class="site-content" role="main" id="menu-index">
+
+        <section class="fill-cream">
+          <div class="row customer-account sm-width">
+
+            <section class="manage-account">
+              <header class="row form-title">
+                <p class="note dark med">Edit your Account Information</p>
+              </header>
+
+              <div class="update-gravatar row">
+                <span class="med user icon"><img src="images/user_james-bond.jpg" alt=""></span>
+                <a href="#" class="note small dark"><em>Manage your Avatar with Gravatar</em></a>
               </div>
-              <div class="row">
-                 <div class="large-12 columns">
-                  <input type="text" placeholder="Company Name">
-                 </div>
-              </div>
-              <div class="row">
-                 <div class="large-4 columns">
-                  <input type="text" placeholder="Mobile.">
-                 </div>
-                 <div class="large-4 columns">
-                  <input type="text" placeholder="">
-                 </div>
-                 <div class="large-4 columns">
-                  <input type="text" placeholder="">
-                 </div>
-              </div>
-              <div class="row">
-                <div class="large-12 columns">
-                  <small class="note">Don't worry, we'll never share your information. We will only contact you with order status updates</small>
-                </div>
-              </div>
-              <div class="row">
-                 <div class="large-12 columns">
-                    <a href="#" class="button expand caps">Pay with Card</a>
-                 </div>
-              </div>
-            </form>
+
+              <form class="">
+                  <div class="row">
+                    <div class="large-6 columns">
+                      <input type="text" placeholder="Alfred">
+                    </div>
+                    <div class="large-6 columns">
+                      <input type="text" placeholder="Redding">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="large-12 columns">
+                      <input type="email" placeholder="aredding@gmail.com">
+                    </div>
+                  </div>
+                  <div class="row">
+                     <div class="large-6 columns">
+                      <input type="password" placeholder="Password">
+                     </div>
+                     <div class="large-6 columns">
+                      <a href="customer-manage-pw.html" class="change-password button radius tiny info">Change</a>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="large-12 columns toggle-emails">
+                      <fieldset class="switch round tiny" tabindex="0">
+                        <input id="exampleCheckboxSwitch4" type="checkbox">
+                        <label for="exampleCheckboxSwitch4"></label>
+                      </fieldset>
+                      <p>Receive Daily Menu Emails</p>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="large-12 columns">
+                        <a href="#" class="button caps expand">Save Changes</a>
+                     </div>
+                  </div>
+                </form>
+            </section>
+
+            <aside class="side-bar">
+              <h5>Manage Settings</h5>
+              <hr>
+
+              <ul class="side-nav">
+                <li class="active"><a href="customer-manage-account.html">My Account</a></li>
+                <li><a href="customer-manage-delivery-info.html">Delivery Info</a></li>
+                <li><a href="customer-manage-payment-info.html">Payment Info</a></li>
+                <li><a href="customer-manage-my-orders.html">My Orders</a></li>
+              </ul>
+            </aside>
+
           </div>
         </section>
+
         <!-- Footer -->
         <footer class="site-footer">
           <div class="inner row">

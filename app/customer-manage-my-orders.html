@@ -46,49 +46,87 @@
         </section>
       </nav>
 
+
       <!-- Main Content -->
-      <main class="site-content" role="main" id="">
-        <section class="fill-cream clearfix">
-          <div class="checkout-confirm-delivery">
-            <header class="section-header sm">
-              <h4 class="title caps sans">Confirm Delivery Details</h4>
-              <p>For delivery Today (Monday, February 2nd) by 12:30pm (ET).</p>
-            </header>
-            <form class="">
-              <div class="row">
-                 <div class="large-12 columns">
-                  <select class="location-select form-control" multiple="multiple"></select>
-                 </div>
-              </div>
-              <div class="row">
-                 <div class="large-12 columns">
-                  <input type="text" placeholder="Company Name">
-                 </div>
-              </div>
-              <div class="row">
-                 <div class="large-4 columns">
-                  <input type="text" placeholder="Mobile.">
-                 </div>
-                 <div class="large-4 columns">
-                  <input type="text" placeholder="">
-                 </div>
-                 <div class="large-4 columns">
-                  <input type="text" placeholder="">
-                 </div>
-              </div>
-              <div class="row">
-                <div class="large-12 columns">
-                  <small class="note">Don't worry, we'll never share your information. We will only contact you with order status updates</small>
-                </div>
-              </div>
-              <div class="row">
-                 <div class="large-12 columns">
-                    <a href="#" class="button expand caps">Pay with Card</a>
-                 </div>
-              </div>
-            </form>
+      <main class="site-content" role="main" id="menu-index">
+
+        <section class="fill-cream">
+          <div class="row customer-account lg-width">
+
+            <section class="manage-account">
+              <header class="row form-title show-for-small-only">
+                <p class="note dark med">My Orders</p>
+              </header>
+              <table class="simple responsive">
+                <thead>
+                  <tr>
+                    <th>Date</th>
+                    <th>Delivered To</th>
+                    <th>Order Summary</th>
+                    <th>Total</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>02/01/15</td>
+                    <td>
+                      <p>Alfred Redding</p>
+                      <p>333 Peach St.</p>
+                      <p>Atlanta, GA 45455</p>
+                    </td>
+                    <td>
+                      <p><b>Order #1278</b></p>
+                      <p>(1) Supergreen Wrap</p>
+                      <p>(2) Kale Tuscan Salad</p>
+                      <p>(4) Turkey Avocado Wrap</p>
+                    </td>
+                    <td><p>$98</p></td>
+                  </tr>
+                  <tr>
+                    <td>02/12/15</td>
+                    <td>
+                      <p>Paul Wright</p>
+                      <p>333 Peach St.</p>
+                      <p>Atlanta, GA 45455</p>
+                    </td>
+                    <td>
+                      <p><b>Order #1319</b></p>
+                      <p>(1) Supergreen Wrap</p>
+                    </td>
+                    <td><p>$14</p></td>
+                  </tr>
+                  <tr>
+                    <td>02/12/15</td>
+                    <td>
+                      <p>Meryl Streep</p>
+                      <p>3148 Atlantic Ave.</p>
+                      <p>Atlanta, GA 45455</p>
+                    </td>
+                    <td>
+                      <p><b>Order #1519</b></p>
+                      <p>(1) Simple Vegetable Soup</p>
+                    </td>
+                    <td><p>$10</p></td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+
+            <aside class="side-bar">
+              <h5>Manage Settings</h5>
+              <hr>
+
+              <ul class="side-nav">
+                <li><a href="customer-manage-account.html">My Account</a></li>
+                <li><a href="customer-manage-delivery-info.html">Delivery Info</a></li>
+                <li><a href="customer-manage-payment-info.html">Payment Info</a></li>
+                <li class="active"><a href="customer-manage-my-orders.html">My Orders</a></li>
+              </ul>
+            </aside>
+
           </div>
         </section>
+
         <!-- Footer -->
         <footer class="site-footer">
           <div class="inner row">

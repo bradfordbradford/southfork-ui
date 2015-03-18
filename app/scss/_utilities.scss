@@ -175,6 +175,12 @@
     border-radius: $global-rounded;
     height: rem-calc(32);
     width: rem-calc(32);
+
+    &.med,
+    &.med img {
+        height: rem-calc(64);
+        width: rem-calc(64);
+    }
 }
 .user.icon {
     position: relative;
@@ -191,4 +197,44 @@
         width:inherit;
         float: none;
     }
+}
+
+
+// Update Gravatar
+.update-gravatar {
+    position: relative;
+    height: rem-calc(64);
+    margin-bottom: rem-calc(16) !important;
+
+    .icon,
+    .note {display: inline-block;}
+
+    // Icon
+    .icon {
+        z-index:1;
+        position: absolute;
+    }
+
+    // Note
+    .note {
+        background: $white;
+        padding: rem-calc(14 32 17);
+        position: relative;
+        top: rem-calc(8);
+        left: rem-calc(54);
+        z-index: 0;
+    }
+    @media #{$small-only} {
+        .user.icon,
+        .user.icon img  {
+            height: rem-calc(48);
+            width: rem-calc(48);
+        }
+        .note {
+            padding: rem-calc(8 12 9);
+            top: rem-calc(6);
+            left: rem-calc(45);
+        }
+    }
+
 }

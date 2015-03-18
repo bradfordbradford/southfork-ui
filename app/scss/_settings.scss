@@ -104,6 +104,7 @@ $font-weight-bold: 700 !default;
 // $vapor       : #F6F6F6;
 // $white-smoke : #F5F5F5;
 $silver      : #E1E1E1;
+$silver-blue : #9C9AA3;
 
 $gainsboro   : #D8D8D8;
 $iron        : #CCCCCC;
@@ -163,7 +164,7 @@ $secondary-color: $brown; // brown
 $alert-color: $tan;
 $success-color: $success;
 $warning-color: $tan;
-// $info-color: #a0d3e8;
+$info-color: $silver-blue;
 
 
 
@@ -1180,13 +1181,13 @@ $reveal-modal-bg: $white;
 // $side-nav-list-margin: rem-calc(0 0 7 0);
 
 // We use these to control link styles.
-// $side-nav-link-color: $primary-color;
-// $side-nav-link-color-active: scale-color($side-nav-link-color, $lightness: 30%);
+$side-nav-link-color: $clay; //$primary-color;
+$side-nav-link-color-active: $primary-color;//  scale-color($side-nav-link-color, $lightness: 30%);
 // $side-nav-link-color-hover: scale-color($side-nav-link-color, $lightness: 30%);
 // $side-nav-link-bg-hover: hsla(0, 0, 0, 0.025);
 // $side-nav-link-margin: 0;
-// $side-nav-link-padding: rem-calc(7 14);
-// $side-nav-font-size: rem-calc(14);
+$side-nav-link-padding: rem-calc(7 14 7 0);
+$side-nav-font-size: rem-calc(16);
 // $side-nav-font-weight: $font-weight-normal;
 // $side-nav-font-weight-active: $side-nav-font-weight;
 // $side-nav-font-family: $body-font-family;
@@ -1284,7 +1285,7 @@ $reveal-modal-bg: $white;
 // $switch-bg: $white;
 
 // We use these to control the switch heights for our default classes
-// $switch-height-tny: rem-calc(22);
+$switch-height-tny: rem-calc(18);
 // $switch-height-sml: rem-calc(28);
 // $switch-height-med: rem-calc(36);
 // $switch-height-lrg: rem-calc(44);
@@ -1317,16 +1318,16 @@ $reveal-modal-bg: $white;
 // $include-html-table-classes: $include-html-classes;
 
 // These control the background color for the table and even rows
-// $table-bg: $white;
-// $table-even-row-bg: $snow;
+$table-bg: none;
+$table-even-row-bg: none;
 
 // These control the table cell border style
 // $table-border-style: solid;
-// $table-border-size: 1px;
+$table-border-size: 0;
 // $table-border-color: $gainsboro;
 
 // These control the table head styles
-// $table-head-bg: $white-smoke  ;
+$table-head-bg: none;
 // $table-head-font-size: rem-calc(14);
 // $table-head-font-color: $jet;
 // $table-head-font-weight: $font-weight-bold;

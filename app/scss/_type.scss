@@ -61,6 +61,17 @@ hr {
     font-size: rem-calc(12);
     color: $old-iron;
     display: block;
+
+    &.small {
+        font-size:  rem-calc(14);
+    }
+
+    &.med {
+        font-size:  rem-calc(16);
+    }
+    &.dark {
+        color:$clay;
+    }
 }
 
 // Blockquote

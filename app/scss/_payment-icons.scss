@@ -1,0 +1,12 @@
+// Payment Icons
+// -------------
+
+.pay-icon {
+    width:33px;
+    height:20px;
+    background-size: 100% !important;
+    &.mastercard {background: url('../images/icons/payment-icons-2x/mastercard6@2x.png') no-repeat;}
+    &.visa {background: url('../images/icons/payment-icons-2x/visa6@2x.png') no-repeat;}
+    &.amex {background: url('../images/icons/payment-icons-2x/amex6@2x.png') no-repeat;}
+    &.discover {background: url('../images/icons/payment-icons-2x/discover6@2x.png') no-repeat;}
+}
