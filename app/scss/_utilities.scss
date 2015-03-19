@@ -238,3 +238,15 @@
     }
 
 }
+
+// Toggle Switch & Helper Copy
+
+.switch-wrap {
+    .switch, .switch-note {display: inline-block;}
+    .switch-note {
+        font-size: rem-calc(14);
+        top: rem-calc(-4);
+        margin-left: rem-calc(6);
+        position: relative;
+    }
+}
