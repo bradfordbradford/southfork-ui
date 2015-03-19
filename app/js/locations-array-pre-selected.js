@@ -1,4 +1,4 @@
-
+var $locationsSelect = $(".location-select");
 
 // Select 2 Locations
 // -------------------
@@ -13,10 +13,15 @@ var locations = [
     { id: 7, text: 'Transamerica Tower (102 Geary St. Atlanta, GA)' }
 ];
 
+var selectedLocation = [
+    { id: 0, text: 'Jefferson Tower (2121 W. 12th St. Atlanta, GA)' }
+];
 
-$(".location-select").select2({
+
+$locationsSelect.select2({
   data: locations,
   placeholder: "Enter Your Delivery Address",
   maximumSelectionLength: 1,
   minimumInputLength: 1
 });
+
