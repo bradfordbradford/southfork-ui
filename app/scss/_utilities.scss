@@ -250,3 +250,15 @@
         position: relative;
     }
 }
+
+
+// Icons
+.icon {
+position: relative;top:2px;
+&.arrow-left {
+    margin-right: 4px;
+}
+&.arrow-right {
+    margin-left: 4px;
+}
+}

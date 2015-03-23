@@ -12,6 +12,11 @@
 <body>
    <div class="site-container">
 
+    <div data-alert class="alert-box warning fixed-centered">
+      Too late to order today! Shop <a href="#">tomorrow's</a> menu <span class="arrow-left icon" data-icon="c"></span>
+      <a href="#" class="close">&times;</a>
+    </div>
+
       <!-- Top Bar -->
       <nav class="top-bar" data-topbar role="navigation">
         <ul class="title-area">
@@ -32,12 +37,8 @@
                 <li><a href="#">Second link</a></li>
               </ul>
             </li>
-            <li class="user has-dropdown">
-              <a href="#"><span class="user icon"><img src="images/michaelcaine_140x140.jpg" alt=""></span><span class="user-name">Alfred Redding</span></a>
-              <ul class="dropdown">
-                <li><a href="#">Settings</a></li>
-                <li><a href="#">Sign Out</a></li>
-              </ul>
+            <li class="has-form">
+              <a href="#" class="radius knockout orange border tiny button">Login</a>
             </li>
             <li class="cart">
               <a href="#"><span class="cart icon" data-icon="m"><span class="badge icon"><span class="count">2</span></span></span></a>
@@ -46,66 +47,75 @@
         </section>
       </nav>
 
-
       <!-- Main Content -->
-      <main class="site-content" role="main" id="menu-index">
-
+      <main class="site-content" role="main">
         <section class="fill-cream">
-          <div class="row customer-account sm-width">
+          <header class="row time-left">
+            <div class="inner-container">
+              <h6 class="title">Friday's menu has closed for the day. These items were removed from your cart:</h6>
+              <ul>
+                <li>California Collard Green Wrap</li>
+                <li>Lentil Salad</li>
+              </ul>
+              </h6>
+            </div>
+          </header>
+          <div class="row checkout-item-review">
+            <ul class="checkout-item-list">
+              <li class="clearfix">
+                <div class="item-title">
+                  <header>
+                    <h2 class="title">California Collard Green Wrap</h2>
+                    <div class="item-opts clearfix">
+                      <div class="quantity">
+                        <select name="" id="">
+                          <option value="1">1</option>
+                          <option selected value="2">2</option>
+                        </select>
+                      </div>
+                      <div class="remove">
+                        <a class="tiny-header" href="#" data-icon="J">Remove from Cart</a>
+                      </div>
+                    </div>
+                  </header>
 
-            <section class="manage-account">
-              <header class="row form-title">
-                <p class="note dark med">Edit your Account Information</p>
-              </header>
+                  <div class="item-meta">
+                    <span class="price">$12.99</span>
+                  </div>
+                </div>
+                <div class="item-pic">
+                  <img src="images/food-review.jpg" alt="">
+                </div>
+              </li>
+            </ul>
+            <footer class="checkout-review-footer">
 
-              <div class="update-gravatar row">
-                <span class="med user icon"><img src="images/michaelcaine_140x140.jpg" alt=""></span>
-                <a href="#" class="note small dark"><em>Manage your Avatar with Gravatar</em></a>
+              <div class="clearfix checkout-item-summary-container">
+                <table class="checkout-item-summary">
+                  <tbody>
+                    <tr>
+                      <td><div class="tiny-header">Meals Subtotal:</div></td>
+                      <td>$12.99</td>
+                    </tr>
+                    <tr>
+                      <td><div class="tiny-header">Delivery:</div></td>
+                      <td>$2.00</td>
+                    </tr>
+                    <tr>
+                      <td><div class="tiny-header total">Total:</div></td>
+                      <td><span class="total-amount">$14.99</span></td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
 
-              <form class="">
-                  <div class="row">
-                    <div class="large-6 columns">
-                      <input type="text" placeholder="Alfred">
-                    </div>
-                    <div class="large-6 columns">
-                      <input type="text" placeholder="Redding">
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="large-12 columns">
-                      <input type="email" placeholder="aredding@gmail.com">
-                    </div>
-                  </div>
-                  <div class="row">
-                     <div class="large-6 columns">
-                      <input type="password" placeholder="Password">
-                     </div>
-                     <div class="large-6 columns">
-                      <a href="customer-manage-pw.html" class="change-password button radius tiny info">Change</a>
-                     </div>
-                  </div>
-                  <br>
-                  <div class="row">
-                     <div class="large-12 columns">
-                        <a href="customer-manage-account-error.html" class="button caps expand">Save Changes</a>
-                     </div>
-                  </div>
-                </form>
-            </section>
-
-            <aside class="side-bar">
-              <h5>Manage Settings</h5>
-              <hr>
-
-              <ul class="side-nav">
-                <li class="active"><a href="customer-manage-account.html">My Account</a></li>
-                <li><a href="customer-manage-delivery-info.html">Delivery Info</a></li>
-                <li><a href="customer-manage-payment-info.html">Payment Info</a></li>
-                <li><a href="customer-manage-my-orders.html">My Orders</a></li>
-              </ul>
-            </aside>
-
+              <div class="checkout-nav clearfix">
+                <a href="#" class="return tiny-header">Go Back To Menu</a>
+                <div class="order">
+                  <a href="#" class="button caps">continue to checkout <span data-icon="c"></span></a>
+                </div>
+              </div>
+            </footer>
           </div>
         </section>
 
@@ -161,6 +171,13 @@
   <script src="js/jquery.min.js"></script>
   <script src="js/libs.js"></script>
   <script src="js/app.js"></script>
+  <script>
+  // Time Left to Order Lunch
+  $("#time-left").countdown({
+      date: "29 February 2015 15:55:00", // Change this to your desired date to countdown to
+      format: "on"
+  });
+  </script>
 
 </body>
 </html>

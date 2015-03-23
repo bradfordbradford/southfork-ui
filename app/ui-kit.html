@@ -419,6 +419,16 @@
                         </div>
                      </div>
                   </div>
+
+                  <div class="row">
+                    <h6 class="doc-note">Errors</h6>
+                  </div>
+                  <div class="row">
+                    <div class="error large-12 columns">
+                      <input type="email" placeholder="aredding@gmail.com">
+                      <small class="error">Please provide a valid email address</small>
+                    </div>
+                  </div>
                </form>
             </article>
          </section>
@@ -431,14 +441,28 @@
             <div class="large-8 columns large-centered">
               <h6 class="doc-note">Success</h6>
               <div data-alert class="alert-box success">
-                YOUR ORDER HAS BEEN SUCCESSFULLY SUBMITTED! HURRAH!
+                YOUR ORDER HAS BEEN SUCCESSFULLY SUBMITTED! HURRAH! <a href="#">Try again.</a>
+                <a href="#" class="close">&times;</a>
+              </div>
+              <br>
+
+              <h6 class="doc-note">Info</h6>
+              <div data-alert class="alert-box info">
+                <span class="caps">A message to inform users of something here. <a href="#">Link example.</a></span>
                 <a href="#" class="close">&times;</a>
               </div>
               <br>
 
               <h6 class="doc-note">Warning</h6>
+              <div data-alert class="alert-box alert">
+                <span class="caps">Oh, snap! We couldn't process your card info. <a href="#">Try again.</a></span>
+                <a href="#" class="close">&times;</a>
+              </div>
+              <br>
+
+              <h6 class="doc-note">Alert</h6>
               <div data-alert class="alert-box warning">
-                <span class="caps">Oh, snap! We couldn't process your card info.</span>
+                <span class="caps">Too late to order today! Continue <a href="#">shopping</a> the menu.</span>
                 <a href="#" class="close">&times;</a>
               </div>
             </div>

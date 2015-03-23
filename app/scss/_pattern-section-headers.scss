@@ -22,6 +22,16 @@ header.time-left {
         }
         font-size: rem-calc(16);
     }
+
+    ul {
+        display: inline-block;
+        margin-top: 1em;
+
+        li {
+            text-align: left;
+            margin-bottom: rem-calc(2);
+        }
+    }
 }
 
 .section-header {

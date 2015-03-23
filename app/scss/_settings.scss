@@ -151,6 +151,9 @@ $blue        : #4A90E2;
 
 $gold        : #FAD13E;
 
+$sea-blue        : #D3E2E1;
+$error-red        : #F45656;
+
 
 
 
@@ -161,10 +164,10 @@ $global-transition: .2s linear;
 // We use these as default colors throughout
 $primary-color: $orange;
 $secondary-color: $brown; // brown
-$alert-color: $tan;
+$alert-color: $error-red;
 $success-color: $success;
-$warning-color: $tan;
-$info-color: $silver-blue;
+$warning-color: $orange;
+$info-color: $sea-blue;
 
 
 
