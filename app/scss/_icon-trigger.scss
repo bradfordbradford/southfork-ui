@@ -25,17 +25,21 @@
         @media #{$small-only}{
             &:hover {height:rem-calc(48);}
         }
+
     }
+
+
 
     // More
     .more {
+        position: relative;
+        top: -3px;
         font-size: rem-calc(32);
         display: block;
         text-align: center;
     }
     // Content
     .content {
-
         display: block;
         text-align: center;
         font-size: rem-calc(10);
@@ -55,4 +59,18 @@
 
 
 
+}
+
+// Sold Out
+.sold-out {
+    .icon-trigger.add-to-cart {
+        background: rgba($jet, .9);
+        .content {
+            margin-top: 8px;
+        }
+
+        &:hover {
+            height:rem-calc(48);
+        }
+    }
 }

@@ -91,3 +91,9 @@ $('[data-menu-by-day!=""]').qtip({ // Grab all elements with a non-blank data-me
 });
 
 
+
+
+// Disabled Link
+// --------------
+$('a.disabled').click(function( event ) {
+  event.preventDefault();});
