@@ -1,4 +1,4 @@
-
+var $locationsSelect = $(".location-select");
 
 // Select 2 Locations
 // -------------------
@@ -14,9 +14,10 @@ var locations = [
 ];
 
 
-$(".location-select").select2({
+$locationsSelect.select2({
   data: locations,
   placeholder: "Enter Your Delivery Address",
   maximumSelectionLength: 1,
+  allowClear: true,
   minimumInputLength: 1
 });
