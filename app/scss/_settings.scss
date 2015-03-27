@@ -1419,6 +1419,8 @@ $table-head-bg: none;
 $topbar-bg-color: $white;
 $topbar-bg: $topbar-bg-color;
 
+$min-width-dropdown-link: rem-calc(140);
+
 // Height and margin
 $topbar-height: rem-calc(90);
 $topbar-margin-bottom: 0;
