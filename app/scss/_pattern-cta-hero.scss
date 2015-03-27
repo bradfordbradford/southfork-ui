@@ -46,7 +46,7 @@
 
         // Fill Card
         &.fill-card {
-            padding: rem-calc(180 16 80);
+            padding: rem-calc(180 16 90);
             .inner {
                 background: $cool;
                 @include grid-column(6, $center: true);
@@ -106,12 +106,12 @@
 }
 
 // Collapse Rows for a Split Email Form Row
-form .collapse-split-form {
-    // margin: 0 auto;
-    .large-8.columns {padding-right:0;}
-    .large-4.columns {padding-left:0;}
-    @media #{$small-only} {
-    .large-8.columns {padding:0;}
-    .large-4.columns {padding:0;}
-    }
-}
+// form .collapse-split-form {
+//     // margin: 0 auto;
+//     .large-8.columns {padding-right:0;}
+//     .large-4.columns {padding-left:0;}
+//     @media #{$small-only} {
+//     .large-8.columns {padding:0;}
+//     .large-4.columns {padding:0;}
+//     }
+// }
