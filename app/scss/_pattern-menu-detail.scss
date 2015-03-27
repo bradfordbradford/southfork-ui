@@ -39,9 +39,28 @@
 // Image
 .menu-detail-pic {
     position: relative;
+    .img-wrap {
+        position: relative;
+    }
+    .cart-update-alert {
+        display: none;
+        background: rgba($success, .8);
+        position: absolute;
+        bottom: 0;
+        line-height: rem-calc(80);
+        width:100%;
+        left:0;
+        right:0;
+        text-align: center;
+        color: $white;
+        text-transform: uppercase;
+        font-size: rem-calc(18);
+        letter-spacing: 0.04em;
+        height: rem-calc(80);
+    }
+
     img {
         width:100%;
-
     }
 
     .ribbon {

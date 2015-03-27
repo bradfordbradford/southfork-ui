@@ -115,3 +115,10 @@ $('[data-menu-by-day!=""]').qtip({ // Grab all elements with a non-blank data-me
 $('a.disabled').click(function( event ) {
   event.preventDefault();});
 
+
+// Cart Update Alert
+// -----------------
+$('.menu-detail .order a').click(function(event) {
+  event.preventDefault();
+  $('.cart-update-alert').fadeIn('slow').slideUp('slow', 'easeInOutCirc');
+});

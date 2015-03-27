@@ -16,7 +16,7 @@ var locations = [
 
 $locationsSelect.select2({
   data: locations,
-  placeholder: "Enter Your Delivery Address",
+  placeholder: "Select Your Delivery Address",
   maximumSelectionLength: 1,
   allowClear: true,
   minimumInputLength: 1
