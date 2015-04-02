@@ -62,7 +62,7 @@
 
 // Number Badge
 .number-badge {
-    background: $white;
+    // background: $white;
     color: $orange;
     border-radius: 1000px;
     height:rem-calc(48);
@@ -73,7 +73,7 @@
     font-size: rem-calc(24);
     span {
         position: relative;
-        top:6px;
+        top:4px;
     }
 
     &.sm {

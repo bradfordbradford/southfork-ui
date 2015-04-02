@@ -18,6 +18,10 @@
         .list-content {
             text-align: center;
         }
+        &:nth-child(3) .number-badge span {
+            top:3px;
+            left:1px;
+        }
 
         @media #{$medium-only} {
             @include grid-column(6);
