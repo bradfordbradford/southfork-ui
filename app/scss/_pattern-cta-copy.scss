@@ -1,0 +1,18 @@
+// Pattern: CTA Copy
+// -----------------
+
+.cta-copy {
+    padding: rem-calc(80 16);
+    text-align: center;
+    .title, p {
+        color: $orange;
+    }
+    .title {
+        max-width:800px;
+        margin: 0 auto rem-calc(32);
+    }
+    p {
+        font-size: rem-calc(14);
+        letter-spacing: 0.06em;
+    }
+}

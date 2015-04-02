@@ -1,0 +1,43 @@
+// Page: Catering
+// ---------------
+
+
+// Catering Header
+.clipping_fresh {
+    background: url(../images/food_1280x744.jpg) no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position: 0 -60px;
+    -webkit-mask-image: url(../images/fresh-delicious.svg);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position:center center;
+    height:400px;
+    top: 0;
+    left:0;
+    width:100%;
+    position: relative;
+
+    @media #{$medium-only} {
+          -webkit-mask-size: 80%;
+          background-attachment: inherit;
+          height: 340px;
+          -webkit-mask-position: center center;
+    }
+    @media #{$small-only} {
+          -webkit-mask-size: 80%;
+          background-attachment: inherit;
+          height: 240px;
+          -webkit-mask-position: center center;
+    }
+}
+
+
+// We Cater
+// .we-cater {
+//   h2 {
+//     margin-bottom: rem-calc(40);
+//   }
+//       p {
+//           color: $clay;
+//       }
+//   }

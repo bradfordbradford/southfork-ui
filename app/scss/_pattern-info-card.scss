@@ -1,0 +1,27 @@
+// Info Card
+.info-card {
+    background: $white;
+    padding: rem-calc(60 40 60);
+    margin: rem-calc(10 0);
+
+    .title {
+        font-family: $font-family-sans-serif;
+        text-align: center;
+        margin: rem-calc(0 0 24);
+    }
+    .content {
+        strong {
+            font-weight: $font-weight-normal;
+            color: $primary-color;
+        }
+    }
+
+    &.press {
+        .title {
+            img {display: block;margin: 0 auto;}
+        }
+        .content {
+            text-align: center;
+        }
+    }
+}

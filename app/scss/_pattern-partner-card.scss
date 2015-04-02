@@ -1,0 +1,39 @@
+// Pattern: Partner Card
+// ---------------------
+
+.partner-card {
+    margin-bottom: rem-calc(40);
+    position: relative;
+    overflow: hidden;
+    background: $white;
+
+    .content-wrap {
+        height:rem-calc(100);
+        z-index: 10;
+        position: relative;
+    }
+
+    .content {
+        background: $white;
+        padding: rem-calc(24 40 40);
+        text-align: center;
+        transition: all $global-transition;
+
+        h5 {
+            margin-bottom:0;
+        }
+        p {
+            margin-top:0;
+            font-size: rem-calc(16);
+            color: $clay;
+        }
+    }
+
+    @media #{$small-only} {
+        overflow: visible;
+        .content-wrap {
+            height: 100%;
+        }
+    }
+
+}

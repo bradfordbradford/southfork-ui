@@ -46,7 +46,7 @@
 
         // Fill Card
         &.fill-card {
-            padding: rem-calc(180 16 90);
+            padding: rem-calc(160 16 182);
             .inner {
                 background: $cool;
                 @include grid-column(6, $center: true);
@@ -62,6 +62,11 @@
 
             form {
                 padding: rem-calc(16 0 62);
+            }
+
+            .footnote {
+                position: relative;
+                top:rem-calc(60);
             }
         }
 

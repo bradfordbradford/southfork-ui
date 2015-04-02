@@ -1,9 +1,9 @@
 
 // Pattern: Checkout Confirm Deliver
 .checkout-confirm-delivery {
-    @include grid-column(10, $center:true);
-    @media #{$large-only} {
-        @include grid-column(4, $center:true);
+    @include grid-column(4, $center:true);
+    @media #{$medium-down-upperbound} {
+        @include grid-column(10, $center:true);
     }
 
     padding: 0 0 rem-calc(140);

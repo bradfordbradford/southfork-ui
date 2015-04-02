@@ -109,7 +109,7 @@ $silver-blue : #9C9AA3;
 $gainsboro   : #D8D8D8;
 $iron        : #CCCCCC;
 $old-iron    : #C9C7C9;
-// $base        : #AAAAAA;
+$base        : #ACAAA8;
 $aluminum    : #979899;
 $jumbo       : #827974;
 $jumbo-light : #B4ABA8;
@@ -341,7 +341,7 @@ $blockquote-border: 0px; //1px solid $gainsboro;
 // $acronym-underline: 1px dotted $gainsboro;
 
 // We use these to control padding and margin
-// $microformat-padding: rem-calc(10 12);
+$microformat-padding: rem-calc(0 24 0);
 // $microformat-margin: rem-calc(0 0 20 0);
 
 // We use these to control the border styles

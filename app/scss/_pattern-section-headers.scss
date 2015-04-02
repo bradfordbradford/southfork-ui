@@ -33,6 +33,11 @@ header.time-left {
         }
     }
 }
+.page-header {
+    .title {
+        margin: rem-calc(24 0);
+    }
+}
 
 .section-header {
     text-align: center;
@@ -43,10 +48,12 @@ header.time-left {
            font-size: rem-calc(18);
         }
         p {
-            color: $clay;
             font-size: rem-calc(13);
         }
-
+    }
+    p {
+        color: $clay;
+        font-size: rem-calc(16);
     }
 }
 

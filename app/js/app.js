@@ -94,7 +94,7 @@ $('[data-menu-by-day!=""]').qtip({ // Grab all elements with a non-blank data-me
 // SMOOTH
   // --------------
   $(function() {
-    $('a[href*=#]:not([href=#])').click(function() {
+    $('a[href*=#]:not([href=#]):not(".no-scroll")').click(function() {
       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
         var target = $(this.hash);
         target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
@@ -122,3 +122,19 @@ $('.menu-detail .order a').click(function(event) {
   event.preventDefault();
   $('.cart-update-alert').fadeIn('slow').slideUp('slow', 'easeInOutCirc');
 });
+
+
+// Partner Card Hover
+// -------------------
+
+
+$('.partner-card').hover(function() {
+  var findContentHeight = $(this).find('.content')
+  var height = $(findContentHeight).height()
+
+  $(this).find('.content-wrap').stop().animate({ top: -height, opacity: .98 }, 'slow', 'easeInOutCirc');
+  }, function() {
+      $(this).find('.content-wrap').stop().animate({ top: 0,  opacity: 1 }, 'slow', 'easeInOutCirc');
+});
+
+

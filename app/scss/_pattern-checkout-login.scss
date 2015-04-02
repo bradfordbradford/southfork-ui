@@ -3,27 +3,19 @@
 .checkout-login {
     padding: rem-calc(60 0 160);
 
-    .inner {
-        padding: rem-calc(0 40 100);
-    }
-
     .section-header {
         text-align: left;
         .title {
-            font-size: rem-calc(18);
             color: $orange;
         }
+    }
+    .inner {
+        padding-top: 0;
     }
 
     .button {
         margin: rem-calc(32 0 12);
         padding-left: rem-calc(48);
         padding-right: rem-calc(48);
-    }
-
-    @media #{$medium-down-upperbound} {
-        .inner {
-            padding: rem-calc(0 24 60);
-        }
     }
 }

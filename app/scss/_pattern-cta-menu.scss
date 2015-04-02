@@ -1,0 +1,16 @@
+// CTA Menu
+// - - - - - - - -
+
+.cta-menu {
+    padding: rem-calc(48 16 32);
+    .title {
+        letter-spacing: 0.06em;
+    }
+    .footnote a {
+        color: $jumbo;
+        font-size: rem-calc(14);
+    }
+    form {
+        padding: rem-calc(24 0 16);
+    }
+}

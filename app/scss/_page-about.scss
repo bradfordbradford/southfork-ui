@@ -1,0 +1,135 @@
+// Page: about
+// ----------
+
+#about-intro {
+    @include clearfix;
+    padding-bottom:rem-calc(70);
+
+    .about-img {
+        width:57%;
+        float:left;
+        padding-right:rem-calc(20);
+        padding-left:rem-calc(40);
+        img {
+            float: right;
+        }
+    }
+    .about-content {
+        width: 43%;
+        float:left;
+        padding-left:rem-calc(20);
+        padding-right:rem-calc(100);
+    }
+    @media #{$medium-only} {
+        .about-img {padding-left:rem-calc(20);}
+        .about-content {
+            padding-right:rem-calc(20);
+        }
+    }
+    @media #{$small-only} {
+        .about-img,
+        .about-content {
+            img {float: none;}
+            padding-left: rem-calc(20);
+            padding-right: rem-calc(20);
+            width:100%;
+            float:none;
+        }
+        .about-content {
+            margin-top: rem-calc(40);
+        }
+    }
+}
+
+// Features
+#about-features {
+    .focus-list-w-icons {
+        padding: rem-calc(0 64 0);
+        @media #{$small-only} {
+            padding: rem-calc(0 );
+        }
+    }
+}
+
+// Southfork Means
+#southfork-means {
+    // Header
+    .section-header {
+        padding-top: rem-calc(86);
+    }
+
+    .panel-wrap {
+        padding: rem-calc(0 124 0);
+    }
+    .split-panel {
+        .inner {
+            padding: rem-calc(58 40 60);
+        }
+    }
+    @media #{$medium-down-upperbound} {
+        figure img {margin:0 auto;}
+        figcaption {float: none !important; text-align: right;}
+    }
+    @media #{$small-only} {
+        .panel-wrap {
+            padding: rem-calc(0 20 0);
+        }
+    }
+}
+
+
+// Delivering
+#about-delivering {
+    padding: rem-calc(34 0 50);
+}
+
+#about-our-story {
+
+    .profile-highlight {
+        width:80%;
+        margin:0 auto;
+        .profile-pic,
+        .profile-content {
+            float:left;
+        }
+        .profile-pic {
+            width: 38%;
+            margin-top: rem-calc(40);
+            img {
+                max-width: rem-calc(280);
+                margin:0 auto;
+                display: block;
+            }
+
+        }
+        .profile-content {
+            width: 62%;
+        }
+        @media #{$medium-only} {
+            width:100%;
+        }
+        @media #{$small-only} {
+            .profile-pic,
+            .profile-content {
+                float:none;
+            }
+            .profile-pic {width:100%;margin: 0 auto;}
+            .profile-content {width:100%;}
+        }
+    }
+
+    // @media #{$medium-only} {
+    //     .profile-highlight {
+    //         padding: rem-calc(0);
+    //         .profile-pic {
+    //             width: 33%;
+    //             padding: rem-calc(0);
+
+    //         }
+    //         .profile-content {
+    //             width: 67%;
+    //         }
+
+    //     }
+    // }
+}

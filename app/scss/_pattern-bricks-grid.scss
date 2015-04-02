@@ -1,0 +1,23 @@
+#brick-grid[data-columns]::before {
+    content: '3 .column.size-1of3';
+}
+
+/* These are the classes that are going to be applied: */
+.column {
+    float: left;
+    padding-left:10px;
+    padding-right:10px;
+}
+.size-1of3 { width: 33.333%;
+    > div {
+      display: block;
+      margin-bottom: 20px;
+    }
+}
+
+@media #{$medium-only}{
+    .size-1of3 { width: 49.555%; }
+}
+@media #{$small-only}{
+    .size-1of3 { width: 100%; }
+}

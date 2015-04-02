@@ -1,0 +1,57 @@
+// Pattern: Mini Southfork Menu
+// ----------------------------
+
+.mini-southfork-menu {
+    margin: rem-calc(-90 0 0);
+    padding: rem-calc(0 80 80);
+    .inner {
+        background: $white;
+        padding: rem-calc(40 16 80);
+        text-align: center;
+        ul.slat-list {width:72%; margin:0 auto;}
+    }
+
+    header {
+        padding: rem-calc(0 16 32);
+        .bowl-icon {
+            color: $orange;
+            font-size: rem-calc(72);
+        }
+    }
+
+    .sans.title {
+        font-weight: 200;
+        color: $gainsboro;
+        text-transform: uppercase;
+        margin-bottom: rem-calc(18);
+    }
+    .icon-content {
+        .number-badge {
+            color: $gainsboro;
+            border: 2px solid $gainsboro;
+        }
+
+        display: inline-block;
+        margin-right: 1em;
+        &:last-child {margin-right: 0;}
+    }
+    .active .number-badge{
+            color: $orange;
+            border: 2px solid $orange;
+    }
+
+    .tabs dd>a, .tabs .tab-title>a {
+      background: none !important;
+      padding:rem-calc(0 8);
+    }
+    .tabs dd, .tabs .tab-title {
+      float: none;
+      display: inline-block;
+    }
+
+}
+
+
+
+
+

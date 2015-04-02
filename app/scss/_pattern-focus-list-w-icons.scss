@@ -37,11 +37,7 @@
             }
         }
 
-        @media #{$medium-only} {
-            @include grid-column(6, $center:true, $float:false);
-            display: block;
-        }
-        @media #{$small-only} {
+        @media only screen and (max-width: 48em) {
             @include grid-column(10, $center:true );
             display: block;
             .inner {

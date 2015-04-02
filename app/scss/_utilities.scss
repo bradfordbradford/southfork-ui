@@ -28,10 +28,21 @@
 
 // Colors
 .color-white {
-    background: $white;
+    color: $white;
 }
 .color-cream {
-    background: $cream;
+    color: $cream;
+}
+.color-orange {
+    color: $orange;
+}
+.color-base {
+    color: $base;
+}
+
+// Weights
+.norm-weight {
+    font-weight: $font-weight-normal;
 }
 
 // Breaks
@@ -64,6 +75,17 @@
         position: relative;
         top:6px;
     }
+
+    &.sm {
+        height:rem-calc(32);
+        width:rem-calc(32);
+        font-size: rem-calc(16);
+        span {
+            position: relative;
+            top:2px;
+        }
+    }
+
 }
 
 // Ribbon
@@ -181,6 +203,18 @@
         height: rem-calc(64);
         width: rem-calc(64);
     }
+    &.lg,
+    &.lg img {
+        height: 100%;
+        width: 100%;
+    }
+    @media #{$small-only} {
+        &.lg,
+        &.lg img {
+            height: rem-calc(140);
+            width: rem-calc(140);
+        }
+    }
 }
 .user.icon {
     position: relative;
@@ -193,9 +227,19 @@
 .split-panel {
     width:50%;
     float:left;
+    .inner {
+        padding: rem-calc(40 40 100);
+    }
+    .title {
+        font-size: rem-calc(18);
+    }
+    p {color:$clay;}
     @media #{$medium-down-upperbound} {
         width:inherit;
         float: none;
+        .inner {
+            padding: rem-calc(32 24 60);
+        }
     }
 }
 
@@ -267,3 +311,78 @@ position: relative;top:2px;
 a.disabled {
     cursor: default;
 }
+
+
+// header buffer
+.header-buffer {
+    padding-top: rem-calc(60);
+}
+
+
+// Footer buffer
+.footer-buffer {
+    padding-bottom: rem-calc(180);
+}
+
+
+
+// Offset Images
+@media #{$large-only} {
+    img.offset-image-left,
+    img.offset-image-right {
+        display: block;
+    }
+    img.offset-image-left {
+        margin-left: rem-calc(-64);
+    }
+    img.offset-image-right {
+        margin-left: rem-calc(64);
+    }
+    // figure
+
+    figure.offset-image-left {
+        figcaption {float:left !important;}
+        img {
+            margin-left: rem-calc(-64);
+        }
+    }
+    figure.offset-image-right {
+        figcaption {
+            float:right;
+        }
+        img {
+            margin-left: rem-calc(100);
+        }
+    }
+}
+figure.offset-image-left,
+figure.offset-image-right {
+    margin:0;
+    img {
+        display: block;
+    }
+    figcaption {
+        float:right;
+        color: $clay;
+        margin-top: 1em;
+        font-size: rem-calc(12);
+    }
+}
+
+// Slat List
+ul.slat-list {
+    @extend %list-reset;
+    li {
+        padding: rem-calc(12 16);
+        display: block;
+        list-style: none;
+        text-align: center;
+        border-bottom: 1px solid $gainsboro;
+        p {
+            color: $clay;
+        }
+    }
+}
+
+// Paragraphs
+p {color: $light-tan;}
