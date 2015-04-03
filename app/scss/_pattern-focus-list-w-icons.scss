@@ -18,11 +18,21 @@
         .icon-content {
             text-align: center;
             margin-top: rem-calc(32);
+            position: relative;
+            transition: all .35s ease-in-out;
+
             img {
                 max-width:100px;
                 margin: 0 auto;
                 display: block;
             }
+        }
+
+        &:hover .icon-content {
+            cursor:pointer;
+            transform: translate3d(-0, -4px, 0) rotateY(-360deg);
+            -moz-transform: translate3d(-0, -4px, 0) rotateY(-360deg);
+            -webkit-transform: translate3d(-0, -4px, 0) rotateY(-360deg);
         }
 
         .list-content {

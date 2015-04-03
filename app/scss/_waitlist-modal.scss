@@ -1,0 +1,64 @@
+// Waitlist Modal
+
+.waitlist-modal-layout {
+    background-color: $cool;
+    padding:0;
+    text-align: center;
+    .inner {
+        @include grid-column(10, $center: true);
+    }
+
+
+    .title {
+        font-size: rem-calc(80);
+        padding: rem-calc(20 0);
+    }
+
+    .tagline {
+        padding: rem-calc(72 0 0);
+        text-transform: uppercase;
+        letter-spacing: rem-calc(1.8);
+
+        .heart-icon {
+            position: relative;
+            top: 2px;
+            margin-left: 4px;
+        }
+    }
+
+    p.lead {
+        font-size: rem-calc(16);
+        color: $light-tan;
+        letter-spacing: 0.08em;
+        margin-bottom: rem-calc(40);
+    }
+    p {
+        font-size: rem-calc(14);
+        color:$light-brown;
+    }
+
+    form {
+        padding: rem-calc(32 0 72);
+        .row {
+            margin: 0 auto;
+        }
+    }
+    small {
+        font-size: rem-calc(12);
+        letter-spacing: 0.08em;
+        color:$alt-light-tan;
+    }
+
+    .footnote {
+        display: block;
+        padding: rem-calc(0 0 72);
+    }
+
+    // Confirm
+    .social-sharing {
+        border-top: 1px solid $alt-light-tan;
+        border-bottom: 1px solid $alt-light-tan;
+        padding: rem-calc(24 0 26);
+        margin: rem-calc(16 0 60);
+    }
+}

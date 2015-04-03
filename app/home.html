@@ -53,11 +53,11 @@
                       <select class="location-select form-control" multiple="multiple"></select>
                     </div>
                     <div class="large-4 columns">
-                     <a href="#" class="button expand">View Menu</a>
+                     <a href="#" class="button expand caps">View Menu</a>
                     </div>
                  </div>
               </form>
-              <small class="footnote"><a href="#waitlist">Don't see your office address? Join our waitlist <span class="icon" data-icon="c"></span></a></small>
+              <small class="footnote"><a data-reveal-id="waitlist-modal">Don't see your office address? Join our waitlist <span class="icon" data-icon="c"></span></a></small>
            </div>
         </section>
 
@@ -76,7 +76,7 @@
             <ul class="focus-list-w-icons" data-equalizer>
               <li data-equalizer-watch>
                 <div class="inner">
-                  <div class="icon-content">
+                  <div class="icon-content hover-slideUp">
                     <img src="images/icons/chef-icon.png" alt="">
                   </div>
                   <div class="list-content">
@@ -110,7 +110,7 @@
             </ul>
           </div>
 
-          <section class="clearfix split-hero">
+          <section class="clearfix split-hero viewTest">
             <div class="split-hero-content">
                <div class="inner">
                   <h4 class="tagline">We care deeply about the effect of food on our health, the environment, and our community.</h4>
@@ -127,10 +127,10 @@
             </header>
           </div>
 
-          <div class="large-12 columns">
+          <div class="large-12 columns viewTest focus-story-line-wrap">
             <div class="clearfix">
               <div class="large-10 large-centered columns">
-                <ul class="focus-list-story-line">
+                <ul class="focus-list-story-line ">
                   <li>
                     <div class="inner">
                       <div class="icon-content">
@@ -170,7 +170,7 @@
             </div>
           </div>
 
-          <header class="cta-hero" id="waitlist">
+          <header class="cta-hero viewTest" id="waitlist">
             <div class="cta-hero-copy fill-card">
                <div class="inner">
                   <h5 class="tagline sans">Join Our Waitlist</h5>
@@ -195,12 +195,12 @@
                         <input type="text" placeholder="Email Address">
                        </div>
                        <div class="large-4 columns">
-                        <a href="#" class="button expand">Join Waitlist</a>
+                        <a data-reveal-id="waitlist-confirm-modal" class="button expand">Join Waitlist</a>
                        </div>
                     </div>
                  </form>
                </div>
-               <span class="footnote note">Currently delivering to select offices in Atlanta, GA.</span>
+
             </div>
 
             <div class="cta-hero-bg fade-img"></div>
@@ -253,6 +253,55 @@
 
       </section>
     </main>
+  </div>
+  <div id="white-fade"></div>
+
+  <div id="waitlist-modal" class="waitlist-modal-layout reveal-modal medium" data-reveal aria-labelledby="waitlistModalTitle" aria-hidden="true" role="dialog">
+    <div class="inner">
+      <h5 class="tagline sans"  id="waitlistModalTitle">Join Our Waitlist</h5>
+      <p class="lead"><em>Sign up to be notified when we are delivering to your building.</em></p>
+      <form class="">
+        <div class="row">
+           <div class="large-12 columns">
+            <input type="text" placeholder="Office Address">
+           </div>
+        </div>
+        <div class="row">
+           <div class="large-6 columns">
+            <input type="text" placeholder="City">
+           </div>
+           <div class="large-6 columns">
+            <input type="text" placeholder="Zip">
+           </div>
+        </div>
+        <div class="row ">
+           <div class="large-8 columns">
+            <input type="text" placeholder="Email Address">
+           </div>
+           <div class="large-4 columns">
+            <a href="#" data-reveal-id="waitlist-confirm-modal"class="button expand">Join Waitlist</a>
+           </div>
+        </div>
+     </form>
+     <span class="footnote note">Currently delivering to select offices in Atlanta, GA.</span>
+     <a class="close-reveal-modal exit-reveal-modal">&#215;</a>
+   </div>
+  </div>
+
+  <div id="waitlist-confirm-modal" class="waitlist-modal-layout waitlist-confirm-layout reveal-modal medium" data-reveal aria-labelledby="waitlistConfirmTitle" aria-hidden="true" role="dialog">
+    <div class="inner">
+      <h5 class="tagline sans" id="waitlistConfirmTitle">You're In!</h5>
+      <p class="lead"><em>You've been added to the waitlist</em></p>
+      <p>Want us to start delivering to your building… like, now!? Forward our info along to co-workers or officemates in your building. The more people that sign up, the quicker we will start delivering.</p>
+      <small class="sans caps">Spread the Love to Friend around Atlanta!</small>
+      <div class="social-sharing addthis-tools large-addthis">
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-522f767078954aa5" async="async"></script>
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+        <div class="addthis_sharing_toolbox"></div>
+      </div>
+      <a class="close-reveal-modal exit-reveal-modal">&#215;</a>
+   </div>
   </div>
 
   <script src="js/jquery.min.js"></script>

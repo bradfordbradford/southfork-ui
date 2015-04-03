@@ -1,0 +1,87 @@
+// Add This Tools
+.addthis-tools {
+    // remove obnoxious addthis styles:
+    .at4-icon.aticon-facebook,
+    .at4-icon.aticon-twitter,
+    .at4-icon.aticon-email {
+        background: none;
+    }
+    .at-share-tbx-element.addthis_20x20_style .at-share-btn {
+        max-height:32px;
+        max-width:32px;
+        height:32px;
+        width:32px;
+        border-radius: $global-rounded;
+        margin: 0 16px;
+    }
+    a.at-svc-twitter,
+    a.at-svc-facebook,
+    a.at-svc-email {
+        transition: background $global-transition;
+
+        &:before {
+          color: $white;
+          font-size: rem-calc(24);
+          position: relative;
+          top:7px;
+          font-family: "southfork" !important;
+          content: attr(data-icon);
+          font-style: normal !important;
+          font-weight: normal !important;
+          font-variant: normal !important;
+          text-transform: none !important;
+          speak: none;
+          line-height: 1;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        }
+    }
+
+    // Twitter
+    a.at-svc-twitter {
+        background: $twitter;
+
+        &:before {
+            content: "n";
+            top:8px;
+            left:1px;
+        }
+        &:hover {
+            background: darken($twitter, 8);
+        }
+    }
+    // Facebook
+    a.at-svc-facebook {
+        background: $facebook;
+
+        &:before {
+            content: "e";
+            top:8px;
+        }
+        &:hover {
+            background: darken($facebook, 8);
+        }
+    }
+    // Email
+    a.at-svc-email {
+        background: $orange;
+        &:before {
+            content: "b";
+        }
+        &:hover {
+            background: darken($orange, 8);
+        }
+    }
+
+    // Large
+    &.large-addthis {
+        .at-share-tbx-element.addthis_20x20_style .at-share-btn {
+            max-height:40px;
+            max-width:40px;
+            height:40px;
+            width:40px;
+            border-radius: $global-rounded;
+            margin: 0 16px;
+        }
+    }
+}

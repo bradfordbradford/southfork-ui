@@ -49,6 +49,7 @@
         font-size: rem-calc(17);
         text-transform: uppercase;
         letter-spacing: 0.012em;
+
         .icon {
             position: relative;
             top:1px;
@@ -56,6 +57,7 @@
             font-size: rem-calc(16);
         }
         a {
+            padding: 1em;
             color: $brown;
                 // Override Foundation .close-reveal-modal
                 font-size: 16px;

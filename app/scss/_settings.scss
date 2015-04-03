@@ -95,7 +95,8 @@ $font-family-serif: "pt-serif", Georgia, Cambria, "Times New Roman", Times, seri
 // $font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
 
 // We use these to define default font weights
-$font-weight-normal: 200 !default;
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
 $font-weight-bold: 700 !default;
 
 
@@ -124,11 +125,15 @@ $jet         : #222222;
 // Supporting Colors
 $orange      : #F58255;
 $lightest-tan   : #CCC8CA;
+$alt-light-tan  : #C9C6C6;
 $tan         : #C7AA80;
 $light-tan   : #968F93;
 $brown       : #59514F;
 $dark-brown  : #393738;
 $light-brown : #7B7473;
+
+$twitter     : #4BC5E3;
+$facebook    : #4A90E2;
 
 
 $footer-brown: #4A4648;
@@ -1140,8 +1145,8 @@ $select-bg-color: $white;
 // $include-html-reveal-classes: $include-html-classes;
 
 // We use these to control the style of the reveal overlay.
-$reveal-overlay-bg: rgba($white, 1);
-$reveal-overlay-bg-old: $white;
+$reveal-overlay-bg: rgba($jet, .6);
+$reveal-overlay-bg-old: $light-tan;
 
 // We use these to control the style of the modal itself.
 $reveal-modal-bg: $white;
@@ -1149,23 +1154,23 @@ $reveal-modal-bg: $white;
 // $reveal-default-width: 80%;
 // $reveal-max-width: $row-width;
 // $reveal-modal-padding: rem-calc(20);
-// $reveal-box-shadow: 0 0 10px rgba($black,.4);
+$reveal-box-shadow: none; //0 0 10px rgba($black,.4);
 
 // We use these to style the reveal close button
-// $reveal-close-font-size: rem-calc(40);
+$reveal-close-font-size: rem-calc(24);
 // $reveal-close-top: rem-calc(8);
 // $reveal-close-side: rem-calc(11);
 // $reveal-close-color: $base;
-// $reveal-close-weight: $font-weight-bold;
+$reveal-close-weight: $font-weight-light;
 
 // We use this to set the default radius used throughout the core.
-// $reveal-radius: $global-radius;
+$reveal-radius:0 ;// $global-radius;
 // $reveal-round: $global-rounded;
 
 // We use these to control the modal border
 // $reveal-border-style: solid;
 // $reveal-border-width: 1px;
-// $reveal-border-color: $steel;
+$reveal-border-color: $gainsboro;
 
 // $reveal-modal-class: "reveal-modal";
 // $close-reveal-modal-class: "close-reveal-modal";

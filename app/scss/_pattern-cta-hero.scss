@@ -1,7 +1,17 @@
 
 // Pattern: CTA Hero
 // -----------------
-
+.js .cta-hero .fill-card{
+    transition: opacity .8s, -webkit-transform .8s linear, -moz-transform .8s linear;
+    -webkit-transform: translate3d(0, 1em, 0);
+    -moz-transform: translate3d(0, 1em, 0);
+    opacity: 0;
+}
+.js .cta-hero.in-view .fill-card{
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    opacity: 1;
+}
 .cta-hero {
     position: relative;
     background: $secondary-color;

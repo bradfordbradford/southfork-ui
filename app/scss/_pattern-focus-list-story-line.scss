@@ -35,3 +35,42 @@
         }
     }
 }
+
+// In View
+    .focus-story-line-wrap {
+        li {
+            &:first-child .inner, &:first-child .number-badge, &:first-child p {
+                transition: all .3s ease-in;
+            }
+            &:nth-child(2) .inner, &:nth-child(2) .number-badge, &:nth-child(2) p {
+                transition: all .3s ease-in 1s;
+            }
+            &:nth-child(3) .inner, &:nth-child(3) .number-badge, &:nth-child(3) p {
+                transition: all .3s ease-in 2s;
+            }
+            .inner {
+                -webkit-transform: translate3d(0,8px, 0);
+            }
+
+            .number-badge {
+                color: $gainsboro;
+                border-color: $gainsboro;
+            }
+            p {
+                color: $gainsboro;
+            }
+        }
+        &.in-view {
+            li {
+                .inner {
+                    -webkit-transform: translate3d(0,0, 0);
+                }
+                p {color: $light-tan;}
+                .number-badge {
+                    color: $orange;
+                    border-color: $orange;
+                }
+
+            }
+        }
+    }
