@@ -13,6 +13,7 @@
     "url": ""
   },
   "devDependencies": {
+    "grunt-autoprefixer": "~0.7.2",
     "load-grunt-tasks": "~1.0.0",
     "node-sass": "~1.2.3",
     "grunt-sass": "~0.17.0",

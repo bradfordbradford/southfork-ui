@@ -2,14 +2,11 @@
 // Pattern: CTA Hero
 // -----------------
 .js .cta-hero .fill-card{
-    transition: opacity .8s, -webkit-transform .8s linear, -moz-transform .8s linear;
-    -webkit-transform: translate3d(0, 1em, 0);
-    -moz-transform: translate3d(0, 1em, 0);
+    transition: opacity .8s, transform .8s linear;
     opacity: 0;
 }
 .js .cta-hero.in-view .fill-card{
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
     opacity: 1;
 }
 .cta-hero {
@@ -119,14 +116,3 @@
     }
 
 }
-
-// Collapse Rows for a Split Email Form Row
-// form .collapse-split-form {
-//     // margin: 0 auto;
-//     .large-8.columns {padding-right:0;}
-//     .large-4.columns {padding-left:0;}
-//     @media #{$small-only} {
-//     .large-8.columns {padding:0;}
-//     .large-4.columns {padding:0;}
-//     }
-// }

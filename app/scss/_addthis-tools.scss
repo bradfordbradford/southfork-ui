@@ -13,6 +13,7 @@
         width:32px;
         border-radius: $global-rounded;
         margin: 0 16px;
+        text-align: center;
     }
     a.at-svc-twitter,
     a.at-svc-facebook,
@@ -82,6 +83,24 @@
             width:40px;
             border-radius: $global-rounded;
             margin: 0 16px;
+        }
+    }
+    // Medium
+    &.medium-addthis {
+        .at-share-tbx-element.addthis_20x20_style .at-share-btn {
+            max-height:24px;
+            max-width:24px;
+            height:24px;
+            width:24px;
+            border-radius: $global-rounded;
+            margin: 0 4px;
+            &.at-svc-facebook:before {top:2px;}
+            &.at-svc-twitter:before {top:2px;}
+            &.at-svc-email:before {top:1px;}
+            &:before {
+
+                font-size: rem-calc(14);
+            }
         }
     }
 }

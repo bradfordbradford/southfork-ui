@@ -39,14 +39,13 @@ $(document).ready(function(){
       $('.menu-block').waitForImages({
         finished: function() {
             all_images_loaded = 1;
-            console.log('Images Load: All loaded');
-
+            console.log('Images Load: Menu images loaded');
             setTimeout( function(){
             $('.menu-block').addClass('loaded');
             } , 610 );
         },
         each: function() {
-           console.log('Images Load: Each loaded');
+           console.log('Images Load: Menu images faded in');
         },
         waitForAll: true
     });
@@ -83,7 +82,7 @@ $(document).ready(function(){
   (function($) {
     $(document).ready(function() {
       $(window).scroll(function() {
-        $('.viewTest:in-viewport(400)').addClass('in-view');
+        $('.detectView:in-viewport(400)').addClass('in-view');
       });
     });
   }(jQuery));

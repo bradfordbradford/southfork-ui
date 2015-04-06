@@ -19,7 +19,7 @@ module.exports = function(grunt) {
 					outputStyle: 'compressed'
 				},
 				files: {
-					'<%= app %>/css/app.css': '<%= app %>/scss/app.scss'
+					'<%= app %>/css/raw.css': '<%= app %>/scss/app.scss'
 				}
 			}
 		},
@@ -41,16 +41,16 @@ module.exports = function(grunt) {
 				src: ['<%= dist %>/*']
 			},
 		},
-		copy: {
-			dist: {
-				files: [{
-					expand: true,
-					cwd:'<%= app %>/',
-					src: ['fonts/**', '**/*.html', '!**/*.scss', '!bower_components/**'],
-					dest: '<%= dist %>/'
-				}]
-			},
-		},
+		// copy: {
+		// 	dist: {
+		// 		files: [{
+		// 			expand: true,
+		// 			cwd:'<%= app %>/',
+		// 			src: ['fonts/**', '**/*.html', '!**/*.scss', '!bower_components/**'],
+		// 			dest: '<%= dist %>/'
+		// 		}]
+		// 	},
+		// },
 
 		imagemin: {
 			target: {
@@ -69,6 +69,33 @@ module.exports = function(grunt) {
 				mangle: false
 			}
 		},
+
+		// Autoprefixer
+	    autoprefixer: {
+	        options: {
+	            browsers: ['last 2 versions']
+	        },
+	        // dist: {
+         //        files: {
+         //            'raw.css': 'app.css'
+         //        }
+         //    }
+	        single_file: {
+		      options: {
+		        // Target-specific options go here.
+		      },
+		      src: '<%= app %>/css/raw.css',
+		      dest: '<%= app %>/css/app.css'
+		    },
+
+	        // dist: {
+	        //     files: [{
+	        //         expand: true,
+	        //         src: '<%= app %>/css/app.css',
+	        //         dest: '<%= dist %>/css/prefix/app.css'
+	        //     }]
+	        // }
+	    },
 
 		useminPrepare: {
 			html: ['<%= app %>/index.html'],
@@ -99,7 +126,11 @@ module.exports = function(grunt) {
 				options: {
 					livereload: true
 				}
-			}
+			},
+			styles: {
+                files: ['<%= app %>/css/raw.css'],
+                tasks: ['autoprefixer']
+            }
 		},
 
 		connect: {
@@ -141,9 +172,10 @@ module.exports = function(grunt) {
 
 
 	grunt.registerTask('compile-sass', ['sass']);
+	grunt.registerTask('autoprefix', ['autoprefixer']);
 	grunt.registerTask('bower-install', ['wiredep']);
-
-	grunt.registerTask('default', ['compile-sass', 'bower-install', 'connect:app', 'watch']);
+// 'bower-install',
+	grunt.registerTask('default', ['compile-sass', 'connect:app', 'watch']);
 	grunt.registerTask('validate-js', ['jshint']);
 	grunt.registerTask('server-dist', ['connect:dist']);
 
