@@ -8,10 +8,20 @@
    <script src="js/modernizr.js"></script>
    <script src="//use.typekit.net/eub0pft.js"></script>
    <script>try{Typekit.load();}catch(e){}</script>
-   <script src="js/jquery.min.js"></script>
 </head>
 <body>
    <div class="site-container">
+
+    <div data-alert class="alert-box warning fixed-centered">
+      Uh oh! It’s too late to order lunch for today, <a href="#">but tomorrow's another day… <span class="arrow-left icon" data-icon="c"></span></a>
+      <a href="#" class="close">&times;</a>
+    </div>
+
+    <div data-alert class="alert-box warning fixed-centered">
+      These dishes were just too good! We’re all sold out for today, <a href="#">but why not look ahead to tomorrow’s menu?</a>
+      <a href="#" class="close">&times;</a>
+    </div>
+
       <!-- Top Bar -->
       <nav class="top-bar" data-topbar role="navigation">
         <ul class="title-area">
@@ -23,26 +33,20 @@
 
         <section class="top-bar-section">
           <ul class="right">
-            <li class="active"><a href="menu-index.html">Today's Menu</a></li>
-            <li class=""><a href="how-it-works.html">How It Works</a></li>
+            <li class="active"><a href="#">Today's Menu</a></li>
+            <li><a href="#">How It Works</a></li>
             <li class="has-dropdown">
-              <a class="disabled" href="#">Learn More</a>
+              <a href="#">Learn More</a>
               <ul class="dropdown">
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="how-it-works.html#faq">FAQ</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="cater.html">We Cater</a></li>
+                <li><a href="#">First link</a></li>
+                <li><a href="#">Second link</a></li>
               </ul>
             </li>
-            <li class="user has-dropdown">
-              <a href="#"><span class="user icon"><img src="images/user_james-bond.jpg" alt=""></span><span class="user-name">Alfred Redding</span></a>
-              <ul class="dropdown">
-                <li><a href="customer-manage-account.html">Settings</a></li>
-                <li><a href="#">Sign Out</a></li>
-              </ul>
-            </li>
-            <li class="cart">
-              <a href="checkout-review.html"><span class="cart icon" data-icon="m"><span class="badge icon"><span class="count">2</span></span></span></a>
+            <li class="has-form">
+              <ul class="button-group">
+                      <li><a href="#" class="button knockout orange border radius tiny">Login</a></li>
+                      <li><a href="#" class="button knockout orange border radius tiny">Sign Up</a></li>
+                    </ul>
             </li>
           </ul>
         </section>
@@ -62,7 +66,7 @@
                     <div class="caret"></div>
                     </span>
                   </h2>
-                  <h5>In Partnership with <a href="#todays-partnery">The Blind Butcher</a></h5>
+                  <h5>All Meals Prepared by Jamie McAllister</h5>
 
                </header>
                 <ul class="menu-block-list" data-equalizer>
@@ -70,7 +74,7 @@
                       <div class="inner">
                         <div class="menu-block-pic">
                           <div data-reveal-id="menu-item-modal">
-                            <img class="fade-img" data-src="images/menu-block-1.png" width="400" height="250" src="images/menu-block-1.png" alt="">
+                            <img class="fade-img" src="images/menu-block-1.png" alt="">
                           </div>
                           <a href="#">
                            <span class="icon-trigger add-to-cart">
@@ -112,17 +116,17 @@
                         </div>
                       </div>
                    </li>
-                   <li class="menu-block sold-out" data-equalizer-watch>
+                   <li class="menu-block" data-equalizer-watch>
                       <div class="inner">
                          <div class="menu-block-pic">
-                          <div>
-                            <img class="fade-img" data-src="images/menu-block-2.png" width="400" height="250"  src="images/menu-block-2.png" alt="">
+                          <div data-reveal-id="menu-item-modal">
+                            <img class="fade-img" src="images/menu-block-2.png" alt="">
                           </div>
-                          <a href="#" class="disabled">
+                          <a href="/index.html">
                            <span class="icon-trigger add-to-cart">
+                              <span class="more">+</span>
                               <span class="content">
-                              Sold
-                              <span class="cart">Out</span>
+                              Add To <span class="cart">Cart</span>
                               </span>
                            </span>
                           </a>
@@ -162,7 +166,7 @@
                       <div class="inner">
                          <div class="menu-block-pic">
                           <div data-reveal-id="menu-item-modal">
-                            <img class="fade-img" data-src="images/menu-block-3.png" width="400" height="250"  src="images/menu-block-3.png" alt="">
+                            <img class="fade-img" src="images/menu-block-3.png" alt="">
                           </div>
                           <a href="#">
                            <span class="icon-trigger add-to-cart">
@@ -204,287 +208,12 @@
                          </div>
                       </div>
                    </li>
-                   <li class="menu-block" data-equalizer-watch>
-                      <div class="inner">
-                        <div class="menu-block-pic">
-                          <div data-reveal-id="menu-item-modal">
-                            <img class="fade-img" data-src="images/menu-block-1.png" width="400" height="250"  src="images/menu-block-1.png" alt="">
-                          </div>
-                          <a href="#">
-                           <span class="icon-trigger add-to-cart">
-                              <span class="more">+</span>
-                              <span class="content">
-                              Add To <span class="cart">Cart</span>
-                              </span>
-                           </span>
-                          </a>
-                        </div>
 
-                        <div class="menu-block-content">
-                            <a href="#">
-                               <h5 class="title">Fried Egg BLT Sandwich</h5>
-                            </a>
-                            <p class="menu-ingredients-list">
-                               collard greens / avocado / carrots / sweet potatoes / fresh / high fiber and super greens
-                            </p>
-                            <div class="menu-block-meta">
-                              <ul class="menu-detail-tags sm">
-                                <li data-food-meta="Superfood">
-                                  <span class="food-meta-tag label">
-                                    <span data-icon="q" class="icon"></span>
-                                  </span>
-                                </li>
-                                <li data-food-meta="Vegetarian">
-                                  <span class="food-meta-tag label">
-                                    <span data-icon="y" class="icon"></span>
-                                  </span>
-                                </li>
-                                <li data-food-meta="Paleo Diet">
-                                  <span class="food-meta-tag label">
-                                    <span data-icon="B" class="icon"></span>
-                                  </span>
-                                </li>
-                              </ul>
-                              <span class="price">$14.99</span>
-                           </div>
-                        </div>
-                      </div>
-                   </li>
-                   <li class="menu-block sold-out" data-equalizer-watch>
-                      <div class="inner">
-                         <div class="menu-block-pic">
-                          <div>
-                            <img class="fade-img" data-src="images/menu-block-2.png" width="400" height="250" src="images/menu-block-2.png" alt="">
-                          </div>
-                          <a href="#" class="disabled">
-                           <span class="icon-trigger add-to-cart">
-                              <span class="content">
-                              Sold
-                              <span class="cart">Out</span>
-                              </span>
-                           </span>
-                          </a>
-                        </div>
-
-                         <div class="menu-block-content">
-                            <a href="#">
-                               <h5 class="title">Miso Sweet Potato Broccoli Bowl</h5>
-                            </a>
-                            <p class="menu-ingredients-list">
-                               collard greens / avocado / carrots / sweet potatoes / fresh / high fiber and super greens
-                            </p>
-                            <div class="menu-block-meta">
-                              <ul class="menu-detail-tags sm">
-                                <li data-food-meta="Spicy!">
-                                  <span class="food-meta-tag label">
-                                    <span data-icon="w" class="icon"></span>
-                                  </span>
-                                </li>
-                                <li data-food-meta="Gluten-Free">
-                                  <span class="food-meta-tag label">
-                                    <span data-icon="l" class="icon"></span>
-                                  </span>
-                                </li>
-                                <li data-food-meta="Vegan">
-                                  <span class="food-meta-tag label">
-                                    <span data-icon="t" class="icon"></span>
-                                  </span>
-                                </li>
-                              </ul>
-                              <span class="price">$14.99</span>
-                           </div>
-                         </div>
-                      </div>
-                   </li>
-                   <li class="menu-block" data-equalizer-watch>
-                      <div class="inner">
-                         <div class="menu-block-pic">
-                          <div data-reveal-id="menu-item-modal">
-                            <img class="fade-img" data-src="images/menu-block-3.png" width="400" height="250" src="images/menu-block-3.png" alt="">
-                          </div>
-                          <a href="#">
-                           <span class="icon-trigger add-to-cart">
-                              <span class="more">+</span>
-                              <span class="content">
-                              Add To <span class="cart">Cart</span>
-                              </span>
-                           </span>
-                          </a>
-                        </div>
-
-                         <div class="menu-block-content">
-                            <a href="#">
-                               <h5 class="title">California Collard Green Wrap</h5>
-                            </a>
-                            <p class="menu-ingredients-list">
-                               collard greens / avocado / carrots / sweet potatoes / fresh / high fiber and super greens
-                            </p>
-                            <div class="menu-block-meta">
-                              <ul class="menu-detail-tags sm">
-                                <li data-food-meta="Nut-Free">
-                                  <span class="food-meta-tag label">
-                                    <span data-icon="D" class="icon"></span>
-                                  </span>
-                                </li>
-                                <li data-food-meta="Superfood">
-                                  <span class="food-meta-tag label">
-                                    <span data-icon="q" class="icon"></span>
-                                  </span>
-                                </li>
-                                <li data-food-meta="Vegetarian">
-                                  <span class="food-meta-tag label">
-                                    <span data-icon="y" class="icon"></span>
-                                  </span>
-                                </li>
-                              </ul>
-                              <span class="price">$14.99</span>
-                           </div>
-                         </div>
-                      </div>
-                   </li>
-                   <li class="menu-block" data-equalizer-watch>
-                      <div class="inner">
-                        <div class="menu-block-pic">
-                          <div data-reveal-id="menu-item-modal">
-                            <img class="fade-img" data-src="images/menu-block-1.png" width="400" height="250" src="images/menu-block-1.png" alt="">
-                          </div>
-                          <a href="#">
-                           <span class="icon-trigger add-to-cart">
-                              <span class="more">+</span>
-                              <span class="content">
-                              Add To <span class="cart">Cart</span>
-                              </span>
-                           </span>
-                          </a>
-                        </div>
-
-                        <div class="menu-block-content">
-                            <a href="#">
-                               <h5 class="title">Fried Egg BLT Sandwich</h5>
-                            </a>
-                            <p class="menu-ingredients-list">
-                               collard greens / avocado / carrots / sweet potatoes / fresh / high fiber and super greens
-                            </p>
-                            <div class="menu-block-meta">
-                              <ul class="menu-detail-tags sm">
-                                <li data-food-meta="Superfood">
-                                  <span class="food-meta-tag label">
-                                    <span data-icon="q" class="icon"></span>
-                                  </span>
-                                </li>
-                                <li data-food-meta="Vegetarian">
-                                  <span class="food-meta-tag label">
-                                    <span data-icon="y" class="icon"></span>
-                                  </span>
-                                </li>
-                                <li data-food-meta="Paleo Diet">
-                                  <span class="food-meta-tag label">
-                                    <span data-icon="B" class="icon"></span>
-                                  </span>
-                                </li>
-                              </ul>
-                              <span class="price">$14.99</span>
-                           </div>
-                        </div>
-                      </div>
-                   </li>
-                   <li class="menu-block sold-out" data-equalizer-watch>
-                      <div class="inner">
-                         <div class="menu-block-pic">
-                          <div>
-                            <img class="fade-img" data-src="images/menu-block-2.png" width="400" height="250" src="images/menu-block-2.png" alt="">
-                          </div>
-                          <a href="#" class="disabled">
-                           <span class="icon-trigger add-to-cart">
-                              <span class="content">
-                              Sold
-                              <span class="cart">Out</span>
-                              </span>
-                           </span>
-                          </a>
-                        </div>
-
-                         <div class="menu-block-content">
-                            <a href="#">
-                               <h5 class="title">Miso Sweet Potato Broccoli Bowl</h5>
-                            </a>
-                            <p class="menu-ingredients-list">
-                               collard greens / avocado / carrots / sweet potatoes / fresh / high fiber and super greens
-                            </p>
-                            <div class="menu-block-meta">
-                              <ul class="menu-detail-tags sm">
-                                <li data-food-meta="Spicy!">
-                                  <span class="food-meta-tag label">
-                                    <span data-icon="w" class="icon"></span>
-                                  </span>
-                                </li>
-                                <li data-food-meta="Gluten-Free">
-                                  <span class="food-meta-tag label">
-                                    <span data-icon="l" class="icon"></span>
-                                  </span>
-                                </li>
-                                <li data-food-meta="Vegan">
-                                  <span class="food-meta-tag label">
-                                    <span data-icon="t" class="icon"></span>
-                                  </span>
-                                </li>
-                              </ul>
-                              <span class="price">$14.99</span>
-                           </div>
-                         </div>
-                      </div>
-                   </li>
-                   <li class="menu-block" data-equalizer-watch>
-                      <div class="inner">
-                         <div class="menu-block-pic">
-                          <div data-reveal-id="menu-item-modal">
-                            <img class="fade-img" data-src="images/menu-block-3.png" width="400" height="250" src="images/menu-block-3.png" alt="">
-                          </div>
-                          <a href="#">
-                           <span class="icon-trigger add-to-cart">
-                              <span class="more">+</span>
-                              <span class="content">
-                              Add To <span class="cart">Cart</span>
-                              </span>
-                           </span>
-                          </a>
-                        </div>
-
-                         <div class="menu-block-content">
-                            <a href="#">
-                               <h5 class="title">California Collard Green Wrap</h5>
-                            </a>
-                            <p class="menu-ingredients-list">
-                               collard greens / avocado / carrots / sweet potatoes / fresh / high fiber and super greens
-                            </p>
-                            <div class="menu-block-meta">
-                              <ul class="menu-detail-tags sm">
-                                <li data-food-meta="Nut-Free">
-                                  <span class="food-meta-tag label">
-                                    <span data-icon="D" class="icon"></span>
-                                  </span>
-                                </li>
-                                <li data-food-meta="Superfood">
-                                  <span class="food-meta-tag label">
-                                    <span data-icon="q" class="icon"></span>
-                                  </span>
-                                </li>
-                                <li data-food-meta="Vegetarian">
-                                  <span class="food-meta-tag label">
-                                    <span data-icon="y" class="icon"></span>
-                                  </span>
-                                </li>
-                              </ul>
-                              <span class="price">$14.99</span>
-                           </div>
-                         </div>
-                      </div>
-                   </li>
                 </ul>
 
             </div>
          </section>
-         <section class="fill-cool fill-section" id="todays-partnery">
+         <section class="fill-cool fill-section">
             <div class="row">
               <article class="large-8 large-centered columns">
                  <div class="profile-highlight">
@@ -510,12 +239,12 @@
             <section class="large-8 columns">
               <ul class="site-map-list">
                 <li class="icon"><a href="/"><span class="bowl-icon" data-icon="E"></span></a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="how-it-works.html">How It Works</a></li>
-                <li><a href="#">Blog</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="mission.html">Mission</a></li>
+                <li><a href="blog.html">Blog</a></li>
                 <li><a href="press.html">Press</a></li>
-                <li><a href="cater.html">We Cater</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><a href="faq.html">FAQ</a></li>
               </ul>
               <div class="site-info">
                 © 2015 Southfork Kitchen, LLC
@@ -620,11 +349,10 @@
                   </div>
                 </div>
 
-                <ul class="menu-detail-share-opts social-sharing addthis-tools medium-addthis">
-                  <!-- <li><h5><a href="#"><span class="share icon" data-icon="C"></span> share this</a></h5></li>
-                  <li><h5><a href="#"><span class="share icon" data-icon="p"></span> had this dish</a></h5></li> -->
-                  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-552305a97cc54060" async="async"></script>
-                  <div class="addthis_sharing_toolbox"></div>
+                <ul class="menu-detail-share-opts">
+                  <li><h5><a href="#"><span class="share icon" data-icon="C"></span> share this dish</a></h5></li>
+
+                  <li><h5><a href="#"><span class="share icon" data-icon="p"></span> had this dish</a></h5></li>
                 </ul>
               </div>
 
@@ -638,12 +366,7 @@
                     </div>
                   </span>
                 </span>
-                <div class="img-wrap">
-                  <div class="cart-update-alert">
-                    <span class="content">2 in your Cart</span>
-                  </div>
-                  <img src="images/food-2.jpg" alt="">
-                </div>
+                <img src="images/food-2.jpg" alt="">
                 <ul class="menu-detail-tags">
                   <li>
                     <span class="food-meta-tag label">
@@ -804,15 +527,14 @@
         </div>
       </footer>
     </div>
-    <div id="white-fade"></div>
 
-
+  <script src="js/jquery.min.js"></script>
   <script src="js/libs.js"></script>
   <script src="js/app.js"></script>
   <script>
   // Time Left to Order Lunch
   $("#time-left").countdown({
-      date: "29 April 2015 15:55:00",
+      date: "29 February 2015 15:55:00",
       // Change this to your desired date to countdown to
       format: "on"
   });
