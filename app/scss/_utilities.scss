@@ -388,3 +388,25 @@ ul.slat-list {
 p {color: $light-tan;}
 .site-container {webkit-backface-visibility: hidden;}
 
+
+
+// Small Form
+form.form-sm {
+    max-width: 500px;
+    margin: 0 auto;
+
+    @media #{$medium-only} {
+        .large-8 {
+            width:60%;
+            float:left;
+        }
+        .large-4 {
+            width:40%;
+            float:left;
+            a {
+                display: block;
+            }
+        }
+    }
+
+}

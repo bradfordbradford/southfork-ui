@@ -23,10 +23,11 @@
             left:1px;
         }
 
-        @media #{$medium-only} {
-            @include grid-column(6);
-        }
-        @media #{$small-only} {
+        // @media #{$medium-only} {
+        //     @include grid-column(6);
+        // }
+        // @media #{$small-only} {
+        @media only screen and (max-width: 48em) {
             @include grid-column(12, $center:true);
             display: block;
 

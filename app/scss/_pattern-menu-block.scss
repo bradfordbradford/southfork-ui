@@ -53,6 +53,7 @@ ul.menu-block-list {
             border-top-right-radius: 8px;
             position: relative;
             min-height: 200px;
+            &:hover {cursor:pointer;}
             img {
                 width:100%;
             }

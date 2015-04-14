@@ -4,6 +4,14 @@
 .mini-southfork-menu {
     margin: rem-calc(-90 0 0);
     padding: rem-calc(0 80 80);
+
+    @media #{$medium-only} {
+        padding: rem-calc(0 32 56);
+    }
+    @media #{$small-only} {
+        padding: rem-calc(0 16 42);
+    }
+
     .inner {
         background: $white;
         padding: rem-calc(40 16 80);

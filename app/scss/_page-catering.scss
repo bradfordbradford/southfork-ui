@@ -31,6 +31,27 @@
     }
 }
 
+@media #{$medium-only} {
+  .we-cater {
+    @include grid-column(10, $center: true);
+    float:none !important;
+    padding-bottom: 64px;
+  }
+  #catering-form {
+    article {
+      @include grid-column(10, $center: true);
+    }
+  }
+}
+
+@media #{$small-only} {
+  .we-cater {
+    padding: rem-calc(0 32 64);
+  }
+  #catering-form article {
+    padding: rem-calc(0 32 );
+  }
+}
 
 // We Cater
 // .we-cater {

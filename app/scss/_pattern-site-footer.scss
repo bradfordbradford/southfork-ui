@@ -69,6 +69,16 @@
             }
         }
     }
+
+    @media #{$medium-only} {
+        text-align: center;
+        .site-info {
+            margin-left:auto;
+            margin-right:auto;
+        }
+    }
+
+
     @media #{$small-only} {
         .site-map-list {
             li {
