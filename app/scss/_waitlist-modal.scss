@@ -4,6 +4,7 @@
     background-color: $cool;
     padding:0;
     text-align: center;
+
     .inner {
         @include grid-column(10, $center: true);
     }
@@ -60,5 +61,12 @@
         border-bottom: 1px solid $alt-light-tan;
         padding: rem-calc(24 0 26);
         margin: rem-calc(16 0 60);
+    }
+}
+
+@-moz-document url-prefix() {
+  .waitlist-modal-layout.open {
+        position: fixed;
+        overflow: scroll;
     }
 }
