@@ -4,7 +4,7 @@
 // -------------------
 .js .menu-block-list {
 
-    li {
+    > li {
         opacity:0;
         -moz-transform: translate3d(0, 1em, 0);
         -webkit-transform: translate3d(0, 1em, 0);
