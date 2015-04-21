@@ -183,7 +183,6 @@ $(document).ready(function () {
         $(this).find('.content-wrap').stop().animate({ top: 0,  opacity: 1 }, 'slow', 'easeInOutCirc');
   });
 
-
 });
 
 

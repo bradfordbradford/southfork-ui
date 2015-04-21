@@ -6,7 +6,7 @@
 //     @include grid-column(11, $center: true);
 // }
 // @media #{$small-only} {.row .inner-container {width:100%;float:none;display: block;padding:0}}
-
+.site-container {background: $cream;}
 
 // Fills
 .fill-white {

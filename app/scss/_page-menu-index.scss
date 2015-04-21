@@ -3,7 +3,12 @@
 // ----------------
 
 #menu-index {
+	.row {
+		max-width:rem-calc(1172);
+	}
+
     .menu-block-list {
         margin-bottom: rem-calc(50);
+
     }
 }

@@ -110,22 +110,26 @@
     .menu-detail-cart-opts {
         @include clearfix;
         margin: rem-calc(0 0 32 0);
+        display:flex;
 
         .quantity {
             float:left;
+            flex-grow: 1;
         }
 
         .order {
-            width: rem-calc(200);
+            // width: rem-calc(200);
+            flex-grow: 8;
             float:left;
             margin-left: rem-calc(16);
         }
         @media #{$small-only} {
             .order {
-                width: inherit;
+                // width: inherit;
                 .button {
                     padding-left: rem-calc(16);
                     padding-right: rem-calc(16);
+                    font-size: rem-calc(12);
                 }
             }
         }

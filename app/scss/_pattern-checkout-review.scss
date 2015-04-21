@@ -65,7 +65,8 @@
 
     // Footer
     footer.checkout-review-footer {
-        @include grid-column(7, $float:right);
+        @include grid-column(8, $float:right);
+        max-width:rem-calc(540);
     }
 
     // Summary

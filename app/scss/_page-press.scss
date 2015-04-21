@@ -5,6 +5,9 @@
 
     #press-intro {
         padding-left: rem-calc(32);
+        @media #{$medium-down-upperbound} {
+            padding-left: 0;
+        }
         // Header
         .column.header {
             width: 66.667%;

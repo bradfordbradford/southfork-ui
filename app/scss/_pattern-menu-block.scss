@@ -50,12 +50,12 @@ ul.menu-block-list {
 
         // Menu Pic
         .menu-block-pic {
-            border-top-right-radius: 8px;
             position: relative;
             min-height: 200px;
             &:hover {cursor:pointer;}
             img {
                 width:100%;
+                border-top-right-radius: 8px;
             }
             a {
                 display: block;
