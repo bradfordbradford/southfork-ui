@@ -24,4 +24,3 @@ $locationsSelect.select2({
   maximumSelectionLength: 1,
   minimumInputLength: 1
 });
-

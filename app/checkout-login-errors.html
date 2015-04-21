@@ -11,6 +11,7 @@
 </head>
 <body>
    <div class="site-container">
+
       <!-- Top Bar -->
       <nav class="top-bar" data-topbar role="navigation">
         <ul class="title-area">
@@ -31,12 +32,8 @@
                 <li><a href="#">Second link</a></li>
               </ul>
             </li>
-            <li class="user has-dropdown">
-              <a href="#"><span class="user icon"><img src="images/user_james-bond.jpg" alt=""></span><span class="user-name">Alfred Redding</span></a>
-              <ul class="dropdown">
-                <li><a href="#">Settings</a></li>
-                <li><a href="#">Sign Out</a></li>
-              </ul>
+            <li class="has-form">
+              <a href="#" class="radius knockout orange border tiny button">Login</a>
             </li>
             <li class="cart">
               <a href="#"><span class="cart icon" data-icon="m"><span class="badge icon"><span class="count">2</span></span></span></a>
@@ -45,55 +42,83 @@
         </section>
       </nav>
 
-
       <!-- Main Content -->
       <main class="site-content" role="main" id="menu-index">
-
-        <section class="fill-cream">
-          <div class="row customer-account sm-width">
-
-            <section class="manage-account">
-              <header class="row form-title">
-                <p class="note dark med">Change Your Password</p>
-              </header>
-
-              <form class="">
+        <section class="clearfix checkout-login fill-cream">
+          <div class="large-8 columns large-centered" data-equalizer>
+            <section class="fill-white split-panel" data-equalizer-watch>
+              <div class="inner">
+                <header class="section-header sm">
+                  <h4 class="title sans caps">Registered Customers</h4>
+                  <p>If you already have a Southfork account, login with your email address. </p>
+                  <div data-alert class="tiny alert-box">
+                    No account matches that email/password combination.
+                  </div>
+                </header>
+                <form class="">
                   <div class="row">
                     <div class="large-12 columns">
-                      <input type="password" placeholder="Current Password">
+                      <input type="email" placeholder="Email Address">
                     </div>
                   </div>
                   <div class="row">
                      <div class="large-12 columns">
-                      <input type="password" placeholder="New Password">
+                      <input type="password" placeholder="Password">
                      </div>
                   </div>
                   <div class="row">
                      <div class="large-12 columns">
-                      <input type="password" placeholder="Confirm Password">
-                     </div>
-                  </div>
-                  <br>
-                  <div class="row">
-                     <div class="large-12 columns">
-                        <a href="customer-manage-account.html" class="button caps expand">Save New Password</a>
+                        <a href="#" class="button caps">Login</a>
+                        <small class="note"><a href="#">Forgot your password?</a></small>
                      </div>
                   </div>
                 </form>
+              </div>
             </section>
 
-            <aside class="side-bar">
-              <h5>Manage Settings</h5>
-              <hr>
+            <section class="fill-cool split-panel" data-equalizer-watch>
+              <div class="inner">
+                <header class="section-header sm">
+                  <h4 class="title sans caps">New Customers</h4>
+                  <p>Sign up to get delicious, chef-crafted meals delivered to your desk.</p>
+                  <div data-alert class="tiny alert-box error">
+                    These fields are required:
+                    <ul>
+                      <li>Location</li>
+                      <li>Email Address</li>
+                      <li>Password</li>
+                    </ul>
+                  </div>
+                </header>
 
-              <ul class="side-nav">
-                <li class="active"><a href="customer-manage-account.html">My Account</a></li>
-                <li><a href="customer-manage-delivery-info.html">Delivery Info</a></li>
-                <li><a href="customer-manage-payment-info.html">Payment Info</a></li>
-                <li><a href="customer-manage-my-orders.html">My Orders</a></li>
-              </ul>
-            </aside>
-
+                <form class="">
+                  <div class="row">
+                     <div class="large-12 columns">
+                      <select class="location-select form-control" multiple="multiple"></select>
+                     </div>
+                  </div>
+                  <div class="row">
+                    <div class="large-12 columns">
+                      <input type="email" placeholder="Email Address">
+                    </div>
+                  </div>
+                  <div class="row">
+                     <div class="large-6 columns">
+                      <input type="password" placeholder="Password">
+                     </div>
+                     <div class="large-6 columns">
+                      <input type="password" placeholder="Confirm Password">
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="large-12 columns">
+                        <a href="#" class="button knockout orange border caps">Sign up</a>
+                        <small class="note">By clicking “Sign Up" you agree to our Terms of Service &amp; Privacy Policy.</small>
+                     </div>
+                  </div>
+                </form>
+                </div>
+            </section>
           </div>
         </section>
 
@@ -144,12 +169,9 @@
       </main>
    </div>
 
-
-
   <script src="js/jquery.min.js"></script>
   <script src="js/libs.js"></script>
   <script src="js/app.js"></script>
-
-
+  <script src="js/locations-array.js"></script>
 </body>
 </html>

@@ -410,3 +410,25 @@ form.form-sm {
     }
 
 }
+
+// Correct Alert Positioning
+span.error, small.error2 {margin-top: -8px;}
+
+.tiny.alert-box {
+    padding: rem-calc(12 14 12);
+    font-size: rem-calc(13);
+
+    ul {
+        border-top: 1px solid $white;
+        padding: rem-calc(4 16 16);
+        margin: rem-calc(16 0 0);
+        li {
+            font-size: rem-calc(13);
+            margin: rem-calc(2 0);
+        }
+    } 
+}
+input.warning {
+    border-color: $error-red;
+    background: lighten($error-red, 30);
+}

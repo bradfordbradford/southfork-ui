@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/app.css">
+    <title>Demo</title>
+
+  </head>
+  <body>
+  <br>
+  <br>
+  <br>
+
+    <div class="large-10 columns">
+        <form id="waitlistForm" action="/lights/camera" method="post">
+            <div class="row">
+               <div class="large-12 columns">
+                <input type="text" id="officeAddress" placeholder="Office Address">
+               </div>
+            </div>
+            <div class="row">
+               <div class="large-6 columns">
+                <input type="text" id="city" placeholder="City">
+               </div>
+               <div class="large-6 columns">
+                <input type="text" id="zip" placeholder="Zip">
+               </div>
+            </div>
+            <div class="row ">
+               <div class="large-8 columns">
+                <input id="emailAddress" type="text" placeholder="Email Address">
+               </div>
+               <div class="large-4 columns">
+                <input type="submit" class="button expand" name="Join Waitlist">
+                <!-- <a data-reveal-id="waitlist-confirm-modal" class="button expand">Join Waitlist</a> -->
+               </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/happy.js"></script>
+    <script>
+    // Form Validation
+    // -------------------
+    $('#waitlistForm').isHappy({
+      fields: {
+        // reference the field you're talking about, probably by `id`
+        // but you could certainly do $('[name=name]') as well.
+        // '#yourName': {
+        //   required: true,
+        //   message: 'Might we inquire your name'
+        // },
+        '#officeAddress': {
+          required: true,
+          message: '*required'
+        },
+        '#city': {
+          required: true,
+          message: '*required'
+        },
+        '#zip': {
+          required: true,
+          message: '*required'
+        },
+        '#emailAddress': {
+          required: true,
+          message: '*required'
+        },
+        
+      }
+    });
+
+    </script>
+
+  </body>    
+</html>

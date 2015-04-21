@@ -6,8 +6,8 @@
   <title>SouthFork UI Kit</title>
   <link rel="stylesheet" href="css/app.css">
   <script src="js/modernizr.js"></script>
-  <script src="//use.typekit.net/eub0pft.js"></script>
-  <script>try{Typekit.load();}catch(e){}</script>
+  <!--<script src="//use.typekit.net/eub0pft.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>-->
 </head>
 <body>
   <div class="site-container">
@@ -44,16 +44,15 @@
         <section class="full-spread-cta columns">
            <div class="inner">
               <h2 class="section-tag">Lunch from your Favorite Chefs</h2>
-
               <p><em>We're currently delivering to select offices in Atlanta!</em></p>
-
-              <form class="">
+              <form class="validate" method="post">
                  <div class="row">
                     <div class="large-8 columns">
-                      <select class="location-select form-control" multiple="multiple"></select>
+                      <select id="location-select" class="location-select form-control" multiple="multiple"></select>
+                      <!-- <small class="error">Please enter your delivery address</small> -->
                     </div>
                     <div class="large-4 columns">
-                     <a href="#" class="button expand">View Menu</a>
+                    <input type="submit" name="commit" class="button expand" value="View Menu">
                     </div>
                  </div>
               </form>
@@ -113,7 +112,7 @@
           <section class="clearfix split-hero detectView">
             <div class="split-hero-content">
                <div class="inner">
-                  <h4 class="tagline">We care deeply about the effect of food on our health, the environment, and our community.</h4>
+                  <h4 class="tagline">We are on a mission to change the way you experience lunch, delivering meals made with the highest quality ingredients—locally and sustainably sourced whenever possible.</h4>
                   <a href="#" class="tiny button knockout orange border radius">Read Our Mission</a>
                </div>
                <div class="split-hero-pic fade-img" style="background-image:url('images/split-hero-1.jpg'); background-size: cover;">
@@ -176,10 +175,10 @@
                   <h5 class="tagline sans">Join Our Waitlist</h5>
                   <p>Sign up to be notified when we are delivering to your building.</p>
 
-                  <form class="">
+                  <form class="" method="post">
                     <div class="row">
                        <div class="large-12 columns">
-                        <input type="text" placeholder="Office Address">
+                        <input type="text" name="officeAddress" placeholder="Office Address">
                        </div>
                     </div>
                     <div class="row">
@@ -192,10 +191,12 @@
                     </div>
                     <div class="row ">
                        <div class="large-8 columns">
-                        <input type="text" placeholder="Email Address">
+                        <input id="email-address" type="text" placeholder="Email Address">
                        </div>
                        <div class="large-4 columns">
-                        <a data-reveal-id="waitlist-confirm-modal" class="button expand">Join Waitlist</a>
+                        <!-- <input type="submit" class="button expand" name="Join Waitlist"> -->
+                        <a id="success" class="button expand">Join Waitlist</a>
+                        <!-- <a data-reveal-id="waitlist-confirm-modal" class="button expand">Join Waitlist</a> -->
                        </div>
                     </div>
                  </form>
@@ -260,7 +261,34 @@
     <div class="inner">
       <h5 class="tagline sans"  id="waitlistModalTitle">Join Our Waitlist</h5>
       <p class="lead"><em>Sign up to be notified when we are delivering to your building.</em></p>
-      <form class="">
+      <form id="waitlistForm" >
+      <!-- action="/lights/camera" method="post" -->
+          <div class="row">
+             <div class="large-12 columns">
+              <input type="text" id="officeAddress" placeholder="Office Address">
+             </div>
+          </div>
+          <div class="row">
+             <div class="large-6 columns">
+              <input type="text" id="city" placeholder="City">
+             </div>
+             <div class="large-6 columns">
+              <input type="text" id="zip" placeholder="Zip">
+             </div>
+          </div>
+          <div class="row ">
+             <div class="large-8 columns">
+              <input id="emailAddress" type="text" placeholder="Email Address">
+             </div>
+             <div class="large-4 columns">
+              <!-- <input id="submit" type="submit" class="button expand" name="Join Waitlist"> -->
+              <!-- <input type="submit" id="submit" name="commit" value="Join Waitlist" class="button expand"> -->
+              <!-- <a data-reveal-id="waitlist-confirm-modal" class="button expand">Join Waitlist</a> -->
+              <div id="submit" class="button expand">Join Waitlist</div>
+             </div>
+          </div>
+      </form>
+      <!-- <form class="">
         <div class="row">
            <div class="large-12 columns">
             <input type="text" placeholder="Office Address">
@@ -282,7 +310,7 @@
             <a href="#" data-reveal-id="waitlist-confirm-modal"class="button expand">Join Waitlist</a>
            </div>
         </div>
-     </form>
+     </form> -->
      <span class="footnote note">Currently delivering to select offices in Atlanta, GA.</span>
      <a class="close-reveal-modal exit-reveal-modal">&#215;</a>
    </div>
@@ -308,6 +336,46 @@
   <script src="js/libs.js"></script>
   <script src="js/app.js"></script>
   <script src="js/locations-array.js"></script>
+  <!-- // <script src="js/happy.js"></script> -->
+
+  <script>
+
+    // Form Validation
+    // -------------------
+    var waitlistForm = $("#waitlistForm");
+    var waitlistFormInput = $("#waitlistForm :input[type='text']");
+    var waitlistFormSubmit = $("#waitlistForm #submit");
+    
+    // Either on submit:
+    // $('#signupform').submit(function() { // or use click:
+    waitlistFormSubmit.click(function() {
+      var errors = 0;
+      waitlistFormInput.map(function(){
+           if( !$(this).val() ) {
+                $(this).addClass('warning');
+                errors++;
+          } else if ($(this).val()) {
+                $(this).removeClass('warning');
+          }   
+      });
+      if(errors > 0){
+          console.log("Errors!");
+          return false;
+      }
+      // do the ajax..   
+      $(this).addClass('success'); 
+    });
+    // After validation, make sure the warning classes don't brow-beat the user
+    waitlistFormInput.blur(function() {
+        if ($(this).val()) {
+          $(this).removeClass('warning');
+        }
+    });
+    
+
+    </script>
+
+  
 
 </body>
 </html>

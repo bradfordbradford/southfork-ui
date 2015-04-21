@@ -1,8 +1,7 @@
 console.log('Hide Elements for Effects');
 $('.full-spread-cta').css('opacity: 0');
 
-$(document).ready(function(){
-
+$(document).ready(function () {
 
   image_loaded = 0;
   all_images_loaded = 0;
@@ -91,7 +90,6 @@ $(document).ready(function(){
   // Select 2
   // ---------
   $('.special-select').select2();
-
 
   // Tooltips
   // ---------
@@ -187,42 +185,5 @@ $(document).ready(function(){
 
 
 });
-
-
-
-
-
-
-
-
-// Images - imagesloaded.js
-// ---------------------------------
-// $('.fade-img').hide();
-// var $images = $('.fade-img');
-// $('.fade-img').each(function(){
-//   var el = $(this), sources, image;
-//   if(sources = el.css('background-image')){
-//     $.each(sources.split(','), function(i, source){
-//       if(image = source.match(/url\((['"])?(.*?)\1\)/)){
-//         $images = $images.add($('<img>').attr('src', image.pop()));
-//       }
-//     });
-//   }
-// });
-
-// $images.imagesLoaded().progress(function(instance, image){
-//   var result = image.isLoaded ? 'loaded' : 'broken';
-//   console.log('Image:', result, image.img.src);
-// });
-
-// $images.imagesLoaded( function() {
-//     $('.fade-img').fadeIn('fast');
-// });
-
-
-
-
-
-
 
 
