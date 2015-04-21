@@ -6,8 +6,8 @@
   <title>SouthFork UI Kit</title>
   <link rel="stylesheet" href="css/app.css">
   <script src="js/modernizr.js"></script>
-  <!--<script src="//use.typekit.net/eub0pft.js"></script>
-  <script>try{Typekit.load();}catch(e){}</script>-->
+  <script src="//use.typekit.net/eub0pft.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
 </head>
 <body>
   <div class="site-container">
@@ -49,7 +49,6 @@
                  <div class="row">
                     <div class="large-8 columns">
                       <select id="location-select" class="location-select form-control" multiple="multiple"></select>
-                      <!-- <small class="error">Please enter your delivery address</small> -->
                     </div>
                     <div class="large-4 columns">
                     <input type="submit" name="commit" class="button expand" value="View Menu">
@@ -281,10 +280,9 @@
               <input id="emailAddress" type="text" placeholder="Email Address">
              </div>
              <div class="large-4 columns">
-              <!-- <input id="submit" type="submit" class="button expand" name="Join Waitlist"> -->
+              <input id="submit" type="submit" class="button expand" name="Join Waitlist">
               <!-- <input type="submit" id="submit" name="commit" value="Join Waitlist" class="button expand"> -->
               <!-- <a data-reveal-id="waitlist-confirm-modal" class="button expand">Join Waitlist</a> -->
-              <div id="submit" class="button expand">Join Waitlist</div>
              </div>
           </div>
       </form>
@@ -336,8 +334,6 @@
   <script src="js/libs.js"></script>
   <script src="js/app.js"></script>
   <script src="js/locations-array.js"></script>
-  <!-- // <script src="js/happy.js"></script> -->
-
   <script>
 
     // Form Validation
@@ -362,10 +358,17 @@
           console.log("Errors!");
           return false;
       }
-      // do the ajax..   
-      $(this).addClass('success'); 
+      else {
+        // Add a success class to the button
+        event.preventDefault();
+        $(this).addClass('success'); 
+        // Fire the success Modal
+        $('#waitlist-confirm-modal').foundation('reveal', 'open');
+        // And do the AJAX to submit the form info
+      }
     });
-    // After validation, make sure the warning classes don't brow-beat the user
+
+    // After .warnings have been applide, make sure they don't brow-beat the user
     waitlistFormInput.blur(function() {
         if ($(this).val()) {
           $(this).removeClass('warning');
