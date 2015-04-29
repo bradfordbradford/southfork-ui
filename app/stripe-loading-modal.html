@@ -1,0 +1,32 @@
+<!doctype html>
+<html class="no-js" lang="en" >
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>SouthFork UI Kit</title>
+   <link rel="stylesheet" href="css/app.css">
+   <script src="js/modernizr.js"></script>
+   <script src="//use.typekit.net/eub0pft.js"></script>
+   <script>try{Typekit.load();}catch(e){}</script>
+</head>
+<body>
+   <div id="stripe-loading" class="stripe-loading-layout reveal-modal small" data-reveal aria-labelledby="stripIsLoading" aria-hidden="true" role="dialog">
+    <div class="inner">
+     <div class="loading"></div>
+     <div class="pulse loading-text">Loading</div>
+   </div>
+  </div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/libs.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+  // Instead of document read, this could be whatever:
+  $(document).ready(function(){
+    // Fire away!
+    $('#stripe-loading').foundation('reveal', 'open')
+  });
+  </script>
+
+</body>
+</html>

@@ -17,7 +17,8 @@ $(document).ready(function () {
             console.log('Loaded: Full-Spread Image');
 
             setTimeout( function(){
-            $('.full-spread-cta').addClass('loaded');
+            // $('.full-spread-cta').addClass('loaded');
+            $('.full-spread-wrap').addClass('loaded');
             } , 610 );
         },
         waitForAll: true

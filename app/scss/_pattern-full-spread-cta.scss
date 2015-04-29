@@ -1,10 +1,7 @@
 
 // Full Spread CTA
 // ----------------
-.js .full-spread-cta {
-    transition: opacity .8s,transform .8s linear;
-    opacity: 0;
-}
+
 .full-spread-cta {
     &.loaded {
         transform: translate3d(0, 0, 0);
