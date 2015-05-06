@@ -153,22 +153,22 @@
   <script src="js/app.js"></script>
 
   <script>
-  // Instead of document read, this could be whatever:
-  $(document).ready(function(){
-    var parent = $('.site-container');
-    var newAlert = $(
-              "<div data-alert class='alert-box success fixed-centered'>" +
-                  // Put your Alert Text here:
-                 "THIS IS AN ALERT THAT WAS TRIGGERED PROGRAMMATICALLY." +
-                 "<a href='#' class='close'>&times;</a>" + 
-              "</div>");
-    
-    parent.prepend(
-      newAlert.hide().fadeIn('slow')
-    );
-    // Reflow the Foundaton the Alert is cataloged
-    $(document).foundation('reflow'); 
-  });
+// Instead of document read, this could be whatever:
+$(document).ready(function(){
+  var parent = $('.site-container');
+  var newAlert = $(
+            "<div data-alert class='alert-box success fixed-centered'>" +
+                // Put your Alert Text here:
+               "THIS IS AN ALERT THAT WAS TRIGGERED PROGRAMMATICALLY." +
+               "<a href='#' class='close'>&times;</a>" + 
+            "</div>");
+  
+  parent.prepend(
+    newAlert.hide().fadeIn('slow')
+  );
+  // Reflow the Foundaton the Alert is cataloged
+  $(document).foundation('reflow'); 
+});
   </script>
 
 </body>
