@@ -240,14 +240,14 @@
     }
   .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
     // display: none;
-    color: $gainsboro;
+    color: $orange;
     cursor: pointer;
     display: inline-block;
     font-weight: bold;
     margin-right: 4px;
     }
     .select2-container--default .select2-selection--multiple .select2-selection__choice__remove:hover {
-      color: #333; }
+      color: $brown; }
 .select2-container--default[dir="rtl"] .select2-selection--multiple .select2-selection__choice, .select2-container--default[dir="rtl"] .select2-selection--multiple .select2-selection__placeholder {
   float: right; }
 .select2-container--default[dir="rtl"] .select2-selection--multiple .select2-selection__choice {
