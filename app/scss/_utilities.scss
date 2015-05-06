@@ -432,3 +432,9 @@ input.warning {
     border-color: $error-red;
     background: lighten($error-red, 30);
 }
+
+// Hidden Alert Box
+.hidden.alert-box {
+    visibility: none;
+    transition: visibility;
+}
