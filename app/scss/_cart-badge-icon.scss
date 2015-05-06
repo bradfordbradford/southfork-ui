@@ -1,0 +1,48 @@
+// Cart
+li.cart {
+  background:none;
+  padding-right: 1.875rem;
+  a {
+    position: relative;
+    top: 4px;
+  }
+
+  .cart.icon {
+    color: $brown;
+    position: relative;
+    top:-2px;
+    font-size: rem-calc(22);
+    position: relative;
+    transition: all $global-transition;
+
+    &:hover {color: $orange;}
+  }
+  .cart.icon.inactive {
+    color: $old-iron;
+    &:hover {color: $brown;}
+  }
+  .badge.icon {
+    background: $orange;
+    border-radius: $global-rounded;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    top: -12px;
+    right: -18px;
+    height:24px;
+    width:24px;
+    .count {
+      position: absolute;
+      text-align: center;
+      display: inline-block;
+      top: 0;
+      right: 0;
+      height: 24px;
+      width: 24px;
+      font-size: 13px;
+      color: $white;
+      line-height: 25px;
+      z-index: 1000;
+    }
+  }
+}

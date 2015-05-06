@@ -71,14 +71,14 @@
         }
 
     }
-    .cart {
-        color: $old-iron;
-        position: relative;
-        top:-2px;
-        margin: rem-calc(0 8 0 0);
-        font-size: rem-calc(22);
-        &:hover {color: $brown;}
-    }
+    // .cart {
+    //     color: $old-iron;
+    //     position: relative;
+    //     top:-2px;
+    //     margin: rem-calc(0 8 0 0);
+    //     font-size: rem-calc(22);
+    //     &:hover {color: $brown;}
+    // }
 
     @media #{$medium-down} {
        .back-to-menu .content {display: none;}
