@@ -1,30 +1,39 @@
 
 // Full Spread
 // -----------
-$large-screen-full-spread-cta:rem-calc(660);
+$large-screen-full-spread-cta:rem-calc(700);
 $medium-screen-full-spread-cta:70%;
 $small-screen-full-spread-cta:84%;
 
+.full-spread-wrap {
+  position: relative;
+  height:rem-calc(600);
+}
 
 #full-spread {
-  background: url('../images/hero-1.jpg');
+  background: url('../images/header-3_1280x600x72res.jpg');
   background-size:cover;
   position: absolute;
   z-index: 0;
   height: 100%;
   width: 100%;
   left: 0;
-  top: rem-calc(90); // offset nav-bar
+  top: 0; 
   overflow: hidden;
+}
 
-  @media #{$small-only} {
-      background: url('../images/hero-1-small.jpg');
-      background-size: cover;
+ @media #{$small-only} {
+  .full-spread-wrap {
+    position: relative;
+    height:rem-calc(500);
+  }
+  #full-spread {
+    background: url('../images/header-3_768x600x72res.jpg');
+    background-size:cover;
   }
 }
 
 .full-spread-cta {
-  // display: none;
   position: absolute;
   z-index: 100;
   width:$large-screen-full-spread-cta;
@@ -32,23 +41,25 @@ $small-screen-full-spread-cta:84%;
   left:50%;
   margin-top: rem-calc(120);
 
-  @media #{$medium-only} {
+  // @media #{$medium-only} {
+  @media screen and (max-width:1024px) and (min-width: 768px) {
+    margin-top: rem-calc(90);
     width:$medium-screen-full-spread-cta;
     margin-left: -$medium-screen-full-spread-cta/2;
   }
-
-  @media #{$small-only} {
+  @media screen and (max-width:768px) {
+  // @media #{$small-only} {
     margin-top: rem-calc(60);
     width:$small-screen-full-spread-cta;
     margin-left: -$small-screen-full-spread-cta/2;
   }
 }
 .below-full-spread {
-  position: absolute;
-  top: 100%;
-  width: 100%;
-  height: 100%;
-  margin-top: rem-calc(90);
+  position: relative;
+  // top: 100%;
+  // width: 100%;
+  // height: 100%;
+  // margin-top: rem-calc(90);
 
   .site-footer {
     position: relative;
@@ -58,12 +69,7 @@ $small-screen-full-spread-cta:84%;
 
 @media #{$small-only} {
   .full-spread-wrap {
-    background: url('../images/hero-1-small.jpg');
-    background-size: cover;
-    #full-spread {
-      display: none !important
 
-    }
     .full-spread-cta {
       position: relative;
       margin:0 auto;

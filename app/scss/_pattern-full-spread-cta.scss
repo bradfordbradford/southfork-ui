@@ -3,14 +3,15 @@
 // ----------------
 
 .full-spread-cta {
+    
     &.loaded {
         transform: translate3d(0, 0, 0);
         opacity: 1;
     }
 
     .inner {
-        padding: rem-calc(70 78 32);
-        background: rgba($white, .08);
+        padding: rem-calc(70 96 32);
+        background: rgba($black, .2);
         border: 3px solid $white;
     }
 
