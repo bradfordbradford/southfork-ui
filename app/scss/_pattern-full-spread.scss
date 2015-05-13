@@ -11,7 +11,7 @@ $small-screen-full-spread-cta:84%;
 }
 
 #full-spread {
-  background: url('../images/header-3_1280x600x72res.jpg');
+  background: url('http://res.cloudinary.com/hkfwkcc3l/image/upload/v1431539312/header-3_1280x600x72res_pvu1fs.jpg');
   background-size:cover;
   position: absolute;
   z-index: 0;
@@ -28,7 +28,7 @@ $small-screen-full-spread-cta:84%;
     height:rem-calc(500);
   }
   #full-spread {
-    background: url('../images/header-3_768x600x72res.jpg');
+    background: url('http://res.cloudinary.com/hkfwkcc3l/image/upload/v1431539308/header-3_768x600x72res_s3dpim.jpg');
     background-size:cover;
   }
 }
