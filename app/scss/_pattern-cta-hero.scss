@@ -53,7 +53,7 @@
 
         // Fill Card
         &.fill-card {
-            padding: rem-calc(160 16 182);
+            padding: rem-calc(182 16 182);
             .inner {
                 background: $cool;
                 @include grid-column(6, $center: true);
@@ -80,7 +80,7 @@
     }
 
     .cta-hero-bg {
-        background: url('../images/hero-3.jpg')no-repeat;
+        background: url('../images/atlantaskyline_1280x700.jpg')no-repeat;
         background-size: cover;
         position: absolute;
         z-index:0;
