@@ -56,7 +56,7 @@ $(document).ready(function () {
 
   go_foundation = function(){
     // $(function() {
-    //   FastClick.attach(document.body);
+    //   FastClick.attach(tdocument.body);
     // });
     $(document).foundation();
     // Modal
